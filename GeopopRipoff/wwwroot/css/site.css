@@ -1,0 +1,262 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    z-index: 1000;
+    position: absolute;
+    width:100%;
+}
+
+.inner_fotter{
+    padding:25px 0 25px 0;
+    margin: 0 10% 0 10%;
+}
+
+.invisible-button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+
+.mainCorpo {
+    height: 800vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 10px solid #3498db; 
+    border-radius: 30px;
+    position:relative;
+    top:50px;
+}
+
+.titleAndSearch {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    height: 5%;
+    display: flex;
+}
+
+.titleImg {
+    background-color: chartreuse;
+    border-radius: 20px 0 0 0;
+    height: 100%;
+}
+.searchBar {
+    background-color: darkred;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.notificationsBell {
+    background-color: gold;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+.specMenu {
+    background-color: indigo;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.justBorder {
+    border-radius: 0 20px 0 0;
+}
+
+.menuSelection {
+    background-color: #0000FF;
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    height: 1%;
+    justify-content: space-between;
+}
+.menuSelectionELEMENT {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainShowCase {
+    background-color: #7FFFD4;
+    position: absolute;
+    width: 100%;
+    top: 6%;
+    height:12%;
+}
+
+.detailShowCase {
+    background-color: #DC143C;
+    position: absolute;
+    width: 100%;
+    top: 18%;
+    height: 17%;
+}
+
+.detailShowCaseELEMENT{
+}
+
+.flashNews {
+    background-color:chocolate;
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    height: 8%;
+}
+
+.videoSerie {
+    background-color:crimson;
+    position: absolute;
+    width: 100%;
+    top: 43%;
+    height: 5%;
+}
+
+.roccoRipoff {
+    background-color:darkmagenta;
+    position: absolute;
+    width: 100%;
+    top: 48%;
+    height: 8%;
+}
+
+.news {
+    background-color:darksalmon;
+    position: absolute;
+    width: 100%;
+    top: 56%;
+    height: 5%;
+}
+
+.aroundTheWorld {
+    background-color:gray;
+    position: absolute;
+    width: 100%;
+    top: 61%;
+    height: 10%;
+}
+
+.zaWardo {
+    background-color:darkkhaki;
+    position: absolute;
+    width: 100%;
+    top: 71%;
+    height: 5%;
+}
+
+.idk {
+    background-color:greenyellow;
+    position: absolute;
+    width: 100%;
+    top: 76%;
+    height: 5%;
+}
+
+.serie {
+    background-color:aliceblue;
+    position: absolute;
+    width: 100%;
+    top: 81%;
+    height: 5%;
+}
+
+.suggerimenti {
+    background-color: darkslategray;
+    position: absolute;
+    width: 100%;
+    top: 86%;
+    height: 14%;
+    border-radius: 0 0 20px 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px auto auto auto 300px;
+    grid-template-rows: 90px 40px 150px 40px 40px; 
+}
+
+.grid-item {
+    background-color: #555;
+    text-align: center; 
+    color: #fff;
+}
+
+.btn-image-test{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.social-media-buttons-container{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.social-media-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.social-media-buttons .facebook {
+    background-color: #3b5998;
+}
+
+.social-media-buttons .twitter {
+    background-color: #1da1f2;
+}
+
+.social-media-buttons .instagram {
+    background-color: #e1306c;
+}
+
+.social-media-buttons .linkedin {
+    background-color: #0077b5;
+}
+.privacy-coockie-ecc {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.rowClass {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    margin: 0;
+}

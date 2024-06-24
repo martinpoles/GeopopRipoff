@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success mt-3" role="alert">
+        @ViewBag.Message
+    </div>
+}
+
+<div class="container">
+    <div class="col-12 mainCorpo">
+        <div class="row titleAndSearch">
+            <div class="col-6 titleImg"></div>
+
+            <div class="col-3 searchBar">
+
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Cerca...">
+                    <button type="submit">Cerca</button>
+                </form>
+
+            </div>
+
+            <div class="col-1 notificationsBell">
+
+                @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    <button class="invisible-button">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                }
+            </div>
+
+
+            <div class="col-1 specMenu">
+                @using (Html.BeginForm("Menu", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    <button class="invisible-button" onclick="navigateTo('Menu')">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                }
+            </div>
+
+
+
+            <div class="col-1 justBorder"></div>
+        </div>
+        <div class="row menuSelection">
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="btn btn-primary w-100 h-100 invisible-button">Argument1</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "2")
+                    <button class="btn btn-primary w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "3")
+                    <button class="btn btn-primary w-100 h-100 invisible-button">Argument3</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "4")
+                    <button class="btn btn-primary w-100 h-100 invisible-button">Argument4</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "5")
+                    <button class="btn btn-primary w-100 h-100 invisible-button">Argument5</button>
+                }
+            </div>
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "6")
+                    <button class="btn btn-primary w-100 h-100 invisible-button">Argument6</button>
+                }
+            </div>
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "7")
+                    <button class="btn btn-primary w-100 h-100 invisible-button">Argument7</button>
+                }
+            </div>
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "8")
+                    <button class="btn btn-primary w-100 h-100 invisible-button">Argument8</button>
+                }
+            </div>
+        </div>
+        <div class="mainShowCase">3</div>
+        <div class="detailShowCase">4</div>
+        <div class="flashNews">5</div>
+        <div class="videoSerie">6</div>
+        <div class="roccoRipoff">7</div>
+        <div class="news">7</div>
+        <div class="aroundTheWorld">9</div>
+        <div class="zaWardo">10</div>
+        <div class="idk">11</div>
+        <div class="serie">12</div>
+        <div class="suggerimenti">12</div>
+    </div>
+</div>

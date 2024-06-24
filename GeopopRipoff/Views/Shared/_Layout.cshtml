@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GeopopRipoff</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/GeopopRipoff.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer id="footer">
+        <div class="grid-container inner_fotter">
+            <div class="grid-item">8MILA</div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item">
+                <div class="row h-100">
+                    <div class="social-media-buttons-container social-media-buttons">
+
+                        <a href="https://www.facebook.com" class="facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com" class="twitter" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com" class="instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" class="linkedin" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+
+
+            <div class="grid-item">Era una giornata luminosa: il sole splendeva alto nel cielo blu, mentre le onde dell'oceano danzavano delicatamente sulla spiaggia deserta, creando un'atmosfera di pace e serenità</div>
+            <div class="grid-item"></div>
+            <div class="grid-item privacy-coockie-ecc">
+
+                @Html.ActionLink("Privacy Policy", "PrivacyPolicy", "Home", null, new { @class = "grid-item" })
+
+                @Html.ActionLink("Cookie Policy", "CookiePolicy", "Home", null, new { @class = "grid-item" })
+
+                @Html.ActionLink("Redazione", "Redazione", "Home", null, new { @class = "grid-item" })
+
+                @Html.ActionLink("Modifica Consenso", "ModificaConsenso", "Home", null, new { @class = "grid-item" })
+
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item privacy-coockie-ecc">
+
+                <i class="fa fa-solid fa-bell">@Html.ActionLink("Notifiche", "Notifiche", "Home", null, new { @class = "grid-item" })</i>
+
+                <i class="fas fa-cog"> @Html.ActionLink("Impostazioni", "Impostazioni", "Home", null, new { @class = "grid-item" })</i>
+
+            </div>
+
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+
+            <div class="grid-item row" style="margin:0%">
+                
+                <div class="col-5" style="height:100%; overflow:hidden; padding-left:0%">
+                    <a href="https://apps.apple.com/us/app/home/id1110145103?itsct=apps_box_badge&amp" style="display:flex; overflow:hidden; justify-content:center; align-items:center;height:100%; width:100%;">
+                        <img src="/Img/AppStore.png" alt="Download on the App Store" style="display:flex; overflow:hidden; justify-content:center; align-items:center; height:100%; width:100%" />
+                    </a>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-5" style="height:100%">
+                    <a href="https://play.google.com/store/apps/details?id=com.example.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" style="display:flex; overflow:hidden; justify-content:center; align-items:center;height:100%; width:100%">
+                        <img src="/Img/PlayStore.png" alt="Download on the Play Store" style="display:flex; overflow:hidden; justify-content:center; align-items:center; height:100%; width:100%" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

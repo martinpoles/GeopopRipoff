@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GeopopRipoff/1.0.0": {
+        "runtime": {
+          "GeopopRipoff.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GeopopRipoff/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
