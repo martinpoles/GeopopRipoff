@@ -1,28 +1,162 @@
-﻿<div class="row" style="height:100vh; width:100%; top:10%; position:relative;  display: flex;">
+﻿<div class="row" style="height:100vh; width:100%; position:relative; top:50px">
     <div class="col-1"></div>
-    
-    <div class="col-10" style="background: #32CD32">
-       
+
+    <div class="col-10" style="background: #32CD32;">
+
         <div class="row" style="top:15%; height:10%;">
             <div class="col-11" style="background: #B8860B "></div>
-            <div class="col-1" style="background: #00008B; ">exit</div>
-        </div>
 
-        <div class="row" style="top:25%; height:10%;">
-            <div style="background: #6495ED">dassadadadas</div>
+            <div class="col-1" style="background:  #70dbdb; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-times" style="padding:5px"></i>
+                CHIUDI
+            </div>
         </div>
 
         <div class="row" style="top:35%; height:10%;">
-            <div class="col-3" style="background: #8A2BE2"></div>
-            <div class="col-3" style=" background:#000000">exitexitexitexitexit</div>
+
+
+            <div class="col-3" style="background: #8A2BE2; ;">
+
+                @using (Html.BeginForm("Profilo", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    <button class="invisible-button" style="display: flex; align-items: center">
+                        <img src="#" alt="Alternate Text" style="border-radius:50%; padding:5px" />
+                        <span style="display: flex; flex-direction: column; justify-content: center;">
+                            <span>Benvemuto</span>
+                            <span>Nome e Comgnome</span>
+                        </span>
+                    </button>
+                }
+            </div>
+
+            <div class="col-3" style=" background:#00FFFF; display: flex; align-items: center;">
+
+                @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    <button class="invisible-button">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                }
+
+                <span style="display: flex; flex-direction: column; justify-content: center; padding:10px">
+                    <span>Hai X</span>
+                    <span>Nuove Notifiche</span>
+                </span>
+
+
+            </div>
+
         </div>
 
-
-        <div class="row" style="top:35%; height:stretch; width:stretch; position:absolute">
-            <div class="col-12" style="background: #00FFFF">exitexitexitexitexitexitexitexitexitexitexitexitexitexitexitexit</div>
+        <div class="row" style="top:25%; height:10%;">
+            <div style="background: #6495ED">
+                <form id="search-form" style="justify-content: center; display: flex; align-items: center; height:100%;">
+                    <input type="text" id="search-input" placeholder="Cerca..." style="width:50%; padding:10px">
+                    <button type="submit" class="invisible-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
         </div>
 
+        <div class="grid-container-menu" style="position:relative; width:100%; top:10%;">
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="invisible-button">
+                        <h1>Argomento</h1>
+                    </button>
+                }
+            </div>
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="invisible-button">
+                        <h1>Argomento</h1>
+                    </button>
+                }
+            </div>
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="invisible-button">
+                        <h1>Argomento</h1>
+                    </button>
+                }
+            </div>
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="invisible-button">
+                        <h1>Argomento</h1>
+                    </button>
+                }
+            </div>
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="invisible-button">
+                        <h1>Argomento</h1>
+                    </button>
+                }
+            </div>
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="invisible-button">
+                        <h1>Argomento</h1>
+                    </button>
+                }
+            </div>
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="invisible-button">
+                        <h1>Argomento</h1>
+                    </button>
+                }
+            </div>
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="invisible-button">
+                        <h1>Argomento</h1>
+                    </button>
+                }
+            </div>
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="invisible-button">
+                        <h1>Argomento</h1>
+                    </button>
+                }
+            </div>
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("ItemId", "1")
+                    <button class="invisible-button">
+                        <h1>Argomento</h1>
+                    </button>
+                }
+            </div>
+        </div>
     </div>
-    
-    <div class="col-1"></div>
+
 </div>
+
+<div class="col-1"></div>
+</div>
+
+
+<script src="~/js/menu.js" asp-append-version="true"></script>

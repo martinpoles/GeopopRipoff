@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ssoko\\Desktop\\Personal\\GeopopRipoff-main\\GeopopRipoff-main\\GeopopRipoff\\GeopopRipoff.csproj",
+      "projectUniqueName": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff.csproj",
       "projectName": "GeopopRipoff",
-      "projectPath": "C:\\Users\\ssoko\\Desktop\\Personal\\GeopopRipoff-main\\GeopopRipoff-main\\GeopopRipoff\\GeopopRipoff.csproj",
+      "projectPath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff.csproj",
       "packagesPath": "C:\\Users\\ssoko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ssoko\\Desktop\\Personal\\GeopopRipoff-main\\GeopopRipoff-main\\GeopopRipoff\\obj\\",
+      "outputPath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ssoko\\AppData\\Roaming\\NuGet\\NuGet.Config",
