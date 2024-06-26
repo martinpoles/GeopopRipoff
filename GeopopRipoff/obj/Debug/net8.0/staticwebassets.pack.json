@@ -9,8 +9,36 @@
       "PackagePath": "staticwebassets\\Img\\AppStore.png"
     },
     {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Img\\BG_Img.jpg",
+      "PackagePath": "staticwebassets\\Img\\BG_Img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Img\\Background_Home.jpg",
+      "PackagePath": "staticwebassets\\Img\\Background_Home.jpg"
+    },
+    {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Img\\PlayStore.png",
       "PackagePath": "staticwebassets\\Img\\PlayStore.png"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test1.mp4",
+      "PackagePath": "staticwebassets\\Video\\Test1.mp4"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test2.mp4",
+      "PackagePath": "staticwebassets\\Video\\Test2.mp4"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test3.mp4",
+      "PackagePath": "staticwebassets\\Video\\Test3.mp4"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test4.mp4",
+      "PackagePath": "staticwebassets\\Video\\Test4.mp4"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test5.mp4",
+      "PackagePath": "staticwebassets\\Video\\Test5.mp4"
     },
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\site.css",

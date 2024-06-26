@@ -1,26 +1,21 @@
 html {
     font-size: 14px;
 }
-
 @media (min-width: 768px) {
     html {
         font-size: 16px;
     }
 }
-
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
-
 html {
     position: relative;
     min-height: 100%;
 }
-
 body {
 
 }
-
 footer {
     background-color: #333;
     color: #fff;
@@ -34,7 +29,6 @@ footer {
     padding: 25px 0 25px 0;
     margin: 0 10% 0 10%;
 }
-
 .invisible-button {
     background: none;
     border: none;
@@ -95,9 +89,6 @@ footer {
     display: flex;
 }
 
-.justBorder {
-    border-radius: 0 20px 0 0;
-}
 
 .menuSelection {
     background-color: #0000FF;
@@ -130,8 +121,6 @@ footer {
     height: 17%;
 }
 
-.detailShowCaseELEMENT {
-}
 
 .flashNews {
     background-color: chocolate;
@@ -147,6 +136,9 @@ footer {
     width: 100%;
     top: 43%;
     height: 5%;
+
+
+
 }
 
 .roccoRipoff {
@@ -207,6 +199,16 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 .grid-container-footer {
     display: grid;
     grid-template-columns: 400px auto auto auto 300px;
@@ -219,28 +221,11 @@ footer {
     color: #fff;
 }
 
-
-.grid-container-menu {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 50px);
-}
-
 .grid-item-menu {
-    background-color: #555;
     text-align: center;
-    color: #fff;
     align-items: center;
     justify-content: center;
     display: flex;
-}
-
-
-
-.btn-image-test {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .social-media-buttons-container {
@@ -248,7 +233,6 @@ footer {
     align-items: center;
     justify-content: space-evenly;
 }
-
 
 .social-media-buttons a {
     display: inline-flex;
@@ -261,37 +245,47 @@ footer {
     border-radius: 50%;
 }
 
-.social-media-buttons .facebook {
-    background-color: #3b5998;
-}
-
-.social-media-buttons .twitter {
-    background-color: #1da1f2;
-}
-
-.social-media-buttons .instagram {
-    background-color: #e1306c;
-}
-
-.social-media-buttons .linkedin {
-    background-color: #0077b5;
-}
-
 .privacy-coockie-ecc {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
 }
 
-.list {
-    display: table;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
+.flexbox-try {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:15px;
 }
 
-.listItem {
-    display: table-cell;
-    padding: 5px;
+.flash-stories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content:center;
+}
+
+.grid-item-reels {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color:forestgreen;
+    height:100%;
+    min-width:200px;
+    overflow:hidden;
+    position:relative;
+}
+
+
+.thumbnail-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

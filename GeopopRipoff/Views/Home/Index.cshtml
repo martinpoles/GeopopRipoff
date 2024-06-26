@@ -45,7 +45,7 @@
 
 
 
-            <div class="col-1 justBorder"></div>
+            <div class="col-1" style="border-radius: 0 20px 0 0;"></div>
         </div>
         <div class="row menuSelection">
 
@@ -113,7 +113,106 @@
         <div class="mainShowCase">3</div>
         <div class="detailShowCase">4</div>
         <div class="flashNews">5</div>
-        <div class="videoSerie">6</div>
+
+
+
+
+        <div class="videoSerie">
+
+            <div class="row">
+
+                <div class="col-2">
+                    <i class="fas fa-bolt"></i>
+                    Flash
+                </div>
+
+                <div class="col-8"></div>
+
+
+                <div class="col-2">
+                    @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
+                    {
+                        <button class="invisible-button">
+                            <i class="fas fa-play"></i>
+                            Guarda Tutti
+                        </button>
+                    }
+                </div>
+
+            </div>
+
+            <div class="row" style="height:100%; display:flex; padding-top:10px; padding-bottom:10px">
+
+                <div class="flash-stories" id="flash-stories">
+
+                    <div class="grid-item-reels">
+                        @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button w-100 h-100">
+                                <video id="thumbnail-video" class="thumbnail-video" muted="true" loop="true">
+                                    <source src="~/Video/Test1.mp4" type="video/mp4">
+                                </video>
+                            </button>
+                        }
+                    </div>
+
+                    <div class="grid-item-reels">
+                        @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <video id="thumbnail-video" class="thumbnail-video" muted loop>
+                                    <source src="~/Video/Test2.mp4" type="video/mp4">
+                                </video>
+                            </button>
+                        }
+                    </div>
+
+                    <div class="grid-item-reels">
+                        @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <video id="thumbnail-video" class="thumbnail-video" muted loop>
+                                    <source src="~/Video/Test3.mp4" type="video/mp4">
+                                </video>
+                            </button>
+                        }
+                    </div>
+
+                    <div class="grid-item-reels">
+                        @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <video id="thumbnail-video" class="thumbnail-video" muted loop>
+                                    <source src="~/Video/Test4.mp4" type="video/mp4">
+                                </video>
+                            </button>
+                        }
+                    </div>
+
+                    <div class="grid-item-reels">
+                        @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <video id="thumbnail-video" class="thumbnail-video" muted loop>
+                                    <source src="~/Video/Test5.mp4" type="video/mp4">
+                                </video>
+                            </button>
+                        }
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
         <div class="roccoRipoff">7</div>
         <div class="news">7</div>
         <div class="aroundTheWorld">9</div>
