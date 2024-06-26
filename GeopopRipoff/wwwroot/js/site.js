@@ -10,10 +10,9 @@
             const video = videos[currentVideoIndex];
             video.currentTime = 0;
             await video.play();
-            await new Promise(resolve => setTimeout(resolve, 2000)); // Play for 2 seconds
+            await new Promise(resolve => setTimeout(resolve, 4000));
             video.pause();
-            video.currentTime = 0; // Reset the video
-
+            video.currentTime = 0;
             currentVideoIndex = (currentVideoIndex + 1) % videos.length;
         }
     };

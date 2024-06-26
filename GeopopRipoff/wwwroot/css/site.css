@@ -130,15 +130,14 @@ footer {
     height: 8%;
 }
 
-.videoSerie {
+.reelsStyle {
     background-color: crimson;
     position: absolute;
     width: 100%;
     top: 43%;
     height: 5%;
-
-
-
+    display:flex;
+    flex-direction:column;
 }
 
 .roccoRipoff {
@@ -273,7 +272,6 @@ footer {
     align-items: center;
     justify-content: center;
     display: flex;
-    background-color:forestgreen;
     height:100%;
     min-width:200px;
     overflow:hidden;
@@ -281,11 +279,12 @@ footer {
 }
 
 
-.thumbnail-video{
+.thumbnail-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 10%;
 }
