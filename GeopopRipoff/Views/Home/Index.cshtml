@@ -11,9 +11,10 @@
 
 <div class="container">
     <div class="col-12 mainCorpo">
-        <div class="row titleAndSearch">
-            <div class="col-6 titleImg"></div>
 
+        <div class="row titleAndSearch">
+            
+            <div class="col-6 titleImg"></div>
             <div class="col-3 searchBar">
 
                 <form id="search-form">
@@ -22,7 +23,6 @@
                 </form>
 
             </div>
-
             <div class="col-1 notificationsBell">
 
                 @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
@@ -32,8 +32,6 @@
                     </button>
                 }
             </div>
-
-
             <div class="col-1 specMenu">
                 @using (Html.BeginForm("Menu", "Home", FormMethod.Post, new { @class = "" }))
                 {
@@ -42,11 +40,10 @@
                     </button>
                 }
             </div>
-
-
-
             <div class="col-1" style="border-radius: 0 20px 0 0;"></div>
+
         </div>
+
         <div class="row menuSelection">
 
             <div class="col-1 menuSelectionELEMENT">
@@ -110,24 +107,50 @@
                 }
             </div>
         </div>
-        <div class="mainShowCase">3</div>
-        <div class="detailShowCase">4</div>
-        <div class="flashNews">5</div>
 
+        <div class="row mainShowCase">
 
+            <div id="carouselExampleControls" class="carousel slide w-100 h-100" data-ride="carousel">
+                
+                @using (Html.BeginForm("Menu", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    <div class="carousel-inner w-100 h-100">
+                        <div class="carousel-item active w-100 h-100 show-case" style="position:relative">
+                            <span class="text-overlay">Prova</span>
+                            <img src="/Img/MS11.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item w-100 h-100 show-case" style="position:relative">
+                            <span class ="text-overlay">Test</span>
+                            <img src="/Img/MS10.jpg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item w-100 h-100 show-case" style="position:relative">
+                            <span class="text-overlay">Proviamoci</span>
+                            <img src="/Img/MS3.jpg" class="d-block w-100" alt="Slide 3" >
+                        </div>
+                    </div>
+                }
 
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
 
-        <div class="reelsStyle">
+        </div>
+
+        <div class="row reelsStyle">
 
             <div class="row">
-
                 <div class="col-2">
                     <i class="fas fa-bolt"></i>
                     Flash
                 </div>
 
                 <div class="col-8"></div>
-
 
                 <div class="col-2">
                     @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
@@ -138,7 +161,6 @@
                         </button>
                     }
                 </div>
-
             </div>
 
             <div class="row" style="height:100%; display:flex; padding-top:10px; padding-bottom:10px; flex:1">
@@ -203,22 +225,85 @@
                                 </video>
                             </button>
                         }
-                        
+
                     </div>
                 </div>
+
             </div>
 
         </div>
 
+        <div class="row stories-container" style="width:100%">
 
+            @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "stories-element" }))
+            {
+                @Html.Hidden("ItemId", "1")
+                <button class="invisible-button">
+                    <img src="/Img/Img1.jpg">
+                </button>
+            }
 
+            @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "stories-element" }))
+            {
+                @Html.Hidden("ItemId", "1")
+                <button class="invisible-button">
+                    <img src="/Img/Img1.jpg">
+                </button>
+            }
 
-        <div class="roccoRipoff">7</div>
-        <div class="news">7</div>
-        <div class="aroundTheWorld">9</div>
-        <div class="zaWardo">10</div>
-        <div class="idk">11</div>
-        <div class="serie">12</div>
-        <div class="suggerimenti">12</div>
+            @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "stories-element" }))
+            {
+                @Html.Hidden("ItemId", "1")
+                <button class="invisible-button">
+                    <img src="/Img/Img1.jpg">
+                </button>
+            }
+
+            @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "stories-element" }))
+            {
+                @Html.Hidden("ItemId", "1")
+                <button class="invisible-button">
+                    <img src="/Img/Img1.jpg">
+                </button>
+            }
+
+            @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "stories-element" }))
+            {
+                @Html.Hidden("ItemId", "1")
+                <button class="invisible-button">
+                    <img src="/Img/Img1.jpg">
+                </button>
+            }
+
+            @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "stories-element" }))
+            {
+                @Html.Hidden("ItemId", "1")
+                <button class="invisible-button">
+                    <img src="/Img/Img1.jpg">
+                </button>
+            }
+
+            @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "stories-element" }))
+            {
+                @Html.Hidden("ItemId", "1")
+                <button class="invisible-button">
+                    <img src="/Img/Img1.jpg">
+                </button>
+            }
+
+            @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "stories-element" }))
+            {
+                @Html.Hidden("ItemId", "1")
+                <button class="invisible-button">
+                    <img src="/Img/Img1.jpg">
+                </button>
+            }
+
+        </div>
+
+        <div class="row suggerimenti">
+            12
+        </div>
+
     </div>
 </div>

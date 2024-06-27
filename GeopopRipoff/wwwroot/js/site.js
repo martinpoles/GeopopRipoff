@@ -1,6 +1,10 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
+
+    adjustWidth();
+
     const aDiv = document.getElementById("flash-stories")
     const videos = document.getElementsByClassName('thumbnail-video');
+
     let observer;
     let currentVideoIndex = 0;
     let isPlaying = false;
@@ -16,6 +20,7 @@
             currentVideoIndex = (currentVideoIndex + 1) % videos.length;
         }
     };
+
 
     const startSequence = () => {
         isPlaying = true;
@@ -42,4 +47,20 @@
     }, { threshold: 0.5 });
 
     observer.observe(aDiv);
+
 });
+
+
+function adjustWidth() {
+    const childDivs = document.getElementsByClassName('stories-element');
+
+    for (var i = 0; i < childDivs.length; i++) {
+
+        {
+            const width = childDivs[i].offsetWidth;
+            childDivs[i].style.height = `${width}px`;
+        }
+    }
+
+}
+
