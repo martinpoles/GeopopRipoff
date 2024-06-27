@@ -21,7 +21,6 @@
         }
     };
 
-
     const startSequence = () => {
         isPlaying = true;
         playVideoSequence();
@@ -52,14 +51,14 @@
 
 
 function adjustWidth() {
+    const parentDiv = document.getElementsByClassName('stories-container');
     const childDivs = document.getElementsByClassName('stories-element');
 
-    for (var i = 0; i < childDivs.length; i++) {
+    targetHeight = parentDiv[0].offsetHeight - (parentDiv[0].offsetHeight *0.2)
 
-        {
-            const width = childDivs[i].offsetWidth;
-            childDivs[i].style.height = `${width}px`;
-        }
+    for (var i = 0; i < childDivs.length; i++) {
+        childDivs[i].style.height = `${targetHeight}px`;
+        childDivs[i].style.width = `${targetHeight}px`;
     }
 
 }
