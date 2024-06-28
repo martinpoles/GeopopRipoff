@@ -2,7 +2,7 @@
 
 namespace GeopopRipoff.Controllers
 {
-    public class Argument : Controller
+    public class ArgumentController : Controller
     {
         public IActionResult Index()
         {

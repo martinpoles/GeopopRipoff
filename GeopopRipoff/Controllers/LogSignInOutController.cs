@@ -25,7 +25,7 @@ namespace GeopopRipoff.Controllers
             _logger = logger;
         }
 
-        public ActionResult SignIn()
+        public ActionResult Index()
         {
 
             return View();

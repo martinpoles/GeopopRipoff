@@ -34,7 +34,6 @@ namespace GeopopRipoff.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
         [HttpPost]
         public ActionResult Argument(string itemId)
         {
@@ -43,7 +42,6 @@ namespace GeopopRipoff.Controllers
             //utilizzo il model per generare la view successiva
             return View();
         }
-
         [HttpPost]
         public ActionResult Notifiche()
         {
@@ -65,23 +63,18 @@ namespace GeopopRipoff.Controllers
             }
 
         }
-
-
         public ActionResult PrivacyPolicy()
         {
             return View();
         }
-
         public ActionResult CookiePolicy()
         {
             return View();
         }
-
         public ActionResult Redazione()
         {
             return View();
         }
-
         public ActionResult ModificaConsenso()
         {
             return View();
