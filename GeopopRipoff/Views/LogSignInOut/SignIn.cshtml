@@ -1,0 +1,24 @@
+﻿@* <script>
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId());
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail());
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log('ID Token: ' + id_token);
+    }
+</script> *@
+
+
+
+<div>Iscriviti per ricevere notifiche personalizzate sugli argomenti di tuo interesse.</div>
+
+<div class="jumbotron">
+    <h1>test</h1>
+    <p><a href="@ViewBag.Url" class="btn btn-primary btn-lg">LogFB</a></p>
+</div>
+
+
+@* <div class="fb-login-button" data-width="500" data-size="" data-button-type="" data-layout="" data-auto-logout-link="false" data-use-continue-as="false"></div> *@

@@ -90,3 +90,7 @@ C:\Users\ssoko\Desktop\Personal\GeopopRipoff-main\GeopopRipoff-main\GeopopRipoff
 C:\Users\ssoko\Desktop\Personal\GeopopRipoff-main\GeopopRipoff-main\GeopopRipoff\obj\Debug\net8.0\GeopopRipoff.pdb
 C:\Users\ssoko\Desktop\Personal\GeopopRipoff-main\GeopopRipoff-main\GeopopRipoff\obj\Debug\net8.0\GeopopRipoff.genruntimeconfig.cache
 C:\Users\ssoko\Desktop\Personal\GeopopRipoff-main\GeopopRipoff-main\GeopopRipoff\obj\Debug\net8.0\ref\GeopopRipoff.dll
+C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff\bin\Debug\net8.0\Facebook.dll
+C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff\obj\Debug\net8.0\GeopopRipoff.csproj.AssemblyReference.cache
+C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff\obj\Debug\net8.0\GeopopRi.48C29B59.Up2Date
+C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff\bin\Debug\net8.0\Newtonsoft.Json.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6MNSKZyo6d8+rfcFBXReFgT54MxTPAsTpwospX2HUlE=",
+  "Hash": "RnsHoUtDzToaNlb8F5vhKcIAO3tNvt850YPjZrif8TU=",
   "Source": "GeopopRipoff",
   "BasePath": "_content/GeopopRipoff",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GeopopRipoff.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\LogSignInOut.css",
+      "SourceId": "GeopopRipoff",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
+      "BasePath": "_content/GeopopRipoff",
+      "RelativePath": "css/LogSignInOut.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LogSignInOut.css"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\site.css",
@@ -471,6 +490,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\PlayStore.png"
+    },
+    {
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\FacebookSDK.js",
+      "SourceId": "GeopopRipoff",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
+      "BasePath": "_content/GeopopRipoff",
+      "RelativePath": "js/FacebookSDK.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\FacebookSDK.js"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\menu.js",

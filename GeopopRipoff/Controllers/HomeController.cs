@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Diagnostics;
 using System.Reflection;
 using System.Xml.Linq;
+using Facebook;
 
 namespace GeopopRipoff.Controllers
 {
@@ -18,6 +19,8 @@ namespace GeopopRipoff.Controllers
 
         public IActionResult Index()
         {
+
+
             return View();
         }
 
@@ -50,12 +53,17 @@ namespace GeopopRipoff.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Menu()
+        public ActionResult Menu(UserProfile userProfile = null)
         {
-            //premo il bottone 
-            //entro qua e in base al bottone valorizzo il model 
-            //utilizzo il model per generare la view successiva
-            return View();
+            if (userProfile == null)
+            {
+                return View();
+            }
+            else
+            {
+                return View(userProfile);
+            }
+
         }
 
 

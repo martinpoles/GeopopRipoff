@@ -105,12 +105,20 @@
       "PackagePath": "staticwebassets\\Video\\Test5.mp4"
     },
     {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\LogSignInOut.css",
+      "PackagePath": "staticwebassets\\css\\LogSignInOut.css"
+    },
+    {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\FacebookSDK.js",
+      "PackagePath": "staticwebassets\\js\\FacebookSDK.js"
     },
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\menu.js",
