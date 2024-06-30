@@ -1,10 +1,5 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
 
-    //FB.getLoginStatus(function (response) {
-    //    statusChangeCallback(response);
-    //});
-
-
     adjustWidth();
 
     const aDiv = document.getElementById("flash-stories")

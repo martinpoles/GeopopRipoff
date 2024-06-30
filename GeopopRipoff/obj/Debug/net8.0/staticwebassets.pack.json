@@ -113,6 +113,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Sebas\\Desktop\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\FbSDK.js",
+      "PackagePath": "staticwebassets\\js\\FbSDK.js"
+    },
+    {
       "Id": "C:\\Users\\Sebas\\Desktop\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\homeIndex.js",
       "PackagePath": "staticwebassets\\js\\homeIndex.js"
     },
