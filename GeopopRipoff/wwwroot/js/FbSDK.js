@@ -1,6 +1,6 @@
 ﻿window.fbAsyncInit = function () {
     FB.init({
-        appId: '1541569503091986',
+        appId: '1015689366876643',
         cookie: true,
         xfbml: true,
         version: 'v20.0'
@@ -48,9 +48,9 @@ function getUserData() {
     });
 }
 
+
 function saveUserData(user) {
-    // Invia i dati dell'utente al server per salvarli nel database
-    fetch('LogSignInOut/SaveUserData', {
+    fetch('/LogSignInOut/SaveUserData', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -60,11 +60,22 @@ function saveUserData(user) {
             Name: user.name,
             Email: user.email
         })
-    }).then(response => {
-        return response.json();
-    }).then(data => {
-        console.log('User data saved successfully:', data);
-    }).catch(error => {
-        console.error('Error saving user data:', error);
-    });
+    })
+        .then(response => response.json())
+        .then(data => {
+            // Gestisci la risposta JSON dal server
+            if (data.success) {
+                // Operazioni da eseguire se il salvataggio è riuscito
+                console.log('Dati salvati con successo.');
+                window.location.href = '/Menu/Index';
+            } else {
+                // Operazioni da eseguire se c'è stato un errore di validazione o altro errore sul server
+                console.error('Errore durante il salvataggio dei dati:', data.errors);
+                // Esempio: mostrare gli errori all'utente o altre azioni di gestione degli errori
+            }
+        })
+        .catch(error => {
+            console.error('Errore nella richiesta:', error);
+            // Gestione degli errori di rete o altre eccezioni
+        });
 }

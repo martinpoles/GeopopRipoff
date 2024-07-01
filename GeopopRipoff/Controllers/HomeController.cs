@@ -19,8 +19,6 @@ namespace GeopopRipoff.Controllers
 
         public IActionResult Index()
         {
-
-
             return View();
         }
 
