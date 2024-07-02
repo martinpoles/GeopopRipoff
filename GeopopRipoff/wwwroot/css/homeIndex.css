@@ -23,11 +23,10 @@ body {
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
     z-index: 1000;
-    position: absolute;
     width: 100%;
-    display:flex;
+    display: flex;
+
 }
 
 .invisible-button {
@@ -51,6 +50,7 @@ footer {
     border: 10px solid #3498db;
     border-radius: 30px;
     top: 50px;
+    margin-bottom: 50px;
 }
 
 .utility-bar {

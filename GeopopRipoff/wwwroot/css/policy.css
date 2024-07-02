@@ -1,0 +1,32 @@
+.corpo-policy {
+    min-height: 200vh;
+    max-height:800vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 10px solid #3498db;
+    border-radius: 30px;
+    top: 50px;
+    margin-bottom:50px;
+}
+.testo{
+    position:absolute;
+    width:100%;
+    top:5%;
+}
+
+.title-policy {
+
+}
+.header-policy{
+
+}
+.subtitle-policy{
+
+}
+.content-policy{
+
+}

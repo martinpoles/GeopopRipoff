@@ -97,13 +97,50 @@
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
                         <p>
-                            <a href="#!" class="text-white">Testo a casa</a>
+
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "telemarketingPolicyForm",}))
+                            {
+                                @Html.Hidden("ItemId", "1")
+                                <a href="javascript:void(0);" id="telemarketingPolicyLink" class="link-text">Telemarketing Policy</a>
+                            }
+                            <script>
+                                document.getElementById("telemarketingPolicyLink").addEventListener("click", function () {
+                                    document.getElementById("telemarketingPolicyForm").submit();
+                                });
+                            </script>
+
                         </p>
                         <p>
-                            <a href="#!" class="text-white">Testo a casa</a>
+
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "cookiePolicyForm", }))
+                            {
+                                @Html.Hidden("ItemId", "2")
+                                <a href="javascript:void(0);" id="cookiePolicyLink" class="link-text">Cookie Policy</a>
+                            }
+                            <script>
+                                document.getElementById("cookiePolicyLink").addEventListener("click", function () {
+                                    document.getElementById("cookiePolicyForm").submit();
+                                });
+                            </script>
+
                         </p>
+
+
+
                         <p>
-                            <a href="#!" class="text-white">Testo a casa</a>
+
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "privacyPolicyForm", }))
+                            {
+                                @Html.Hidden("ItemId", "3")
+                                <a href="javascript:void(0);" id="privacyPolicyLink" class="link-text">Privacy Policy</a>
+                            }
+                            <script>
+                                document.getElementById("privacyPolicyLink").addEventListener("click", function () {
+                                    document.getElementById("privacyPolicyForm").submit();
+                                });
+                            </script>
+                        
+                        
                         </p>
                         <p>
                             <a href="#!" class="text-white">Testo a casa</a>

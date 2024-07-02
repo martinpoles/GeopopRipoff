@@ -5,6 +5,11 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Xml.Linq;
 using Facebook;
+using static System.Net.Mime.MediaTypeNames;
+using System.Reflection.Metadata;
+using System.Xml.Serialization;
+using System.Xml;
+using GeopopRipoff.Utility;
 
 namespace GeopopRipoff.Controllers
 {
@@ -61,14 +66,49 @@ namespace GeopopRipoff.Controllers
             }
 
         }
-        public ActionResult PrivacyPolicy()
+
+
+        public ActionResult Policy(string itemId)
         {
-            return View();
+
+            string xmlFilePath = "C:\\Users\\ssoko\\Desktop\\TEMP\\TestXml.xml";
+
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(xmlFilePath);
+
+            GeopopRipoff.Utility.Document document = new GeopopRipoff.Utility.Document();
+
+
+            // Leggi il titolo e l'intestazione
+            document.Title = xmlDoc.SelectSingleNode("/body/title")?.InnerText;
+            document.Header = xmlDoc.SelectSingleNode("/body/header")?.InnerText;
+            document.Sections = new List<Section>();
+
+
+            // Leggi le sezioni
+            XmlNodeList sectionNodes = xmlDoc.SelectNodes("/body/sections/section");
+            if (sectionNodes != null)
+            {
+                foreach (XmlNode sectionNode in sectionNodes)
+                {
+                    document.Sections.Add(new Section(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("content")?.InnerText));
+                }
+            }
+
+            switch (itemId)
+            {
+                case "1":
+                    break;
+                default:
+                    break;
+            }
+            return View(document);
         }
-        public ActionResult CookiePolicy()
-        {
-            return View();
-        }
+
+
+
+
+
         public ActionResult Redazione()
         {
             return View();

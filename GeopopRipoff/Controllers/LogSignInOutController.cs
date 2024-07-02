@@ -29,7 +29,6 @@ namespace GeopopRipoff.Controllers
             return View();
         }
 
-
         [HttpPost]
         public IActionResult SaveUserData([FromBody] UserProfile user)
         {
