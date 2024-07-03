@@ -40,10 +40,15 @@ namespace GeopopRipoff.Controllers
         [HttpPost]
         public ActionResult Argument(string itemId)
         {
-            //premo il bottone 
-            //entro qua e in base al bottone valorizzo il model 
-            //utilizzo il model per generare la view successiva
-            return View();
+            //itemId rappresenta l'oid del elemento sul db 
+            //Tramite quel valore recuperiamo tutti gli articoli pertinenti
+
+
+
+            Argument argument = new Argument();
+
+
+            return View(argument);
         }
         [HttpPost]
         public ActionResult Notifiche()

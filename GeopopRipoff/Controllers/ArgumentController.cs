@@ -8,5 +8,9 @@ namespace GeopopRipoff.Controllers
         {
             return View();
         }
+        public IActionResult Article(string itemId)
+        {
+            return View();
+        }
     }
 }

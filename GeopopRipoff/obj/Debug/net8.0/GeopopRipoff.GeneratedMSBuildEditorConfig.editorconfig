@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ssoko/Desktop/Personal/Code/GeopopRipoff/GeopopRipoff/GeopopRipoff/Views/Argument/Article.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJndW1lbnRcQXJ0aWNsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ssoko/Desktop/Personal/Code/GeopopRipoff/GeopopRipoff/GeopopRipoff/Views/Argument/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJndW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ssoko/Desktop/Personal/Code/GeopopRipoff/GeopopRipoff/GeopopRipoff/Views/Home/Argument.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBcmd1bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

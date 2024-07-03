@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\Img\\PlayStore.png"
     },
     {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\TrashTemp\\tempXML.xml",
+      "PackagePath": "staticwebassets\\TrashTemp\\tempXML.xml"
+    },
+    {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test1.mp4",
       "PackagePath": "staticwebassets\\Video\\Test1.mp4"
     },
@@ -109,6 +113,10 @@
       "PackagePath": "staticwebassets\\css\\LogSignInOut.css"
     },
     {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\argument.css",
+      "PackagePath": "staticwebassets\\css\\argument.css"
+    },
+    {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\globalColor.css",
       "PackagePath": "staticwebassets\\css\\globalColor.css"
     },
@@ -117,16 +125,24 @@
       "PackagePath": "staticwebassets\\css\\homeIndex.css"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\policy.css",
-      "PackagePath": "staticwebassets\\css\\policy.css"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\homePolicy.css",
+      "PackagePath": "staticwebassets\\css\\homePolicy.css"
     },
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\htmlTemplate\\class432.html",
+      "PackagePath": "staticwebassets\\htmlTemplate\\class432.html"
+    },
+    {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\FbSDK.js",
       "PackagePath": "staticwebassets\\js\\FbSDK.js"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\argumentIndex.js",
+      "PackagePath": "staticwebassets\\js\\argumentIndex.js"
     },
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\homeIndex.js",

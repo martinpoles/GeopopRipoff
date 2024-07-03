@@ -24,9 +24,12 @@
 .header-policy{
     text-align:left;
 }
-.subtitle-policy{
-    text-align:left;
+.subtitle-policy {
+    text-align: left;
+    border-bottom: 5px solid #D55858;
+    display: inline-block; /* Mostra l'elemento come blocco in linea */
+    width:auto;
 }
-.content-policy{
-    text-align:left;
+.content-policy {
+    text-align: left;
 }

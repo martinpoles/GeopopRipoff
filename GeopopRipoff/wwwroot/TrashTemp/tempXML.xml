@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection>
+    <item>
+        <oid>1</oid>
+        <img>image1.png</img>
+        <title>Title One</title>
+    </item>
+    <item>
+        <oid>2</oid>
+        <img>image2.png</img>
+        <title>Title Two</title>
+    </item>
+    <item>
+        <oid>3</oid>
+        <img>image3.png</img>
+        <title>Title Three</title>
+    </item>
+    <item>
+        <oid>4</oid>
+        <img>image4.png</img>
+        <title>Title Four</title>
+    </item>
+    <item>
+        <oid>5</oid>
+        <img>image5.png</img>
+        <title>Title Five</title>
+    </item>
+    <item>
+        <oid>6</oid>
+        <img>image6.png</img>
+        <title>Title Six</title>
+    </item>
+    <item>
+        <oid>7</oid>
+        <img>image7.png</img>
+        <title>Title Seven</title>
+    </item>
+    <item>
+        <oid>8</oid>
+        <img>image8.png</img>
+        <title>Title Eight</title>
+    </item>
+    <item>
+        <oid>9</oid>
+        <img>image9.png</img>
+        <title>Title Nine</title>
+    </item>
+    <item>
+        <oid>10</oid>
+        <img>image10.png</img>
+        <title>Title Ten</title>
+    </item>
+</collection>

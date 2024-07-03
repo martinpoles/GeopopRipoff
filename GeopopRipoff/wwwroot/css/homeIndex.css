@@ -91,6 +91,7 @@ footer {
     width: 100%;
     top: 0%;
     height: 5%;
+    border-bottom: 3px solid #D55858;
 }
 
 .titleImg {
