@@ -1,6 +1,8 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
 
     adjustWidth();
+    window.addEventListener('resize', adjustWidth);
+
 
     const aDiv = document.getElementById("flash-stories")
     const videos = document.getElementsByClassName('thumbnail-video');

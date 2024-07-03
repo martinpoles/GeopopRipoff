@@ -1,0 +1,24 @@
+.intestazione {
+    background-color: #D55858; /* Intestazione rossa */
+    color: #FFFFFF; /* Testo dell'intestazione bianco */
+}
+
+.sfondo-pricipale {
+    background-color: #D32F2F; /* Pulsante CTA rosso */
+    color: #FFFFFF; /* Testo del pulsante bianco */
+}
+
+.pulsanti-cta {
+    background-color: #FFCDD2; /* Pulsante secondario rosso chiaro */
+    color: #212121; /* Testo del pulsante nero */
+}
+
+.sezioni-secondarie {
+    background-color: #F5F5F5; /* Sezione secondaria grigio chiaro */
+    color: #212121; /* Testo della sezione secondaria nero */
+}
+
+.footer-colori {
+    background-color: #BDBDBD; /* Footer grigio medio */
+    color: #212121; /* Testo del footer nero */
+}

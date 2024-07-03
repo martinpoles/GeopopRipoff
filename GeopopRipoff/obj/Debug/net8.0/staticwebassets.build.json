@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HLv83niB/k0pfSdKUBNJInAbBHdKeDjcGGtRQq14fhE=",
+  "Hash": "l9UPad7awSmcedikXCxi4U0GzB709zVAchsnx2Wi988=",
   "Source": "GeopopRipoff",
   "BasePath": "_content/GeopopRipoff",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GeopopRipoff.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\globalColor.css",
+      "SourceId": "GeopopRipoff",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
+      "BasePath": "_content/GeopopRipoff",
+      "RelativePath": "css/globalColor.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\globalColor.css"
+    },
+    {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\homeIndex.css",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
@@ -72,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\homeIndex.css"
+    },
+    {
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\LogSignInOut.css",
+      "SourceId": "GeopopRipoff",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
+      "BasePath": "_content/GeopopRipoff",
+      "RelativePath": "css/LogSignInOut.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LogSignInOut.css"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\policy.css",

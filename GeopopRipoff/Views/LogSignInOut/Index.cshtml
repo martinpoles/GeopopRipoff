@@ -1,8 +1,26 @@
-﻿<div>Iscriviti per ricevere notifiche personalizzate sugli argomenti di tuo interesse!|!!!!!!!!!.</div>
-
-<div>
-    <fb:login-button scope="public_profile,email"
-                     onlogin="checkLoginState();">
-    </fb:login-button>
+﻿
+<row style="position:relative; top:100px">
+<div class="col-1"></div>
+<div class="col-10 conteiner-try" style="min-height:700px">
+    <span class="presentation-txt">Accedi per rimanere sempre aggiornato sui nuovi sviluppi delle nostre iniziative</span>
+    <button id="custom-login-btn" class="loginBtn loginBtn--facebook" style="position:absolute; top:100px">Login with Facebook</button>
 </div>
+<div class="col-1"></div>
+</row>
+<script>
+    document.getElementById('custom-login-btn').addEventListener('click', function () {
+        FB.getLoginStatus(function (response) {
+            if (response.status === 'connected') {
+                // Utente già connesso, procedi con getUserData()
+                statusChangeCallback(response);
+            } else {
+                // Utente non connesso, apri la finestra di dialogo di login di Facebook
+                FB.login(function (loginResponse) {
+                    statusChangeCallback(loginResponse);
+                }, { scope: 'email' }); // Aggiungi altre autorizzazioni se necessario
+            }
+        });
+    });
+</script>
 
+<link rel="stylesheet" href="~/css/LogSignInOut.css" asp-append-version="true" />

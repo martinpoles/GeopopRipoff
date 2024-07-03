@@ -23,16 +23,9 @@ namespace GeopopRipoff.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string oid)
         {
-            //if (TempData["name"] != null)
-            //{
-            //    return View(TempData["name"]);
-            //}
-            //else
-            //{
-            //    return View(new UserProfile());
-            //}
+
             return View();
         }
     }

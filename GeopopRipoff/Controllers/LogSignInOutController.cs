@@ -39,7 +39,7 @@ namespace GeopopRipoff.Controllers
                 // MoveToSomething(user);
 
                 // Restituisci un oggetto JSON di conferma
-                return Json(new { success = true, message = "Dati salvati con successo." });
+                return Json(new { success = true, message = "Dati salvati con successo.", oid = "1"});
             }
             else
             {

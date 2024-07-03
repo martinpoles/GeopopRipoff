@@ -105,6 +105,14 @@
       "PackagePath": "staticwebassets\\Video\\Test5.mp4"
     },
     {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\LogSignInOut.css",
+      "PackagePath": "staticwebassets\\css\\LogSignInOut.css"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\globalColor.css",
+      "PackagePath": "staticwebassets\\css\\globalColor.css"
+    },
+    {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\homeIndex.css",
       "PackagePath": "staticwebassets\\css\\homeIndex.css"
     },

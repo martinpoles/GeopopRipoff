@@ -37,11 +37,11 @@
 
         <div class="row testo children-div-policy">
             <h1 class="title-policy">@Model.Title</h1>
-            <h2 class="header-policy">@Model.Header</h2>
+            <h3 class="header-policy">@Model.Header</h3>
 
             @for (int i = 0; i < Model.Sections.Count; i++)
             {
-                <h4 class="subtitle-policy">@(i + 1) @Model.Sections[i].Subtitle</h4>
+                <h4 class="subtitle-policy">@(i + 1)) @Model.Sections[i].Subtitle</h4>
                 <h5 class="content-policy">@Model.Sections[i].Content</h5>
             }
         </div>

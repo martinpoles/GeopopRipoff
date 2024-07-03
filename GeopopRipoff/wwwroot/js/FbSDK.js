@@ -9,6 +9,8 @@
     FB.AppEvents.logPageView();
 };
 
+
+
 (function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) { return; }
@@ -17,9 +19,23 @@
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+//function checkLoginState() {
+//    FB.getLoginStatus(function (response) {
+//        statusChangeCallback(response);
+//    });
+//}
+
 function checkLoginState() {
     FB.getLoginStatus(function (response) {
-        statusChangeCallback(response);
+        if (response.status === 'connected') {
+            // Utente già connesso, procedi con getUserData()
+            statusChangeCallback(response);
+        } else {
+            // Utente non connesso, apri la finestra di dialogo di login di Facebook
+            FB.login(function (loginResponse) {
+                statusChangeCallback(loginResponse);
+            }, { scope: 'email' }); // Aggiungi altre autorizzazioni se necessario
+        }
     });
 }
 
@@ -30,6 +46,7 @@ function statusChangeCallback(response) {
     } else {
         // The person is not logged into your webpage or we are unable to tell.
         console.log('User not authenticated');
+        // Potresti aggiungere qui delle azioni per gestire il caso in cui l'utente non sia autenticato
     }
 }
 
@@ -48,7 +65,6 @@ function getUserData() {
     });
 }
 
-
 function saveUserData(user) {
     fetch('/LogSignInOut/SaveUserData', {
         method: 'POST',
@@ -66,8 +82,9 @@ function saveUserData(user) {
             // Gestisci la risposta JSON dal server
             if (data.success) {
                 // Operazioni da eseguire se il salvataggio è riuscito
-                console.log('Dati salvati con successo.');
-                window.location.href = '/Menu/Index';
+                console.log('Dati salvati con successo.');  
+                var redirectUrl = '/Menu/Index?oid=' + data.oid;
+                window.location.href = redirectUrl;
             } else {
                 // Operazioni da eseguire se c'è stato un errore di validazione o altro errore sul server
                 console.error('Errore durante il salvataggio dei dati:', data.errors);
