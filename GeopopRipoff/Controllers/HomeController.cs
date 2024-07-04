@@ -41,7 +41,7 @@ namespace GeopopRipoff.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        [HttpPost]
+        [HttpPost] 
         public ActionResult Argument(string itemId)
         {
             var argument = _articlesRepository.GetAllCustomersAsync(itemId);

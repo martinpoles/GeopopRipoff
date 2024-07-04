@@ -27,15 +27,14 @@ namespace GeopopRipoff.Repository
 
 
 
-        public async Task<IEnumerable<object>> GetAllCustomersAsync(string oid_argument)
+        public async Task<IEnumerable<object>> GetAllCustomersAsync(string id_argomento)
         {
 
-            string qry = "SELECT autori.id_autore, articoli.id_articolo from Argomenti "
-                            + "join Argomenti_Articoli on Argomenti.Oid = Argomenti_Articoli.Oid_argomenti "
-                            + "join Articoli on Argomenti_Articoli.Oid_articolo = articoli.Oid "
-                            + "join Articoli_Autori on Articoli.Oid = Articoli_Autori.Oid_articolo "
-                            + "join Autori on Articoli_Autori.Oid_autore = autori.Oid "
-                            + "where argomenti.Id_Argomento = 'SCIENZE'" ;
+            string qry = "SELECT articoli.id_articolo" 
+                            + " FROM Argomenti"
+                            + " JOIN Argomenti_Articoli ON Argomenti.Oid = Argomenti_Articoli.Oid_argomenti"
+                            + " JOIN Articoli ON Argomenti_Articoli.Oid_articolo = articoli.Oid"
+                            +$" WHERE argomenti.Id_Argomento = '{id_argomento}'";
 
             return _genericRepository.Query<object>(qry);
         }
