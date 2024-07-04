@@ -10,16 +10,20 @@ using System.Reflection.Metadata;
 using System.Xml.Serialization;
 using System.Xml;
 using GeopopRipoff.Utility;
+using GeopopRipoff.Repository;
 
 namespace GeopopRipoff.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ArticlesRepository _articlesRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+
+        public HomeController(ILogger<HomeController> logger, ArticlesRepository articlesRepository)
         {
             _logger = logger;
+            _articlesRepository = articlesRepository;
         }
 
         public IActionResult Index()
@@ -40,12 +44,7 @@ namespace GeopopRipoff.Controllers
         [HttpPost]
         public ActionResult Argument(string itemId)
         {
-            //itemId rappresenta l'oid del elemento sul db 
-            //Tramite quel valore recuperiamo tutti gli articoli pertinenti
-
-
-
-            Argument argument = new Argument();
+            var argument = _articlesRepository.GetAllCustomersAsync(itemId);
 
 
             return View(argument);
@@ -71,7 +70,6 @@ namespace GeopopRipoff.Controllers
             }
 
         }
-
 
         public ActionResult Policy(string itemId)
         {
@@ -108,23 +106,6 @@ namespace GeopopRipoff.Controllers
                     break;
             }
             return View(document);
-        }
-
-
-
-
-
-        public ActionResult Redazione()
-        {
-            return View();
-        }
-        public ActionResult ModificaConsenso()
-        {
-            return View();
-        }
-        public ActionResult Impostazioni()
-        {
-            return View();
         }
 
     }

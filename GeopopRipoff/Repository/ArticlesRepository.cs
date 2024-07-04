@@ -1,23 +1,43 @@
 ﻿using GeopopRipoff.Models;
+using System.Security.Cryptography;
 
 namespace GeopopRipoff.Repository
 {
     public class ArticlesRepository
     {
-        public ArgumentsPageModel GetModelForArgumentPage(string oid_argument)
+        private readonly GenericRepository _genericRepository;
+
+        public ArticlesRepository(GenericRepository genericRepository)
         {
-            ArgumentsPageModel model = new ArgumentsPageModel();
+            _genericRepository = genericRepository;
+        }
 
-            string qry = "select Argomenti.Id_Argomento, Argomenti.Ds_Argomenti, " +
-                            "Articoli.Id_articolo, Articoli.Id_Path " +
-                            "Autori.Id_Autore " +
-                            "FROM Argomenti" +
-                            "JOIN Articoli" +
-                            "JOIN Autori" +
-                            $"WHERE Argomenti.oid = {oid_argument}";
+        //public async Task<IEnumerable<Customer>> GetAllCustomersAsync()
+        //{
+        //    var sql = "SELECT * FROM Customers";
+        //    return await _genericRepository.QueryAsync<Customer>(sql);
+        //}
 
-            return model;
+        //public async Task<Customer> GetCustomerByIdAsync(int id)
+        //{
+        //    var sql = "SELECT * FROM Customers WHERE Id = @Id";
+        //    var customers = await _genericRepository.QueryAsync<Customer>(sql, new { Id = id });
+        //    return customers.FirstOrDefault();
+        //}
 
+
+
+        public async Task<IEnumerable<object>> GetAllCustomersAsync(string oid_argument)
+        {
+
+            string qry = "SELECT autori.id_autore, articoli.id_articolo from Argomenti "
+                            + "join Argomenti_Articoli on Argomenti.Oid = Argomenti_Articoli.Oid_argomenti "
+                            + "join Articoli on Argomenti_Articoli.Oid_articolo = articoli.Oid "
+                            + "join Articoli_Autori on Articoli.Oid = Articoli_Autori.Oid_articolo "
+                            + "join Autori on Articoli_Autori.Oid_autore = autori.Oid "
+                            + "where argomenti.Id_Argomento = 'SCIENZE'" ;
+
+            return _genericRepository.Query<object>(qry);
         }
     }
 }

@@ -41,7 +41,7 @@
         <div class="row menuSelection">
 
             <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
                 {
                     @Html.Hidden("ItemId", "1")
                     <button class="w-100 h-100 invisible-button">Argument2</button>
