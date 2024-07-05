@@ -3,13 +3,20 @@
     top: 8%;
     position: absolute;
     width: 100%;
-    height:15%;
+    height: 15%;
 }
 
+.argument-display-header img {
+    object-fit: cover;
+    border: 3px solid;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
 
 .container-class234 {
     display: flex;
-    top: 18%;
+    top: 23%;
     position: absolute;
     width: 100%;
     flex-direction: column;
@@ -19,12 +26,16 @@
     display: flex;
     position: relative;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .class-2 {
     display: inline-flex;
     width: 100%;
     height: 400px;
+    margin:0px;
+    padding:0px;
 }
 
 .class-2-element {
@@ -36,6 +47,8 @@
     display: inline-flex;
     width: 100%;
     height: 300px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .class-3-element {
@@ -47,6 +60,8 @@
     display: inline-flex;
     width: 100%;
     height: 200px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .class-4-element {
@@ -54,18 +69,19 @@
     height: 200px;
 }
 
-.class-2-element img,
-.class-3-element img,
-.class-4-element img {
-    width: 100%;
-    object-fit: cover;
-    border: 3px solid;
-    padding: 0px;
-}
+    .class-2-element img,
+    .class-3-element img,
+    .class-4-element img {
+        object-fit: cover;
+        border: 3px solid;
+        padding: 0px;
+        width: 100%;
+        height: 80%;
+    }
 
 
-.show-more{
-    display:flex;
-    position:absolute;
-    bottom:50px;
+.show-more {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
 }

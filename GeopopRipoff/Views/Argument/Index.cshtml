@@ -1,4 +1,6 @@
-﻿<div class="col-12 mainCorpo parent-div-argument">
+﻿@model GeopopRipoff.Models.WrapperArgumentsPageModel
+
+<div class="col-12 mainCorpo parent-div-argument">
 
     <div class="row utility-bar children-div-argument">
 
@@ -120,206 +122,115 @@
         </div>
     </div>
 
-    <div class="row argument-display-header children-div-argument">dsadas</div>
+    <div class="row argument-display-header children-div-argument">
+        <img src="@Model.PathHeader">
+        <span class="text-overlay">@Model.Descrizione</span>
+    </div>
 
     <div class="row container-class234 children-div-argument" id="container-class234">
-        <div class="row class-432">
-            <div class="row class-2">
-                <div class="class-2-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
+    
+        @for (int i = 0; i < Model.ArgumentsPageModel.Count; i+=9)
+        {
+            <div class="row class-432">
+                <div class="row class-2">
+                    <div class="class-2-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i].ImgPath">
+                                <span>@Model.ArgumentsPageModel[i].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-2-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 1].ImgPath">
+                                <span>@Model.ArgumentsPageModel[i + 1].Title</span>
+                            </button>
+                        }
+                    </div>
                 </div>
-                <div class="class-2-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
+                <div class="row class-3">
+                    <div class="class-3-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 2].ImgPath">
+                                <span>@Model.ArgumentsPageModel[i + 2].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-3-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 3].ImgPath">
+                                <span>@Model.ArgumentsPageModel[i + 3].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-3-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 4].ImgPath">
+                                <span>@Model.ArgumentsPageModel[i + 4].Title</span>
+                            </button>
+                        }
+                    </div>
                 </div>
-            </div>
-            <div class="row class-3">
-                <div class="class-3-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-3-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-3-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-            </div>
-            <div class="row class-4">
-                <div class="class-4-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-4-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-4-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-4-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-            </div>
-        </div>
-        
-        <div class="row class-432">
-            <div class="row class-2">
-                <div class="class-2-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-2-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
+                <div class="row class-4">
+                    <div class="class-4-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 5].ImgPath">
+                                <span>@Model.ArgumentsPageModel[i + 5].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-4-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 6].ImgPath">
+                                <span>@Model.ArgumentsPageModel[i + 6].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-4-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 7].ImgPath">
+                                <span>@Model.ArgumentsPageModel[i + 7].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-4-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("ItemId", "1")
+                            <button class="invisible-button">
+                                <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 8].ImgPath">
+                                <span>@Model.ArgumentsPageModel[i + 8].Title</span>
+                            </button>
+                        }
+                    </div>
                 </div>
             </div>
-            <div class="row class-3">
-                <div class="class-3-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-3-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-3-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-            </div>
-            <div class="row class-4">
-                <div class="class-4-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-4-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-4-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-                <div class="class-4-element">
-                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("ItemId", "1")
-                        <button class="invisible-button">
-                            <img src="/Img/Img1.jpg">
-                            <span>Testoooooo ac sacaca  asca</span>
-                        </button>
-                    }
-                </div>
-            </div>
-        </div>
+
+        }
     </div>
 
 

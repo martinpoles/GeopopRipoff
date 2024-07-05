@@ -27,16 +27,16 @@ namespace GeopopRipoff.Repository
 
 
 
-        public async Task<IEnumerable<object>> GetAllCustomersAsync(string id_argomento)
+        public IEnumerable<TempClass> GetAllCustomers(string id_argomento)
         {
 
-            string qry = "SELECT articoli.id_articolo" 
+            string qry = "SELECT top 9 articoli.id_articolo, argomenti.ds_argomento" 
                             + " FROM Argomenti"
                             + " JOIN Argomenti_Articoli ON Argomenti.Oid = Argomenti_Articoli.Oid_argomenti"
                             + " JOIN Articoli ON Argomenti_Articoli.Oid_articolo = articoli.Oid"
                             +$" WHERE argomenti.Id_Argomento = '{id_argomento}'";
 
-            return _genericRepository.Query<object>(qry);
+            return _genericRepository.Query<TempClass>(qry);
         }
     }
 }

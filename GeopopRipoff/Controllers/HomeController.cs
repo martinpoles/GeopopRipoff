@@ -44,10 +44,11 @@ namespace GeopopRipoff.Controllers
         [HttpPost] 
         public ActionResult Argument(string itemId)
         {
-            var argument = _articlesRepository.GetAllCustomersAsync(itemId);
 
 
-            return View(argument);
+
+
+            return View();
         }
         [HttpPost]
         public ActionResult Notifiche()

@@ -44,10 +44,27 @@ namespace GeopopRipoff.Models
         public int Oid_Articoli { get; set; }
         public int Oid_Autori { get; set; }
     }
+
+
+    public class WrapperArgumentsPageModel
+    {
+        public List<ArgumentsPageModel> ArgumentsPageModel { get; set;}
+        public string Descrizione { get; set; }
+        public string PathHeader { get; set; }
+    }
+
     public class ArgumentsPageModel
     {
-        public string Id_Argomento { get; set; }
-        public List<Articoli> List_Articoli { get; set; }
+
+        public string ImgPath { get; set; }
+        public string Title { get; set; }
+    }
+
+
+    public class TempClass
+    {
+        public string id_articolo { get; set; }
+        public string ds_argomento { get; set; }
     }
 
 }
