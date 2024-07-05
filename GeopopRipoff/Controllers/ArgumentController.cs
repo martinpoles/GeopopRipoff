@@ -1,6 +1,7 @@
 ﻿using GeopopRipoff.Models;
 using GeopopRipoff.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace GeopopRipoff.Controllers
 {
@@ -38,5 +39,32 @@ namespace GeopopRipoff.Controllers
         {
             return View();
         }
+
+
+        [HttpPost]
+        public IActionResult PullDataFor9More()
+        {
+            var argument = _articlesRepository.GetAllCustomers("Onlus");
+
+            List<ArgumentsPageModel> values = new List<ArgumentsPageModel>();
+
+            foreach (var item in argument)
+            {
+                var titolo = item.id_articolo;
+                var path  = @$"{item.id_articolo}/{item.id_articolo}.jpg";
+
+                ArgumentsPageModel argumentsPageModel = new ArgumentsPageModel();
+                string imgPath = @$"/Argument/Onlus/{item.id_articolo}/{item.id_articolo}.jpg";
+                argumentsPageModel.ImgPath = imgPath;
+                argumentsPageModel.Title = item.id_articolo.ToString(); ;
+                values.Add(argumentsPageModel);
+
+            }
+
+            // Converti l'oggetto in una stringa JSON e restituiscilo al client
+            return Content(JsonConvert.SerializeObject(values), "application/json");
+        }
+
+
     }
 }

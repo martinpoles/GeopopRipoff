@@ -1,9 +1,41 @@
-.argument-display-header {
+.main-corp {
+    height: 200vh;
     display: flex;
-    top: 8%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 10px solid #F5F5F5;
+    border-radius: 30px;
+    top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.utility-bar-argument {
     position: absolute;
     width: 100%;
-    height: 15%;
+    top: 0%;
+    height: 70px;
+    border-bottom: 3px solid #D55858;
+}
+
+.menu-selection-argument {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.argument-display-header {
+    display: flex;
+    top: 110px;
+    position: absolute;
+    width: 100%;
+    height: 200px;
 }
 
 .argument-display-header img {
@@ -14,12 +46,29 @@
     height: 100%;
 }
 
-.container-class234 {
+.container-class234-holder {
     display: flex;
-    top: 23%;
+    top: 310px;
     position: absolute;
     width: 100%;
     flex-direction: column;
+}
+
+
+.container-class234 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    margin:0px;
+}
+
+.container-class234-extender {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    margin:0px;
 }
 
 .class-432 {
@@ -83,5 +132,5 @@
 .show-more {
     display: flex;
     position: absolute;
-    bottom: 50px;
+    bottom: 25px;
 }
