@@ -1,0 +1,45 @@
+.main-corp-article {
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 10px solid #F5F5F5;
+    border-radius: 30px;
+    top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.utility-bar-article {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    height: 70px;
+    border-bottom: 3px solid #D55858;
+}
+
+
+.menu-selection-article {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+
+.container-flexbox-article{
+    position:absolute;
+    top:130px;
+    width:auto;
+    height:auto;
+}
+
+.new-entry-article{
+    position:absolute;
+   
+}

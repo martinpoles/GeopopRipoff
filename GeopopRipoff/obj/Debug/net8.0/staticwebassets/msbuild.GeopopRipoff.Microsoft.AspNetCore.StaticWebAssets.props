@@ -32,12 +32,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Futuro delle Onlus nel Contesto Globale\Il Futuro delle Onlus nel Contesto Globale.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Futuro delle Onlus nel Contesto Globale\Il Futuro delle Onlus nel Contesto Globale.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Futuro delle Onlus nel Contesto Globale\Il Futuro delle Onlus nel Contesto Globale.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/Il Futuro delle Onlus nel Contesto Globale/Il Futuro delle Onlus nel Contesto Globale.txt</RelativePath>
+      <RelativePath>Argument/Onlus/Il Futuro delle Onlus nel Contesto Globale/Il Futuro delle Onlus nel Contesto Globale.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -46,7 +46,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Futuro delle Onlus nel Contesto Globale\Il Futuro delle Onlus nel Contesto Globale.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Futuro delle Onlus nel Contesto Globale\Il Futuro delle Onlus nel Contesto Globale.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Potenziale delle Microimprese nel Combattere la Povertà\Il Potenziale delle Microimprese nel Combattere la Povertà.jpg))">
       <SourceType>Package</SourceType>
@@ -64,12 +64,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Potenziale delle Microimprese nel Combattere la Povertà\Il Potenziale delle Microimprese nel Combattere la Povertà.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Potenziale delle Microimprese nel Combattere la Povertà\Il Potenziale delle Microimprese nel Combattere la Povertà.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Potenziale delle Microimprese nel Combattere la Povertà\Il Potenziale delle Microimprese nel Combattere la Povertà.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/Il Potenziale delle Microimprese nel Combattere la Povertà/Il Potenziale delle Microimprese nel Combattere la Povertà.txt</RelativePath>
+      <RelativePath>Argument/Onlus/Il Potenziale delle Microimprese nel Combattere la Povertà/Il Potenziale delle Microimprese nel Combattere la Povertà.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -78,23 +78,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Potenziale delle Microimprese nel Combattere la Povertà\Il Potenziale delle Microimprese nel Combattere la Povertà.txt))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>GeopopRipoff</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà/Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Potenziale delle Microimprese nel Combattere la Povertà\Il Potenziale delle Microimprese nel Combattere la Povertà.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.txt))">
       <SourceType>Package</SourceType>
@@ -112,6 +96,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.txt))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.xml))">
+      <SourceType>Package</SourceType>
+      <SourceId>GeopopRipoff</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GeopopRipoff</BasePath>
+      <RelativePath>Argument/Onlus/Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà/Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.xml</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.xml))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nell Accoglienza dei Migranti\Il Ruolo delle Onlus nell Accoglienza dei Migranti.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
@@ -128,12 +128,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nell Accoglienza dei Migranti\Il Ruolo delle Onlus nell Accoglienza dei Migranti.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nell Accoglienza dei Migranti\Il Ruolo delle Onlus nell Accoglienza dei Migranti.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nell Accoglienza dei Migranti\Il Ruolo delle Onlus nell Accoglienza dei Migranti.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/Il Ruolo delle Onlus nell Accoglienza dei Migranti/Il Ruolo delle Onlus nell Accoglienza dei Migranti.txt</RelativePath>
+      <RelativePath>Argument/Onlus/Il Ruolo delle Onlus nell Accoglienza dei Migranti/Il Ruolo delle Onlus nell Accoglienza dei Migranti.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -142,7 +142,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nell Accoglienza dei Migranti\Il Ruolo delle Onlus nell Accoglienza dei Migranti.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nell Accoglienza dei Migranti\Il Ruolo delle Onlus nell Accoglienza dei Migranti.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.jpg))">
       <SourceType>Package</SourceType>
@@ -160,12 +160,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti/Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.txt</RelativePath>
+      <RelativePath>Argument/Onlus/Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti/Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -174,7 +174,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.jpg))">
       <SourceType>Package</SourceType>
@@ -192,12 +192,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/L Accesso all Acqua Potabile come Diritto Umano Fondamentale/L Accesso all Acqua Potabile come Diritto Umano Fondamentale.txt</RelativePath>
+      <RelativePath>Argument/Onlus/L Accesso all Acqua Potabile come Diritto Umano Fondamentale/L Accesso all Acqua Potabile come Diritto Umano Fondamentale.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -206,7 +206,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.jpg))">
       <SourceType>Package</SourceType>
@@ -224,12 +224,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/L Accesso all Istruzione come Strumento di Lotta contro la Povertà/L Accesso all Istruzione come Strumento di Lotta contro la Povertà.txt</RelativePath>
+      <RelativePath>Argument/Onlus/L Accesso all Istruzione come Strumento di Lotta contro la Povertà/L Accesso all Istruzione come Strumento di Lotta contro la Povertà.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -238,7 +238,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Educazione alla Diversità come Strumento di Integrazione\L Educazione alla Diversità come Strumento di Integrazione.jpg))">
       <SourceType>Package</SourceType>
@@ -256,12 +256,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Educazione alla Diversità come Strumento di Integrazione\L Educazione alla Diversità come Strumento di Integrazione.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Educazione alla Diversità come Strumento di Integrazione\L Educazione alla Diversità come Strumento di Integrazione.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Educazione alla Diversità come Strumento di Integrazione\L Educazione alla Diversità come Strumento di Integrazione.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/L Educazione alla Diversità come Strumento di Integrazione/L Educazione alla Diversità come Strumento di Integrazione.txt</RelativePath>
+      <RelativePath>Argument/Onlus/L Educazione alla Diversità come Strumento di Integrazione/L Educazione alla Diversità come Strumento di Integrazione.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -270,7 +270,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Educazione alla Diversità come Strumento di Integrazione\L Educazione alla Diversità come Strumento di Integrazione.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Educazione alla Diversità come Strumento di Integrazione\L Educazione alla Diversità come Strumento di Integrazione.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Emergenza Alimentare e il Ruolo delle Onlus\L Emergenza Alimentare e il Ruolo delle Onlus.jpg))">
       <SourceType>Package</SourceType>
@@ -288,12 +288,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Emergenza Alimentare e il Ruolo delle Onlus\L Emergenza Alimentare e il Ruolo delle Onlus.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Emergenza Alimentare e il Ruolo delle Onlus\L Emergenza Alimentare e il Ruolo delle Onlus.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Emergenza Alimentare e il Ruolo delle Onlus\L Emergenza Alimentare e il Ruolo delle Onlus.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/L Emergenza Alimentare e il Ruolo delle Onlus/L Emergenza Alimentare e il Ruolo delle Onlus.txt</RelativePath>
+      <RelativePath>Argument/Onlus/L Emergenza Alimentare e il Ruolo delle Onlus/L Emergenza Alimentare e il Ruolo delle Onlus.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -302,7 +302,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Emergenza Alimentare e il Ruolo delle Onlus\L Emergenza Alimentare e il Ruolo delle Onlus.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Emergenza Alimentare e il Ruolo delle Onlus\L Emergenza Alimentare e il Ruolo delle Onlus.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Crisi Climatica sulla Povertà\L Impatto della Crisi Climatica sulla Povertà.jpg))">
       <SourceType>Package</SourceType>
@@ -320,12 +320,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Crisi Climatica sulla Povertà\L Impatto della Crisi Climatica sulla Povertà.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Crisi Climatica sulla Povertà\L Impatto della Crisi Climatica sulla Povertà.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Crisi Climatica sulla Povertà\L Impatto della Crisi Climatica sulla Povertà.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/L Impatto della Crisi Climatica sulla Povertà/L Impatto della Crisi Climatica sulla Povertà.txt</RelativePath>
+      <RelativePath>Argument/Onlus/L Impatto della Crisi Climatica sulla Povertà/L Impatto della Crisi Climatica sulla Povertà.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -334,7 +334,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Crisi Climatica sulla Povertà\L Impatto della Crisi Climatica sulla Povertà.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Crisi Climatica sulla Povertà\L Impatto della Crisi Climatica sulla Povertà.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.jpg))">
       <SourceType>Package</SourceType>
@@ -352,12 +352,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/L Impatto della Pandemia da COVID-19 sulla Povertà Globale/L Impatto della Pandemia da COVID-19 sulla Povertà Globale.txt</RelativePath>
+      <RelativePath>Argument/Onlus/L Impatto della Pandemia da COVID-19 sulla Povertà Globale/L Impatto della Pandemia da COVID-19 sulla Povertà Globale.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -366,7 +366,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Povertà sulle Comunità Migranti\L Impatto della Povertà sulle Comunità Migranti.jpg))">
       <SourceType>Package</SourceType>
@@ -384,12 +384,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Povertà sulle Comunità Migranti\L Impatto della Povertà sulle Comunità Migranti.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Povertà sulle Comunità Migranti\L Impatto della Povertà sulle Comunità Migranti.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Povertà sulle Comunità Migranti\L Impatto della Povertà sulle Comunità Migranti.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/L Impatto della Povertà sulle Comunità Migranti/L Impatto della Povertà sulle Comunità Migranti.txt</RelativePath>
+      <RelativePath>Argument/Onlus/L Impatto della Povertà sulle Comunità Migranti/L Impatto della Povertà sulle Comunità Migranti.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -398,7 +398,23 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Povertà sulle Comunità Migranti\L Impatto della Povertà sulle Comunità Migranti.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Impatto della Povertà sulle Comunità Migranti\L Impatto della Povertà sulle Comunità Migranti.xml))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Importanza delle Onlus nella Lotta contro la Povertà\Il Futuro delle Onlus nel Contesto Globale.xml))">
+      <SourceType>Package</SourceType>
+      <SourceId>GeopopRipoff</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GeopopRipoff</BasePath>
+      <RelativePath>Argument/Onlus/L Importanza delle Onlus nella Lotta contro la Povertà/Il Futuro delle Onlus nel Contesto Globale.xml</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Importanza delle Onlus nella Lotta contro la Povertà\Il Futuro delle Onlus nel Contesto Globale.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Importanza delle Onlus nella Lotta contro la Povertà\L Importanza delle Onlus nella Lotta contro la Povertà.jpg))">
       <SourceType>Package</SourceType>
@@ -416,12 +432,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Importanza delle Onlus nella Lotta contro la Povertà\L Importanza delle Onlus nella Lotta contro la Povertà.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Importanza delle Onlus nella Lotta contro la Povertà\L Importanza delle Onlus nella Lotta contro la Povertà.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\Il Futuro delle Onlus nel Contesto Globale.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/L Importanza delle Onlus nella Lotta contro la Povertà/L Importanza delle Onlus nella Lotta contro la Povertà.txt</RelativePath>
+      <RelativePath>Argument/Onlus/L Innovazione Tecnologica al Servizio della Lotta contro la Povertà/Il Futuro delle Onlus nel Contesto Globale.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -430,7 +446,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Importanza delle Onlus nella Lotta contro la Povertà\L Importanza delle Onlus nella Lotta contro la Povertà.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\Il Futuro delle Onlus nel Contesto Globale.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà.jpg))">
       <SourceType>Package</SourceType>
@@ -448,12 +464,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà e la Salute Un Circolo Vizioso\Il Futuro delle Onlus nel Contesto Globale.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/L Innovazione Tecnologica al Servizio della Lotta contro la Povertà/L Innovazione Tecnologica al Servizio della Lotta contro la Povertà.txt</RelativePath>
+      <RelativePath>Argument/Onlus/La Povertà e la Salute Un Circolo Vizioso/Il Futuro delle Onlus nel Contesto Globale.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -462,14 +478,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà e la Salute Un Circolo Vizioso\Il Futuro delle Onlus nel Contesto Globale.xml))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà e la Salute Un Circolo Vizioso\La Povertà e la Salute Un Circolo Vizioso.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà e la Salute Un Circolo Vizioso\La Povertà e la Salute Un Circolo Vizioso.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/La Povertà e la Salute Un Circolo Vizioso/La Povertà e la Salute Un Circolo Vizioso.txt</RelativePath>
+      <RelativePath>Argument/Onlus/La Povertà e la Salute Un Circolo Vizioso/La Povertà e la Salute Un Circolo Vizioso.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -478,14 +494,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà e la Salute Un Circolo Vizioso\La Povertà e la Salute Un Circolo Vizioso.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà e la Salute Un Circolo Vizioso\La Povertà e la Salute Un Circolo Vizioso.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà e la Salute Un Circolo Vizioso\pexels-pixabay-259269.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà nelle Aree Rurali Un Problema Trascurato\Il Futuro delle Onlus nel Contesto Globale.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/La Povertà e la Salute Un Circolo Vizioso/pexels-pixabay-259269.jpg</RelativePath>
+      <RelativePath>Argument/Onlus/La Povertà nelle Aree Rurali Un Problema Trascurato/Il Futuro delle Onlus nel Contesto Globale.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -494,7 +510,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà e la Salute Un Circolo Vizioso\pexels-pixabay-259269.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà nelle Aree Rurali Un Problema Trascurato\Il Futuro delle Onlus nel Contesto Globale.xml))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà nelle Aree Rurali Un Problema Trascurato\La Povertà nelle Aree Rurali Un Problema Trascurato.jpg))">
       <SourceType>Package</SourceType>
@@ -512,12 +528,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà nelle Aree Rurali Un Problema Trascurato\La Povertà nelle Aree Rurali Un Problema Trascurato.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà nelle Aree Rurali Un Problema Trascurato\La Povertà nelle Aree Rurali Un Problema Trascurato.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà tra i Bambini Una Crisi Silenziosa\Il Futuro delle Onlus nel Contesto Globale.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/La Povertà nelle Aree Rurali Un Problema Trascurato/La Povertà nelle Aree Rurali Un Problema Trascurato.txt</RelativePath>
+      <RelativePath>Argument/Onlus/La Povertà tra i Bambini Una Crisi Silenziosa/Il Futuro delle Onlus nel Contesto Globale.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -526,14 +542,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà nelle Aree Rurali Un Problema Trascurato\La Povertà nelle Aree Rurali Un Problema Trascurato.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà tra i Bambini Una Crisi Silenziosa\Il Futuro delle Onlus nel Contesto Globale.xml))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà tra i Bambini Una Crisi Silenziosa\La Povertà tra i Bambini Una Crisi Silenziosa.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà tra i Bambini Una Crisi Silenziosa\La Povertà tra i Bambini Una Crisi Silenziosa.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/La Povertà tra i Bambini Una Crisi Silenziosa/La Povertà tra i Bambini Una Crisi Silenziosa.txt</RelativePath>
+      <RelativePath>Argument/Onlus/La Povertà tra i Bambini Una Crisi Silenziosa/La Povertà tra i Bambini Una Crisi Silenziosa.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -542,23 +558,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà tra i Bambini Una Crisi Silenziosa\La Povertà tra i Bambini Una Crisi Silenziosa.txt))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà tra i Bambini Una Crisi Silenziosa\pexels-ron-lach-9830112.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>GeopopRipoff</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/La Povertà tra i Bambini Una Crisi Silenziosa/pexels-ron-lach-9830112.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà tra i Bambini Una Crisi Silenziosa\pexels-ron-lach-9830112.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Povertà tra i Bambini Una Crisi Silenziosa\La Povertà tra i Bambini Una Crisi Silenziosa.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Protezione dei Diritti dei Migranti\La Protezione dei Diritti dei Migranti.jpg))">
       <SourceType>Package</SourceType>
@@ -576,12 +576,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Protezione dei Diritti dei Migranti\La Protezione dei Diritti dei Migranti.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Protezione dei Diritti dei Migranti\La Protezione dei Diritti dei Migranti.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Protezione dei Diritti dei Migranti\La Protezione dei Diritti dei Migranti.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/La Protezione dei Diritti dei Migranti/La Protezione dei Diritti dei Migranti.txt</RelativePath>
+      <RelativePath>Argument/Onlus/La Protezione dei Diritti dei Migranti/La Protezione dei Diritti dei Migranti.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -590,14 +590,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Protezione dei Diritti dei Migranti\La Protezione dei Diritti dei Migranti.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\La Protezione dei Diritti dei Migranti\La Protezione dei Diritti dei Migranti.xml))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\Le Sfide della Povertà Urbana.txt))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\Le Sfide della Povertà Urbana.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/Le Sfide della Povertà Urbana/Le Sfide della Povertà Urbana.txt</RelativePath>
+      <RelativePath>Argument/Onlus/Le Sfide della Povertà Urbana/Le Sfide della Povertà Urbana.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -606,14 +606,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\Le Sfide della Povertà Urbana.txt))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\Le Sfide della Povertà Urbana.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\pexels-rachel-claire-4993072.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\Le Sfide della Povertà Urbana.xml))">
       <SourceType>Package</SourceType>
       <SourceId>GeopopRipoff</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GeopopRipoff</BasePath>
-      <RelativePath>Argument/Onlus/Le Sfide della Povertà Urbana/pexels-rachel-claire-4993072.jpg</RelativePath>
+      <RelativePath>Argument/Onlus/Le Sfide della Povertà Urbana/Le Sfide della Povertà Urbana.xml</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -622,7 +622,39 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\pexels-rachel-claire-4993072.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\Le Sfide della Povertà Urbana.xml))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\Le Sfide della Povertà Urbana_1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>GeopopRipoff</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GeopopRipoff</BasePath>
+      <RelativePath>Argument/Onlus/Le Sfide della Povertà Urbana/Le Sfide della Povertà Urbana_1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\Le Sfide della Povertà Urbana_1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\Le Sfide della Povertà Urbana_2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>GeopopRipoff</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GeopopRipoff</BasePath>
+      <RelativePath>Argument/Onlus/Le Sfide della Povertà Urbana/Le Sfide della Povertà Urbana_2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Argument\Onlus\Le Sfide della Povertà Urbana\Le Sfide della Povertà Urbana_2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\argument.css))">
       <SourceType>Package</SourceType>
@@ -639,6 +671,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\argument.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\argumentArticle.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>GeopopRipoff</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GeopopRipoff</BasePath>
+      <RelativePath>css/argumentArticle.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\argumentArticle.css))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\globalColor.css))">
       <SourceType>Package</SourceType>
@@ -1071,6 +1119,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Img\PlayStore.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\argumentArticle.js))">
+      <SourceType>Package</SourceType>
+      <SourceId>GeopopRipoff</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GeopopRipoff</BasePath>
+      <RelativePath>js/argumentArticle.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\argumentArticle.js))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\argumentIndex.js))">
       <SourceType>Package</SourceType>

@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
+using System.Xml.Serialization;
 
 namespace GeopopRipoff.Models
 {
@@ -27,7 +28,7 @@ namespace GeopopRipoff.Models
         public int Oid { get; set; }
         public string Id_Autore { get; set; }
         public DateTime Dt_Nascita { get; set; }
-        
+
     }
     public class Argomenti_Articoli
     {
@@ -48,7 +49,7 @@ namespace GeopopRipoff.Models
 
     public class WrapperArgumentsPageModel
     {
-        public List<ArgumentsPageModel> ArgumentsPageModel { get; set;}
+        public List<ArgumentsPageModel> ArgumentsPageModel { get; set; }
         public string Descrizione { get; set; }
         public string PathHeader { get; set; }
     }
@@ -67,4 +68,36 @@ namespace GeopopRipoff.Models
         public string ds_argomento { get; set; }
     }
 
+    [XmlRoot("article")]
+    public class ArticleXml
+    {
+        [XmlElement("title")]
+        public string Title { get; set; }
+
+        [XmlElement("header")]
+        public string Header { get; set; }
+
+        [XmlArray("chapters")]
+        [XmlArrayItem("chapter")]
+        public List<Chapters> Chapters { get; set; }
+        public string LocalPath { get; set; }
+    }
+
+    public class Chapters
+    {
+        [XmlElement("subtitle")]
+        public string Subtitle { get; set; }
+
+        [XmlElement("chapter")]
+        public string Chapter { get; set; }
+
+        public string SubImgPath { get; set; }
+
+        public Chapters(string subtitle, string chapter, string subImgPath = null)
+        {
+            Subtitle = subtitle;
+            Chapter = chapter;
+            SubImgPath = subImgPath;
+        }
+    }
 }

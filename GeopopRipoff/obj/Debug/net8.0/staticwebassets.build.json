@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NJYDTfj2xUrNqNVG3fRlQCUFtkg2ufoVsTLOim7HK5g=",
+  "Hash": "d9ACmwoJPo6j30KvH0D79fUsuyDODp7HYgTXffU2EoQ=",
   "Source": "GeopopRipoff",
   "BasePath": "_content/GeopopRipoff",
   "Mode": "Default",
@@ -93,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Futuro delle Onlus nel Contesto Globale\\Il Futuro delle Onlus nel Contesto Globale.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Futuro delle Onlus nel Contesto Globale\\Il Futuro delle Onlus nel Contesto Globale.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Futuro delle Onlus nel Contesto Globale\\Il Futuro delle Onlus nel Contesto Globale.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/Il Futuro delle Onlus nel Contesto Globale/Il Futuro delle Onlus nel Contesto Globale.txt",
+      "RelativePath": "Argument/Onlus/Il Futuro delle Onlus nel Contesto Globale/Il Futuro delle Onlus nel Contesto Globale.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +109,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Futuro delle Onlus nel Contesto Globale\\Il Futuro delle Onlus nel Contesto Globale.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Futuro delle Onlus nel Contesto Globale\\Il Futuro delle Onlus nel Contesto Globale.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Potenziale delle Microimprese nel Combattere la Povertà\\Il Potenziale delle Microimprese nel Combattere la Povertà.jpg",
@@ -131,12 +131,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Potenziale delle Microimprese nel Combattere la Povertà\\Il Potenziale delle Microimprese nel Combattere la Povertà.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Potenziale delle Microimprese nel Combattere la Povertà\\Il Potenziale delle Microimprese nel Combattere la Povertà.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Potenziale delle Microimprese nel Combattere la Povertà\\Il Potenziale delle Microimprese nel Combattere la Povertà.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/Il Potenziale delle Microimprese nel Combattere la Povertà/Il Potenziale delle Microimprese nel Combattere la Povertà.txt",
+      "RelativePath": "Argument/Onlus/Il Potenziale delle Microimprese nel Combattere la Povertà/Il Potenziale delle Microimprese nel Combattere la Povertà.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,26 +147,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Potenziale delle Microimprese nel Combattere la Povertà\\Il Potenziale delle Microimprese nel Combattere la Povertà.txt"
-    },
-    {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.jpg",
-      "SourceId": "GeopopRipoff",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
-      "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà/Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.jpg"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Potenziale delle Microimprese nel Combattere la Povertà\\Il Potenziale delle Microimprese nel Combattere la Povertà.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.txt",
@@ -188,6 +169,25 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.txt"
     },
     {
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.xml",
+      "SourceId": "GeopopRipoff",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
+      "BasePath": "_content/GeopopRipoff",
+      "RelativePath": "Argument/Onlus/Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà/Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.xml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.xml"
+    },
+    {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nell Accoglienza dei Migranti\\Il Ruolo delle Onlus nell Accoglienza dei Migranti.jpg",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
@@ -207,12 +207,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nell Accoglienza dei Migranti\\Il Ruolo delle Onlus nell Accoglienza dei Migranti.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nell Accoglienza dei Migranti\\Il Ruolo delle Onlus nell Accoglienza dei Migranti.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nell Accoglienza dei Migranti\\Il Ruolo delle Onlus nell Accoglienza dei Migranti.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/Il Ruolo delle Onlus nell Accoglienza dei Migranti/Il Ruolo delle Onlus nell Accoglienza dei Migranti.txt",
+      "RelativePath": "Argument/Onlus/Il Ruolo delle Onlus nell Accoglienza dei Migranti/Il Ruolo delle Onlus nell Accoglienza dei Migranti.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -223,7 +223,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nell Accoglienza dei Migranti\\Il Ruolo delle Onlus nell Accoglienza dei Migranti.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nell Accoglienza dei Migranti\\Il Ruolo delle Onlus nell Accoglienza dei Migranti.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.jpg",
@@ -245,12 +245,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti/Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.txt",
+      "RelativePath": "Argument/Onlus/Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti/Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -261,7 +261,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti\\Il Ruolo delle Onlus nella Tutela dei Diritti delle Donne Migranti.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.jpg",
@@ -283,12 +283,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/L Accesso all Acqua Potabile come Diritto Umano Fondamentale/L Accesso all Acqua Potabile come Diritto Umano Fondamentale.txt",
+      "RelativePath": "Argument/Onlus/L Accesso all Acqua Potabile come Diritto Umano Fondamentale/L Accesso all Acqua Potabile come Diritto Umano Fondamentale.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -299,7 +299,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.jpg",
@@ -321,12 +321,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/L Accesso all Istruzione come Strumento di Lotta contro la Povertà/L Accesso all Istruzione come Strumento di Lotta contro la Povertà.txt",
+      "RelativePath": "Argument/Onlus/L Accesso all Istruzione come Strumento di Lotta contro la Povertà/L Accesso all Istruzione come Strumento di Lotta contro la Povertà.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -337,7 +337,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà\\L Accesso all Istruzione come Strumento di Lotta contro la Povertà.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Educazione alla Diversità come Strumento di Integrazione\\L Educazione alla Diversità come Strumento di Integrazione.jpg",
@@ -359,12 +359,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Educazione alla Diversità come Strumento di Integrazione\\L Educazione alla Diversità come Strumento di Integrazione.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Educazione alla Diversità come Strumento di Integrazione\\L Educazione alla Diversità come Strumento di Integrazione.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Educazione alla Diversità come Strumento di Integrazione\\L Educazione alla Diversità come Strumento di Integrazione.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/L Educazione alla Diversità come Strumento di Integrazione/L Educazione alla Diversità come Strumento di Integrazione.txt",
+      "RelativePath": "Argument/Onlus/L Educazione alla Diversità come Strumento di Integrazione/L Educazione alla Diversità come Strumento di Integrazione.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -375,7 +375,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Educazione alla Diversità come Strumento di Integrazione\\L Educazione alla Diversità come Strumento di Integrazione.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Educazione alla Diversità come Strumento di Integrazione\\L Educazione alla Diversità come Strumento di Integrazione.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus.jpg",
@@ -397,12 +397,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/L Emergenza Alimentare e il Ruolo delle Onlus/L Emergenza Alimentare e il Ruolo delle Onlus.txt",
+      "RelativePath": "Argument/Onlus/L Emergenza Alimentare e il Ruolo delle Onlus/L Emergenza Alimentare e il Ruolo delle Onlus.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -413,7 +413,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus\\L Emergenza Alimentare e il Ruolo delle Onlus.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Impatto della Crisi Climatica sulla Povertà\\L Impatto della Crisi Climatica sulla Povertà.jpg",
@@ -435,12 +435,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Impatto della Crisi Climatica sulla Povertà\\L Impatto della Crisi Climatica sulla Povertà.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Impatto della Crisi Climatica sulla Povertà\\L Impatto della Crisi Climatica sulla Povertà.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Impatto della Crisi Climatica sulla Povertà\\L Impatto della Crisi Climatica sulla Povertà.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/L Impatto della Crisi Climatica sulla Povertà/L Impatto della Crisi Climatica sulla Povertà.txt",
+      "RelativePath": "Argument/Onlus/L Impatto della Crisi Climatica sulla Povertà/L Impatto della Crisi Climatica sulla Povertà.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -451,7 +451,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Impatto della Crisi Climatica sulla Povertà\\L Impatto della Crisi Climatica sulla Povertà.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Impatto della Crisi Climatica sulla Povertà\\L Impatto della Crisi Climatica sulla Povertà.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.jpg",
@@ -473,12 +473,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/L Impatto della Pandemia da COVID-19 sulla Povertà Globale/L Impatto della Pandemia da COVID-19 sulla Povertà Globale.txt",
+      "RelativePath": "Argument/Onlus/L Impatto della Pandemia da COVID-19 sulla Povertà Globale/L Impatto della Pandemia da COVID-19 sulla Povertà Globale.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -489,7 +489,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale\\L Impatto della Pandemia da COVID-19 sulla Povertà Globale.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Impatto della Povertà sulle Comunità Migranti\\L Impatto della Povertà sulle Comunità Migranti.jpg",
@@ -511,12 +511,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Impatto della Povertà sulle Comunità Migranti\\L Impatto della Povertà sulle Comunità Migranti.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Impatto della Povertà sulle Comunità Migranti\\L Impatto della Povertà sulle Comunità Migranti.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Impatto della Povertà sulle Comunità Migranti\\L Impatto della Povertà sulle Comunità Migranti.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/L Impatto della Povertà sulle Comunità Migranti/L Impatto della Povertà sulle Comunità Migranti.txt",
+      "RelativePath": "Argument/Onlus/L Impatto della Povertà sulle Comunità Migranti/L Impatto della Povertà sulle Comunità Migranti.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -527,7 +527,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Impatto della Povertà sulle Comunità Migranti\\L Impatto della Povertà sulle Comunità Migranti.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Impatto della Povertà sulle Comunità Migranti\\L Impatto della Povertà sulle Comunità Migranti.xml"
+    },
+    {
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Importanza delle Onlus nella Lotta contro la Povertà\\Il Futuro delle Onlus nel Contesto Globale.xml",
+      "SourceId": "GeopopRipoff",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
+      "BasePath": "_content/GeopopRipoff",
+      "RelativePath": "Argument/Onlus/L Importanza delle Onlus nella Lotta contro la Povertà/Il Futuro delle Onlus nel Contesto Globale.xml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Importanza delle Onlus nella Lotta contro la Povertà\\Il Futuro delle Onlus nel Contesto Globale.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Importanza delle Onlus nella Lotta contro la Povertà\\L Importanza delle Onlus nella Lotta contro la Povertà.jpg",
@@ -549,12 +568,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Importanza delle Onlus nella Lotta contro la Povertà\\L Importanza delle Onlus nella Lotta contro la Povertà.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Importanza delle Onlus nella Lotta contro la Povertà\\L Importanza delle Onlus nella Lotta contro la Povertà.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\\Il Futuro delle Onlus nel Contesto Globale.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/L Importanza delle Onlus nella Lotta contro la Povertà/L Importanza delle Onlus nella Lotta contro la Povertà.txt",
+      "RelativePath": "Argument/Onlus/L Innovazione Tecnologica al Servizio della Lotta contro la Povertà/Il Futuro delle Onlus nel Contesto Globale.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -565,7 +584,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Importanza delle Onlus nella Lotta contro la Povertà\\L Importanza delle Onlus nella Lotta contro la Povertà.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\\Il Futuro delle Onlus nel Contesto Globale.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà.jpg",
@@ -587,12 +606,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà e la Salute Un Circolo Vizioso\\Il Futuro delle Onlus nel Contesto Globale.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/L Innovazione Tecnologica al Servizio della Lotta contro la Povertà/L Innovazione Tecnologica al Servizio della Lotta contro la Povertà.txt",
+      "RelativePath": "Argument/Onlus/La Povertà e la Salute Un Circolo Vizioso/Il Futuro delle Onlus nel Contesto Globale.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -603,15 +622,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà\\L Innovazione Tecnologica al Servizio della Lotta contro la Povertà.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà e la Salute Un Circolo Vizioso\\Il Futuro delle Onlus nel Contesto Globale.xml"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà e la Salute Un Circolo Vizioso\\La Povertà e la Salute Un Circolo Vizioso.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà e la Salute Un Circolo Vizioso\\La Povertà e la Salute Un Circolo Vizioso.jpg",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/La Povertà e la Salute Un Circolo Vizioso/La Povertà e la Salute Un Circolo Vizioso.txt",
+      "RelativePath": "Argument/Onlus/La Povertà e la Salute Un Circolo Vizioso/La Povertà e la Salute Un Circolo Vizioso.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -622,15 +641,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà e la Salute Un Circolo Vizioso\\La Povertà e la Salute Un Circolo Vizioso.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà e la Salute Un Circolo Vizioso\\La Povertà e la Salute Un Circolo Vizioso.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà e la Salute Un Circolo Vizioso\\pexels-pixabay-259269.jpg",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà nelle Aree Rurali Un Problema Trascurato\\Il Futuro delle Onlus nel Contesto Globale.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/La Povertà e la Salute Un Circolo Vizioso/pexels-pixabay-259269.jpg",
+      "RelativePath": "Argument/Onlus/La Povertà nelle Aree Rurali Un Problema Trascurato/Il Futuro delle Onlus nel Contesto Globale.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -641,7 +660,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà e la Salute Un Circolo Vizioso\\pexels-pixabay-259269.jpg"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà nelle Aree Rurali Un Problema Trascurato\\Il Futuro delle Onlus nel Contesto Globale.xml"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà nelle Aree Rurali Un Problema Trascurato\\La Povertà nelle Aree Rurali Un Problema Trascurato.jpg",
@@ -663,12 +682,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà nelle Aree Rurali Un Problema Trascurato\\La Povertà nelle Aree Rurali Un Problema Trascurato.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà nelle Aree Rurali Un Problema Trascurato\\La Povertà nelle Aree Rurali Un Problema Trascurato.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà tra i Bambini Una Crisi Silenziosa\\Il Futuro delle Onlus nel Contesto Globale.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/La Povertà nelle Aree Rurali Un Problema Trascurato/La Povertà nelle Aree Rurali Un Problema Trascurato.txt",
+      "RelativePath": "Argument/Onlus/La Povertà tra i Bambini Una Crisi Silenziosa/Il Futuro delle Onlus nel Contesto Globale.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -679,15 +698,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà nelle Aree Rurali Un Problema Trascurato\\La Povertà nelle Aree Rurali Un Problema Trascurato.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà tra i Bambini Una Crisi Silenziosa\\Il Futuro delle Onlus nel Contesto Globale.xml"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà tra i Bambini Una Crisi Silenziosa\\La Povertà tra i Bambini Una Crisi Silenziosa.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà tra i Bambini Una Crisi Silenziosa\\La Povertà tra i Bambini Una Crisi Silenziosa.jpg",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/La Povertà tra i Bambini Una Crisi Silenziosa/La Povertà tra i Bambini Una Crisi Silenziosa.txt",
+      "RelativePath": "Argument/Onlus/La Povertà tra i Bambini Una Crisi Silenziosa/La Povertà tra i Bambini Una Crisi Silenziosa.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -698,26 +717,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà tra i Bambini Una Crisi Silenziosa\\La Povertà tra i Bambini Una Crisi Silenziosa.txt"
-    },
-    {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Povertà tra i Bambini Una Crisi Silenziosa\\pexels-ron-lach-9830112.jpg",
-      "SourceId": "GeopopRipoff",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
-      "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/La Povertà tra i Bambini Una Crisi Silenziosa/pexels-ron-lach-9830112.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà tra i Bambini Una Crisi Silenziosa\\pexels-ron-lach-9830112.jpg"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Povertà tra i Bambini Una Crisi Silenziosa\\La Povertà tra i Bambini Una Crisi Silenziosa.jpg"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Protezione dei Diritti dei Migranti\\La Protezione dei Diritti dei Migranti.jpg",
@@ -739,12 +739,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Protezione dei Diritti dei Migranti\\La Protezione dei Diritti dei Migranti.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Protezione dei Diritti dei Migranti\\La Protezione dei Diritti dei Migranti.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\La Protezione dei Diritti dei Migranti\\La Protezione dei Diritti dei Migranti.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/La Protezione dei Diritti dei Migranti/La Protezione dei Diritti dei Migranti.txt",
+      "RelativePath": "Argument/Onlus/La Protezione dei Diritti dei Migranti/La Protezione dei Diritti dei Migranti.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -755,15 +755,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Protezione dei Diritti dei Migranti\\La Protezione dei Diritti dei Migranti.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\La Protezione dei Diritti dei Migranti\\La Protezione dei Diritti dei Migranti.xml"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana.txt",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana.jpg",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/Le Sfide della Povertà Urbana/Le Sfide della Povertà Urbana.txt",
+      "RelativePath": "Argument/Onlus/Le Sfide della Povertà Urbana/Le Sfide della Povertà Urbana.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -774,15 +774,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana.txt"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\pexels-rachel-claire-4993072.jpg",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana.xml",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Argument/Onlus/Le Sfide della Povertà Urbana/pexels-rachel-claire-4993072.jpg",
+      "RelativePath": "Argument/Onlus/Le Sfide della Povertà Urbana/Le Sfide della Povertà Urbana.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -793,7 +793,45 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\pexels-rachel-claire-4993072.jpg"
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana.xml"
+    },
+    {
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana_1.jpg",
+      "SourceId": "GeopopRipoff",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
+      "BasePath": "_content/GeopopRipoff",
+      "RelativePath": "Argument/Onlus/Le Sfide della Povertà Urbana/Le Sfide della Povertà Urbana_1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana_1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana_2.jpg",
+      "SourceId": "GeopopRipoff",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
+      "BasePath": "_content/GeopopRipoff",
+      "RelativePath": "Argument/Onlus/Le Sfide della Povertà Urbana/Le Sfide della Povertà Urbana_2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana_2.jpg"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\argument.css",
@@ -813,6 +851,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\argument.css"
+    },
+    {
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\argumentArticle.css",
+      "SourceId": "GeopopRipoff",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
+      "BasePath": "_content/GeopopRipoff",
+      "RelativePath": "css/argumentArticle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\argumentArticle.css"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\globalColor.css",
@@ -1307,6 +1364,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\PlayStore.png"
+    },
+    {
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\argumentArticle.js",
+      "SourceId": "GeopopRipoff",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
+      "BasePath": "_content/GeopopRipoff",
+      "RelativePath": "js/argumentArticle.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\argumentArticle.js"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\argumentIndex.js",

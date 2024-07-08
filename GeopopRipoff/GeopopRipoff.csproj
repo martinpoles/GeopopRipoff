@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\css\Menu\" />
+    <Folder Include="wwwroot\js\Shared\" />
     <Folder Include="wwwroot\TrashTemp\" />
     <Folder Include="wwwroot\Video\" />
   </ItemGroup>
@@ -20,7 +22,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="wwwroot\css\globalColor.css">
+    <Content Update="wwwroot\css\Argument\Article.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\Shared\globalColor.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\js\Argument\Article.js">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

@@ -1,1 +1,157 @@
-﻿dasdadasdada
+﻿@model GeopopRipoff.Models.ArticleXml
+
+<div class="container">
+    <div class="col-12 main-corp-article parent-div-argument">
+
+        <div class="row utility-bar-article children-div-argument">
+
+            <div class="col-5 titleImg"></div>
+            <div class="col-4 searchBar">
+
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Cerca...">
+                    <button type="submit">Cerca</button>
+                </form>
+
+            </div>
+            <div class="col-1 notificationsBell">
+
+                @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
+                {
+                    <button class="invisible-button">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                }
+            </div>
+            <div class="col-1 specMenu">
+                @using (Html.BeginForm("Index", "Menu", FormMethod.Post, new { @class = "" }))
+                {
+                    <button class="invisible-button" onclick="navigateTo('Menu')">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                }
+            </div>
+            <div class="col-1" style="border-radius: 0 20px 0 0;"></div>
+
+        </div>
+
+        <div class="row menu-selection-article children-div-argument">
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "Onlus")
+                    <button class="w-100 h-100 invisible-button">Onlus</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "2")
+                    <button class="w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "3")
+                    <button class="w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "4")
+                    <button class="w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "5")
+                    <button class="w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "6")
+                    <button class="w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "7")
+                    <button class="w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "8")
+                    <button class="w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "8")
+                    <button class="w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "8")
+                    <button class="w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("ItemId", "8")
+                    <button class="w-100 h-100 invisible-button">Argument2</button>
+                }
+            </div>
+        </div>
+
+        <div class="container-flexbox-article children-div-argument">
+            
+   @*          <div class="row">
+                <div class="new-entry-article">dasdadadada</div>
+            </div>
+ *@
+            <div class="row">
+                <h1>@Model.Title</h1>
+                <h3>@Model.Header</h3>
+            </div>
+
+            @foreach (var item in Model.Chapters)
+            {
+                <div class="row">
+                    <h3>@item.Subtitle</h3>
+                    <h5>@item.Chapter</h5>
+                </div>
+
+                <div class="row">
+                    <img src="@item.SubImgPath" alt="img">
+
+                </div>
+            }
+
+        </div>
+   
+    </div>
+</div>
+
+
+<link rel="stylesheet" href="~/css/Argument/Article.css" asp-append-version="true" />
+<script src="~/js/Argument/Article.js" asp-append-version="true"></script>

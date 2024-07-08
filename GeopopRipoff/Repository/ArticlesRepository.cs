@@ -38,5 +38,16 @@ namespace GeopopRipoff.Repository
 
             return _genericRepository.Query<TempClass>(qry);
         }
+
+        public TempClass GetArticleByIdArticle(string id_articolo)
+        {
+
+            string qry = "SELECT articoli.id_articolo"
+                            + " FROM articoli"
+                            + $" WHERE articoli.id_articolo = '{id_articolo}'";
+
+            return _genericRepository.Query<TempClass>(qry).FirstOrDefault();
+        }
+
     }
 }
