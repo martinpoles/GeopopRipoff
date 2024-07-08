@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d9ACmwoJPo6j30KvH0D79fUsuyDODp7HYgTXffU2EoQ=",
+  "Hash": "iDtD+7WdJSWrkcRV0BcYdLFqbelNP+hrcj97QgOES5Q=",
   "Source": "GeopopRipoff",
   "BasePath": "_content/GeopopRipoff",
   "Mode": "Default",
@@ -834,12 +834,12 @@
       "OriginalItemSpec": "wwwroot\\Argument\\Onlus\\Le Sfide della Povertà Urbana\\Le Sfide della Povertà Urbana_2.jpg"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\argument.css",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Argument\\Article.css",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "css/argument.css",
+      "RelativePath": "css/Argument/Article.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -850,15 +850,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\argument.css"
+      "OriginalItemSpec": "wwwroot\\css\\Argument\\Article.css"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\argumentArticle.css",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Argument\\Index.css",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "css/argumentArticle.css",
+      "RelativePath": "css/Argument/Index.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -869,15 +869,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\argumentArticle.css"
+      "OriginalItemSpec": "wwwroot\\css\\Argument\\Index.css"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\globalColor.css",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Home\\Index.css",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "css/globalColor.css",
+      "RelativePath": "css/Home/Index.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -888,15 +888,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\globalColor.css"
+      "OriginalItemSpec": "wwwroot\\css\\Home\\Index.css"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\homeIndex.css",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Home\\Policy.css",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "css/homeIndex.css",
+      "RelativePath": "css/Home/Policy.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -907,15 +907,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\homeIndex.css"
+      "OriginalItemSpec": "wwwroot\\css\\Home\\Policy.css"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\homePolicy.css",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\LogSignInOut\\Index.css",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "css/homePolicy.css",
+      "RelativePath": "css/LogSignInOut/Index.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -926,15 +926,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\homePolicy.css"
+      "OriginalItemSpec": "wwwroot\\css\\LogSignInOut\\Index.css"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\LogSignInOut.css",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Shared\\globalColor.css",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "css/LogSignInOut.css",
+      "RelativePath": "css/Shared/globalColor.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -945,7 +945,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\LogSignInOut.css"
+      "OriginalItemSpec": "wwwroot\\css\\Shared\\globalColor.css"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\favicon.ico",
@@ -1366,12 +1366,12 @@
       "OriginalItemSpec": "wwwroot\\Img\\PlayStore.png"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\argumentArticle.js",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Argument\\Article.js",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "js/argumentArticle.js",
+      "RelativePath": "js/Argument/Article.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1382,15 +1382,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\argumentArticle.js"
+      "OriginalItemSpec": "wwwroot\\js\\Argument\\Article.js"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\argumentIndex.js",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Argument\\Index.js",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "js/argumentIndex.js",
+      "RelativePath": "js/Argument/Index.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1401,15 +1401,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\argumentIndex.js"
+      "OriginalItemSpec": "wwwroot\\js\\Argument\\Index.js"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\FbSDK.js",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Home\\Index.js",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "js/FbSDK.js",
+      "RelativePath": "js/Home/Index.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1420,15 +1420,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\FbSDK.js"
+      "OriginalItemSpec": "wwwroot\\js\\Home\\Index.js"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\homeIndex.js",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Home\\Policy.js",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "js/homeIndex.js",
+      "RelativePath": "js/Home/Policy.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1439,15 +1439,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\homeIndex.js"
+      "OriginalItemSpec": "wwwroot\\js\\Home\\Policy.js"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\homeMenu.js",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\LogSignInOut\\FbSDK.js",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "js/homeMenu.js",
+      "RelativePath": "js/LogSignInOut/FbSDK.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1458,15 +1458,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\homeMenu.js"
+      "OriginalItemSpec": "wwwroot\\js\\LogSignInOut\\FbSDK.js"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\homePolicy.js",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Menu\\Index.js",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "js/homePolicy.js",
+      "RelativePath": "js/Menu/Index.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1477,7 +1477,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\homePolicy.js"
+      "OriginalItemSpec": "wwwroot\\js\\Menu\\Index.js"
     },
     {
       "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

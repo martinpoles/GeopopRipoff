@@ -273,28 +273,28 @@
       "PackagePath": "staticwebassets\\Video\\Test5.mp4"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\LogSignInOut.css",
-      "PackagePath": "staticwebassets\\css\\LogSignInOut.css"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Argument\\Article.css",
+      "PackagePath": "staticwebassets\\css\\Argument\\Article.css"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\argument.css",
-      "PackagePath": "staticwebassets\\css\\argument.css"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Argument\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Argument\\Index.css"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\argumentArticle.css",
-      "PackagePath": "staticwebassets\\css\\argumentArticle.css"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Home\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Home\\Index.css"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\globalColor.css",
-      "PackagePath": "staticwebassets\\css\\globalColor.css"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Home\\Policy.css",
+      "PackagePath": "staticwebassets\\css\\Home\\Policy.css"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\homeIndex.css",
-      "PackagePath": "staticwebassets\\css\\homeIndex.css"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\LogSignInOut\\Index.css",
+      "PackagePath": "staticwebassets\\css\\LogSignInOut\\Index.css"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\homePolicy.css",
-      "PackagePath": "staticwebassets\\css\\homePolicy.css"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Shared\\globalColor.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\globalColor.css"
     },
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\favicon.ico",
@@ -305,28 +305,28 @@
       "PackagePath": "staticwebassets\\htmlTemplate\\class432.html"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\FbSDK.js",
-      "PackagePath": "staticwebassets\\js\\FbSDK.js"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Argument\\Article.js",
+      "PackagePath": "staticwebassets\\js\\Argument\\Article.js"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\argumentArticle.js",
-      "PackagePath": "staticwebassets\\js\\argumentArticle.js"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Argument\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Argument\\Index.js"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\argumentIndex.js",
-      "PackagePath": "staticwebassets\\js\\argumentIndex.js"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Home\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Home\\Index.js"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\homeIndex.js",
-      "PackagePath": "staticwebassets\\js\\homeIndex.js"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Home\\Policy.js",
+      "PackagePath": "staticwebassets\\js\\Home\\Policy.js"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\homeMenu.js",
-      "PackagePath": "staticwebassets\\js\\homeMenu.js"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\LogSignInOut\\FbSDK.js",
+      "PackagePath": "staticwebassets\\js\\LogSignInOut\\FbSDK.js"
     },
     {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\homePolicy.js",
-      "PackagePath": "staticwebassets\\js\\homePolicy.js"
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Menu\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Menu\\Index.js"
     },
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\lib\\bootstrap\\LICENSE",
