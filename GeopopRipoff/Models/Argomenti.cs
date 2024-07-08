@@ -18,7 +18,6 @@ namespace GeopopRipoff.Models
         public int Oid { get; set; }
         public string Id_Articolo { get; set; }
         public int Oid_Autore { get; set; }
-        public string Ds_Path { get; set; }
         public DateTime Dt_Pubblicazione { get; set; }
     }
 
@@ -66,6 +65,7 @@ namespace GeopopRipoff.Models
     {
         public string id_articolo { get; set; }
         public string ds_argomento { get; set; }
+        public string id_argomenti { get; set; }
     }
 
     [XmlRoot("article")]

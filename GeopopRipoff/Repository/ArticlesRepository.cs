@@ -12,21 +12,6 @@ namespace GeopopRipoff.Repository
             _genericRepository = genericRepository;
         }
 
-        //public async Task<IEnumerable<Customer>> GetAllCustomersAsync()
-        //{
-        //    var sql = "SELECT * FROM Customers";
-        //    return await _genericRepository.QueryAsync<Customer>(sql);
-        //}
-
-        //public async Task<Customer> GetCustomerByIdAsync(int id)
-        //{
-        //    var sql = "SELECT * FROM Customers WHERE Id = @Id";
-        //    var customers = await _genericRepository.QueryAsync<Customer>(sql, new { Id = id });
-        //    return customers.FirstOrDefault();
-        //}
-
-
-
         public IEnumerable<TempClass> GetAllCustomers(string id_argomento)
         {
 
@@ -47,6 +32,19 @@ namespace GeopopRipoff.Repository
                             + $" WHERE articoli.id_articolo = '{id_articolo}'";
 
             return _genericRepository.Query<TempClass>(qry).FirstOrDefault();
+        }
+
+        public IEnumerable<TempTemp> GetLast2WeekStories()
+        {
+
+            string qry = " SELECT Articoli.Id_Articolo, Argomenti.id_argomento"
+                        + " FROM Articoli"
+                        + " JOIN Argomenti_articoli ON Articoli.oid = Argomenti_articoli.oid_articolo"
+                        + " JOIN Argomenti ON Argomenti_articoli.oid_argomenti = Argomenti.oid"
+                        + " WHERE Dt_Pubblicazione >= DATEADD(WEEK, -2, GETDATE())"
+                        + " ORDER BY Argomenti.Id_Argomento DESC";
+
+            return _genericRepository.Query<TempTemp>(qry);
         }
 
     }

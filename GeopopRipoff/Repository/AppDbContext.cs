@@ -10,7 +10,6 @@ namespace GeopopRipoff.Repository
 
         }
 
-
         public DbSet<Argomenti> Argomenti { get; set; }
         public DbSet<Articoli> Articoli { get; set; }
         public DbSet<Autori> Autori { get; set; }

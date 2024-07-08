@@ -1,6 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model GeopopRipoff.Models.HomeIndex
 
 
 <div class="container">
@@ -40,90 +38,17 @@
 
         <div class="row menuSelection">
 
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "Onlus")
-                    <button class="w-100 h-100 invisible-button">Onlus</button>
-                }
-            </div>
+            @foreach (var item in Model.Id_argomenti)
+            {
+                <div class="col-1 menuSelectionELEMENT">
+                    @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                    {
+                        @Html.Hidden("Id_Argomento", @item.Id_Argomento)
+                        <button class="w-100 h-100 invisible-button">@item.Id_Argomento</button>
+                    }
+                </div>
+            }
 
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "2")
-                    <button class="w-100 h-100 invisible-button">Argument2</button>
-                }
-            </div>
-
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "3")
-                    <button class="w-100 h-100 invisible-button">Argument2</button>
-                }
-            </div>
-
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "4")
-                    <button class="w-100 h-100 invisible-button">Argument2</button>
-                }
-            </div>
-
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "5")
-                    <button class="w-100 h-100 invisible-button">Argument2</button>
-                }
-            </div>
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "6")
-                    <button class="w-100 h-100 invisible-button">Argument2</button>
-                }
-            </div>
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "7")
-                    <button class="w-100 h-100 invisible-button">Argument2</button>
-                }
-            </div>
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "8")
-                    <button class="w-100 h-100 invisible-button">Argument2</button>
-                }
-            </div>
-
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "8")
-                    <button class="w-100 h-100 invisible-button">Argument2</button>
-                }
-            </div>
-
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "8")
-                    <button class="w-100 h-100 invisible-button">Argument2</button>
-                }
-            </div>
-
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("ItemId", "8")
-                    <button class="w-100 h-100 invisible-button">Argument2</button>
-                }
-            </div>
         </div>
 
         <div class="row mainShowCase">
@@ -191,6 +116,18 @@
 
         <div class="row stories-container">
 
+
+            @foreach (var item in Model.Stories)
+            {
+                @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
+                {
+                    @Html.Hidden("id_articolo", item.Id_Storie)
+                    <button class="invisible-button">
+                        <img src=@item.Relative_Path>
+                    </button>
+                }
+            }
+@* 
             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
             {
                 @Html.Hidden("id_articolo", "Le Sfide della Povertà Urbana")
@@ -253,7 +190,7 @@
                 <button class="invisible-button">
                     <img src="/Img/Img1.jpg">
                 </button>
-            }
+            } *@
 
         </div>
 

@@ -17,18 +17,39 @@ namespace GeopopRipoff.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+
         private readonly ArticlesRepository _articlesRepository;
+        private readonly ArgomentiRepository _argomentiRepository;
 
 
-        public HomeController(ILogger<HomeController> logger, ArticlesRepository articlesRepository)
+        public HomeController(ILogger<HomeController> logger, ArticlesRepository articlesRepository, ArgomentiRepository argomentiRepository)
         {
             _logger = logger;
             _articlesRepository = articlesRepository;
+            _argomentiRepository = argomentiRepository;
         }
 
         public IActionResult Index()
         {
-            return View();
+            HomeIndex homeIndex = new HomeIndex();
+
+
+            var storie = _articlesRepository.GetLast2WeekStories();
+            homeIndex.Stories = new List<Storie>();
+            foreach (var item in storie)
+            {
+                Storie storie1 = new Storie();
+
+                storie1.Id_Storie = item.id_articolo;
+
+                storie1.Relative_Path = @$"\Argument\{item.id_argomento}\{item.id_articolo}\{item.id_articolo}.jpg";
+
+
+                homeIndex.Stories.Add(storie1);
+            }
+            var argomenti = _argomentiRepository.GetAllActiveDocument("Onlus").ToList();
+            homeIndex.Id_argomenti = argomenti;
+            return View(homeIndex);
         }
 
         public IActionResult Privacy()
