@@ -7,6 +7,7 @@ using System;
 using System.IO;
 using System.Xml;
 using System.Text.RegularExpressions;
+using GeopopRipoff.Models.Argument;
 
 
 namespace GeopopRipoff.Controllers
@@ -15,31 +16,33 @@ namespace GeopopRipoff.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ArticlesRepository _articlesRepository;
-        public ArgumentController(ILogger<HomeController> logger, ArticlesRepository articlesRepository)
+        private readonly ArgomentiRepository _argomentiRepository;
+        public ArgumentController(ILogger<HomeController> logger, ArticlesRepository articlesRepository, ArgomentiRepository argomentiRepository)
         {
             _logger = logger;
             _articlesRepository = articlesRepository;
+            _argomentiRepository = argomentiRepository;
         }
-        public IActionResult Index(string itemId)
+
+        public IActionResult Index(string id_argomento)
         {
-            WrapperArgumentsPageModel wrapperArgumentsPageModel = new WrapperArgumentsPageModel();
-            wrapperArgumentsPageModel.ArgumentsPageModel = new List<ArgumentsPageModel>();
+            ArgumentIndex argumentIndex = new ArgumentIndex();
 
-            var argument = _articlesRepository.GetAllCustomers(itemId);
-
-            foreach (var item in argument)
+            foreach (var item in _articlesRepository.Get9ArticleByArgomento(id_argomento))
             {
-                ArgumentsPageModel argumentsPageModel = new ArgumentsPageModel();
-                string imgPath = @$"{item.id_articolo}/{item.id_articolo}.jpg";
-                argumentsPageModel.ImgPath = imgPath;
-                argumentsPageModel.Title = item.id_articolo.ToString(); ;
-                wrapperArgumentsPageModel.ArgumentsPageModel.Add(argumentsPageModel);
-                wrapperArgumentsPageModel.Descrizione = item.ds_argomento;
+                ContenutoArgumentArticle contenutoArgumentArticle = new ContenutoArgumentArticle();
+                contenutoArgumentArticle.ImgPath = @$"{item.Id_Contenuto}/{item.Id_Contenuto}.jpg";
+                contenutoArgumentArticle.Title = item.Id_Contenuto;
+                argumentIndex.Contenuti.Add(contenutoArgumentArticle);
             }
 
-            wrapperArgumentsPageModel.PathHeader = $"/Argument/Header/{itemId}.jpg";
+            argumentIndex.PathHeader = $"/Argument/Header/{id_argomento}.jpg";
 
-            return View(wrapperArgumentsPageModel);
+            argumentIndex.Descrizione = _argomentiRepository.GetArgumentDescriptionByIdArgument(id_argomento).FirstOrDefault();
+
+            argumentIndex.Id_Argomento = id_argomento;
+
+            return View(argumentIndex);
         }
         public IActionResult Article(string id_articolo)
         {
@@ -106,29 +109,20 @@ namespace GeopopRipoff.Controllers
         }
 
         [HttpPost]
-        public IActionResult PullDataFor9More()
+        public IActionResult PullDataFor9More([FromBody] string id_argomento)
         {
-            var argument = _articlesRepository.GetAllCustomers("Onlus");
+            ArgumentIndex argumentIndex = new ArgumentIndex();
 
-            List<ArgumentsPageModel> values = new List<ArgumentsPageModel>();
-
-            foreach (var item in argument)
+            foreach (var item in _articlesRepository.Get9ArticleByArgomento(id_argomento))
             {
-                var titolo = item.id_articolo;
-                var path = @$"{item.id_articolo}/{item.id_articolo}.jpg";
-
-                ArgumentsPageModel argumentsPageModel = new ArgumentsPageModel();
-                string imgPath = @$"/Argument/Onlus/{item.id_articolo}/{item.id_articolo}.jpg";
-                argumentsPageModel.ImgPath = imgPath;
-                argumentsPageModel.Title = item.id_articolo.ToString(); ;
-                values.Add(argumentsPageModel);
-
+                ContenutoArgumentArticle contenutoArgumentArticle = new ContenutoArgumentArticle();
+                contenutoArgumentArticle.ImgPath = @$"{item.Id_Contenuto}/{item.Id_Contenuto}.jpg";
+                contenutoArgumentArticle.Title = item.Id_Contenuto;
+                argumentIndex.Contenuti.Add(contenutoArgumentArticle);
             }
 
             // Converti l'oggetto in una stringa JSON e restituiscilo al client
-            return Content(JsonConvert.SerializeObject(values), "application/json");
+            return Content(JsonConvert.SerializeObject(argumentIndex), "application/json");
         }
-
-
     }
 }

@@ -18,13 +18,13 @@ public class GenericRepository
 
     public IEnumerable<T> Query<T>(string sql, object parameters = null)
     {
-        using (var connection = Connection)
-        {
-            if (connection.State == ConnectionState.Closed)
-                connection.Open();
 
-            return connection.Query<T>(sql, parameters);
-        }
+        var connection = _context.Database.GetDbConnection();
+        if (connection.State == ConnectionState.Closed)
+            connection.Open();
+
+        return connection.Query<T>(sql, parameters);
+
     }
 
     public object Execute(string sql, object parameters = null)

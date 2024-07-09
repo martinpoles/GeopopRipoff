@@ -1,6 +1,6 @@
-﻿@model GeopopRipoff.Models.WrapperArgumentsPageModel
+﻿@model GeopopRipoff.Models.Argument.ArgumentIndex
 
-<div class="col-12 main-corp parent-div-argument">
+<div class="col-12 main-corp-argument parent-div-argument">
 
     <div class="row utility-bar-argument children-div-argument">
 
@@ -131,27 +131,27 @@
 
         <div class="row container-class234" id="container-class234">
 
-            @for (int i = 0; i < Model.ArgumentsPageModel.Count; i += 9)
+            @for (int i = 0; i < Model.Contenuti.Count; i += 9)
             {
                 <div class="row class-432">
                     <div class="row class-2">
                         <div class="class-2-element">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                             {
-                                @Html.Hidden("ItemId", "1")
+                                @Html.Hidden("ItemId", Model.Contenuti[i].Title)
                                 <button class="invisible-button">
-                                    <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i].ImgPath">
-                                    <span>@Model.ArgumentsPageModel[i].Title</span>
+                                    <img src="/Argument/Onlus/@Model.Contenuti[i].ImgPath">
+                                    <span>@Model.Contenuti[i].Title</span>
                                 </button>
                             }
                         </div>
                         <div class="class-2-element">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                             {
-                                @Html.Hidden("ItemId", "1")
+                                @Html.Hidden("ItemId", Model.Contenuti[i+1].Title)
                                 <button class="invisible-button">
-                                    <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 1].ImgPath">
-                                    <span>@Model.ArgumentsPageModel[i + 1].Title</span>
+                                    <img src="/Argument/Onlus/@Model.Contenuti[i + 1].ImgPath">
+                                    <span>@Model.Contenuti[i + 1].Title</span>
                                 </button>
                             }
                         </div>
@@ -160,30 +160,30 @@
                         <div class="class-3-element">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                             {
-                                @Html.Hidden("ItemId", "1")
+                                @Html.Hidden("ItemId", Model.Contenuti[i+2].Title)
                                 <button class="invisible-button">
-                                    <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 2].ImgPath">
-                                    <span>@Model.ArgumentsPageModel[i + 2].Title</span>
+                                    <img src="/Argument/Onlus/@Model.Contenuti[i + 2].ImgPath">
+                                    <span>@Model.Contenuti[i + 2].Title</span>
                                 </button>
                             }
                         </div>
                         <div class="class-3-element">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                             {
-                                @Html.Hidden("ItemId", "1")
+                                @Html.Hidden("ItemId", Model.Contenuti[i+3].Title)
                                 <button class="invisible-button">
-                                    <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 3].ImgPath">
-                                    <span>@Model.ArgumentsPageModel[i + 3].Title</span>
+                                    <img src="/Argument/Onlus/@Model.Contenuti[i + 3].ImgPath">
+                                    <span>@Model.Contenuti[i + 3].Title</span>
                                 </button>
                             }
                         </div>
                         <div class="class-3-element">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                             {
-                                @Html.Hidden("ItemId", "1")
+                                @Html.Hidden("ItemId", Model.Contenuti[i+4].Title)
                                 <button class="invisible-button">
-                                    <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 4].ImgPath">
-                                    <span>@Model.ArgumentsPageModel[i + 4].Title</span>
+                                    <img src="/Argument/Onlus/@Model.Contenuti[i + 4].ImgPath">
+                                    <span>@Model.Contenuti[i + 4].Title</span>
                                 </button>
                             }
                         </div>
@@ -192,40 +192,40 @@
                         <div class="class-4-element">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                             {
-                                @Html.Hidden("ItemId", "1")
+                                @Html.Hidden("ItemId", Model.Contenuti[i+5].Title)
                                 <button class="invisible-button">
-                                    <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 5].ImgPath">
-                                    <span>@Model.ArgumentsPageModel[i + 5].Title</span>
+                                    <img src="/Argument/Onlus/@Model.Contenuti[i + 5].ImgPath">
+                                    <span>@Model.Contenuti[i + 5].Title</span>
                                 </button>
                             }
                         </div>
                         <div class="class-4-element">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                             {
-                                @Html.Hidden("ItemId", "1")
+                                @Html.Hidden("ItemId", Model.Contenuti[i+6].Title)
                                 <button class="invisible-button">
-                                    <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 6].ImgPath">
-                                    <span>@Model.ArgumentsPageModel[i + 6].Title</span>
+                                    <img src="/Argument/Onlus/@Model.Contenuti[i + 6].ImgPath">
+                                    <span>@Model.Contenuti[i + 6].Title</span>
                                 </button>
                             }
                         </div>
                         <div class="class-4-element">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                             {
-                                @Html.Hidden("ItemId", "1")
+                                @Html.Hidden("ItemId", Model.Contenuti[i +7].Title)
                                 <button class="invisible-button">
-                                    <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 7].ImgPath">
-                                    <span>@Model.ArgumentsPageModel[i + 7].Title</span>
+                                    <img src="/Argument/Onlus/@Model.Contenuti[i + 7].ImgPath">
+                                    <span>@Model.Contenuti[i + 7].Title</span>
                                 </button>
                             }
                         </div>
                         <div class="class-4-element">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                             {
-                                @Html.Hidden("ItemId", "1")
+                                @Html.Hidden("ItemId", Model.Contenuti[i + 8].Title)
                                 <button class="invisible-button">
-                                    <img src="/Argument/Onlus/@Model.ArgumentsPageModel[i + 8].ImgPath">
-                                    <span>@Model.ArgumentsPageModel[i + 8].Title</span>
+                                    <img src="/Argument/Onlus/@Model.Contenuti[i + 8].ImgPath">
+                                    <span>@Model.Contenuti[i + 8].Title</span>
                                 </button>
                             }
                         </div>
@@ -238,6 +238,7 @@
         <div class="row container-class234-extender" id="container-class234-extender"></div>
 
     </div>
+    
     <div class="row show-more children-div-argument">
         <button onclick="insertHtmlStructure()">Show More</button>
     </div>

@@ -4,6 +4,8 @@
 async function insertHtmlStructure() {
     const container = document.getElementById('container-class234-extender');
 
+    let param1 = JSON.parse(document.getElementById('modelData').dataset.model.Id_Argomento);
+
     let myData = await fetchAndProcessData();
 
     var g = popolaHTML(myData);
@@ -13,6 +15,7 @@ async function insertHtmlStructure() {
     resizeView();
 }
 function grab9More() {
+    
     // Esegui una richiesta fetch al server
     return fetch('/Argument/PullDataFor9More', {
         method: 'POST',

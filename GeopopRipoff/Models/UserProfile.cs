@@ -5,6 +5,5 @@ namespace GeopopRipoff.Models
         public string FacebookId { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-
     }
 }

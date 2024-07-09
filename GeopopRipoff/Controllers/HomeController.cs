@@ -11,6 +11,9 @@ using System.Xml.Serialization;
 using System.Xml;
 using GeopopRipoff.Utility;
 using GeopopRipoff.Repository;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.Identity.Client.Extensions.Msal;
+using GeopopRipoff.Models.Home;
 
 namespace GeopopRipoff.Controllers
 {
@@ -21,7 +24,6 @@ namespace GeopopRipoff.Controllers
         private readonly ArticlesRepository _articlesRepository;
         private readonly ArgomentiRepository _argomentiRepository;
 
-
         public HomeController(ILogger<HomeController> logger, ArticlesRepository articlesRepository, ArgomentiRepository argomentiRepository)
         {
             _logger = logger;
@@ -29,27 +31,16 @@ namespace GeopopRipoff.Controllers
             _argomentiRepository = argomentiRepository;
         }
 
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
         public IActionResult Index()
         {
-            HomeIndex homeIndex = new HomeIndex();
-
-
-            var storie = _articlesRepository.GetLast2WeekStories();
-            homeIndex.Stories = new List<Storie>();
-            foreach (var item in storie)
-            {
-                Storie storie1 = new Storie();
-
-                storie1.Id_Storie = item.id_articolo;
-
-                storie1.Relative_Path = @$"\Argument\{item.id_argomento}\{item.id_articolo}\{item.id_articolo}.jpg";
-
-
-                homeIndex.Stories.Add(storie1);
-            }
-            var argomenti = _argomentiRepository.GetAllActiveDocument("Onlus").ToList();
-            homeIndex.Id_argomenti = argomenti;
-            return View(homeIndex);
+            return View(GetIndexData());
         }
 
         public IActionResult Privacy()
@@ -57,20 +48,6 @@ namespace GeopopRipoff.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-        [HttpPost] 
-        public ActionResult Argument(string itemId)
-        {
-
-
-
-
-            return View();
-        }
         [HttpPost]
         public ActionResult Notifiche()
         {
@@ -79,6 +56,7 @@ namespace GeopopRipoff.Controllers
             //utilizzo il model per generare la view successiva
             return View();
         }
+
         [HttpPost]
         public ActionResult Menu(UserProfile userProfile = null)
         {
@@ -130,5 +108,38 @@ namespace GeopopRipoff.Controllers
             return View(document);
         }
 
+        private HomeIndex GetIndexData()
+        {
+            HomeIndex index = new HomeIndex();
+
+            //argomenti
+            index.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList();
+
+            //storie
+            var contenuto = _articlesRepository.GetLast2WeekStories();
+
+
+            for (int i = 0; i < contenuto.Count; i++)
+            {
+                Content contenuto1 = new Content();
+
+                contenuto1.IdContent = contenuto[i].id_contenuto;
+
+                contenuto1.Path = @$"\Argument\{contenuto[i].id_argomento}\{contenuto[i].id_contenuto}\{contenuto[i].id_contenuto}.jpg";
+
+                index.Storie.Add(contenuto1);
+                if (i <= 5)
+                {
+                    //show case
+                    index.ShowCase.Add(contenuto1);
+                }
+            }
+
+            //reels
+            //Da completare
+
+            return index;
+        }
+   
     }
 }

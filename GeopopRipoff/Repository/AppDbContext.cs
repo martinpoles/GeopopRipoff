@@ -10,11 +10,13 @@ namespace GeopopRipoff.Repository
 
         }
 
-        public DbSet<Argomenti> Argomenti { get; set; }
-        public DbSet<Articoli> Articoli { get; set; }
-        public DbSet<Autori> Autori { get; set; }
-        public DbSet<Argomenti_Articoli> Argomenti_Articoli { get; set; }
-        public DbSet<Articoli_Autori> Articoli_Autori { get; set; }
+        public DbSet<Contenuto> Contenuto { get; set; }
+        public DbSet<Argomento> Argomenti { get; set; }
+        public DbSet<Formato> Formato { get; set; }
+        public DbSet<Autore> Autore { get; set; }
+        public DbSet<ContenutoAutore> ContenutoAutore { get; set; }
+        public DbSet<ContenutoFormato> ContenutoFormato { get; set; }
+        public DbSet<ContenutoArgomento> ContenutoArgomento { get; set; }
 
     }
 }

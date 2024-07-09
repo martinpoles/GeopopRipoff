@@ -1,5 +1,4 @@
-﻿@model GeopopRipoff.Models.HomeIndex
-
+﻿@model GeopopRipoff.Models.Home.HomeIndex
 
 <div class="container">
     <div class="col-12 mainCorpo">
@@ -38,12 +37,12 @@
 
         <div class="row menuSelection">
 
-            @foreach (var item in Model.Id_argomenti)
+            @foreach (var item in Model.Argomenti)
             {
                 <div class="col-1 menuSelectionELEMENT">
                     @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                     {
-                        @Html.Hidden("Id_Argomento", @item.Id_Argomento)
+                        @Html.Hidden("id_argomento", @item.Id_Argomento)
                         <button class="w-100 h-100 invisible-button">@item.Id_Argomento</button>
                     }
                 </div>
@@ -57,50 +56,25 @@
 
                 <div class="carousel-inner w-100 h-100">
 
-                    <div class="carousel-item active w-100 h-100 show-case" style="position:relative">
-                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @id = "1_CauroselForm", @class = "text-overlay" }))
-                        {
-                            @Html.Hidden("ItemId", "1")
-                            <a href="javascript:void(0);" id="1_CauroselLink" class="link-text">LinkElemento</a>
-                        }
-                        <script>
-                            document.getElementById("1_CauroselLink").addEventListener("click", function () {
-                                document.getElementById("1_CauroselForm").submit();
-                            });
-                        </script>
-                        <img src="/Img/MS11.jpg" class="d-block w-100" alt="Slide 1">
-                    </div>
+                    @for (int i = 0; i < Model.ShowCase.Count; i++)
+                    {
+                        <div class="carousel-item @((i == 0) ? "active" : "") w-100 h-100 show-case" style="position:relative">
+                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { id = $"CarouselForm_{i}", @class = "text-overlay" }))
+                            {
+                                @Html.Hidden("ItemId", Model.ShowCase[i].IdContent)
+                                <a href="javascript:void(0);" id="@($"CarouselLink_{i}")" class="link-text">@Model.ShowCase[i].IdContent</a>
+                            }
 
-                    <div class="carousel-item w-100 h-100 show-case" style="position:relative">
-                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @id = "1_CauroselForm", @class = "text-overlay" }))
-                        {
-                            @Html.Hidden("ItemId", "2")
-                            <a href="javascript:void(0);" id="2_CauroselLink" class="link-text">LinkElemento</a>
-                        }
-                        <script>
-                            document.getElementById("2_CauroselLink").addEventListener("click", function () {
-                                document.getElementById("2_CauroselForm").submit();
-                            });
-                        </script>
-                        <img src="/Img/MS10.jpg" class="d-block w-100" alt="Slide 2">
-                    </div>
+                            <script>
+                                document.getElementById("@($"CarouselLink_{i}")").addEventListener("click", function () {
+                                    document.getElementById("@($"CarouselForm_{i}")").submit();
+                                });
+                            </script>
 
-                    <div class="carousel-item w-100 h-100 show-case" style="position:relative">
-                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @id = "1_CauroselForm", @class = "text-overlay" }))
-                        {
-                            @Html.Hidden("ItemId", "3")
-                            <a href="javascript:void(0);" id="3_CauroselLink" class="link-text">LinkElemento</a>
-                        }
-                        <script>
-                            document.getElementById("3_CauroselLink").addEventListener("click", function () {
-                                document.getElementById("3_CauroselForm").submit();
-                            });
-                        </script>
-                        <img src="/Img/MS3.jpg" class="d-block w-100" alt="Slide 3">
-                    </div>
-
+                            <img src="@Model.ShowCase[i].Path" class="d-block w-100" alt="Slide @(i + 1)">
+                        </div>
+                    }
                 </div>
-
 
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -116,82 +90,17 @@
 
         <div class="row stories-container">
 
-
-            @foreach (var item in Model.Stories)
+            @foreach (var storia in Model.Storie)
             {
                 @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
                 {
-                    @Html.Hidden("id_articolo", item.Id_Storie)
+                    @Html.Hidden("id_articolo", storia.IdContent)
                     <button class="invisible-button">
-                        <img src=@item.Relative_Path>
+                        <img src="@storia.Path">
                     </button>
                 }
             }
-@* 
-            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
-            {
-                @Html.Hidden("id_articolo", "Le Sfide della Povertà Urbana")
-                <button class="invisible-button">
-                    <img src="/Img/Img1.jpg">
-                </button>
-            }
-
-            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
-            {
-                @Html.Hidden("ItemId", "1")
-                <button class="invisible-button">
-                    <img src="/Img/Img1.jpg">
-                </button>
-            }
-
-            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
-            {
-                @Html.Hidden("ItemId", "1")
-                <button class="invisible-button">
-                    <img src="/Img/Img1.jpg">
-                </button>
-            }
-
-            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
-            {
-                @Html.Hidden("ItemId", "1")
-                <button class="invisible-button">
-                    <img src="/Img/Img1.jpg">
-                </button>
-            }
-
-            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
-            {
-                @Html.Hidden("ItemId", "1")
-                <button class="invisible-button">
-                    <img src="/Img/Img1.jpg">
-                </button>
-            }
-
-            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
-            {
-                @Html.Hidden("ItemId", "1")
-                <button class="invisible-button">
-                    <img src="/Img/Img1.jpg">
-                </button>
-            }
-
-            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
-            {
-                @Html.Hidden("ItemId", "1")
-                <button class="invisible-button">
-                    <img src="/Img/Img1.jpg">
-                </button>
-            }
-
-            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
-            {
-                @Html.Hidden("ItemId", "1")
-                <button class="invisible-button">
-                    <img src="/Img/Img1.jpg">
-                </button>
-            } *@
-
+           
         </div>
 
         <div class="row reelsStyle">
@@ -270,4 +179,3 @@
         </div>
     </div>
 </div>
-

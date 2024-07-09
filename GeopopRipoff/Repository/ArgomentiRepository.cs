@@ -12,13 +12,20 @@ namespace GeopopRipoff.Repository
             _genericRepository = genericRepository;
         }
 
-        public IEnumerable<Argomenti> GetAllActiveDocument(string id_argomento)
+        public IEnumerable<Argomento> GetAllActiveDocument()
         {
 
-            string qry = "SELECT id_argomento FROM argomenti" +
-                            " WHERE argomenti.fl_attivo = 1";
+            string qry = "SELECT id_argomento FROM argomenti";
 
-            return _genericRepository.Query<Argomenti>(qry);
+            return _genericRepository.Query<Argomento>(qry);
+        }
+        public IEnumerable<string> GetArgumentDescriptionByIdArgument(string id_argomento)
+        {
+
+            string qry = "SELECT argomenti.ds_argomento FROM argomenti" +
+                            $" WHERE argomenti.id_argomento = '{id_argomento}'";
+
+            return _genericRepository.Query<string>(qry);
         }
     }
 }
