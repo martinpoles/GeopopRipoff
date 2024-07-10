@@ -2,26 +2,28 @@
     resizeView()
 });
 async function insertHtmlStructure() {
-    const container = document.getElementById('container-class234-extender');
+    const container = document.getElementById('container-class234');
 
-    let param1 = JSON.parse(document.getElementById('modelData').dataset.model.Id_Argomento);
+    var personDataElement = document.getElementById('id-argomento');
+    var idArgomento = personDataElement.getAttribute('data-model');
 
-    let myData = await fetchAndProcessData();
+    let myData = await fetchAndProcessData(idArgomento);
 
-    var g = popolaHTML(myData);
+    var g = popolaHTML(myData.Contenuti);
 
-    container.innerHTML = g;
+   /* container.innerHTML = g;*/
+
+   container.appendChild(g)
 
     resizeView();
 }
-function grab9More() {
+function grab9More(id_argomento) {
     
     // Esegui una richiesta fetch al server
     return fetch('/Argument/PullDataFor9More', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        }
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id_argomento: id_argomento })
     })
         .then(response => {
             console.log('Response status:', response.status); // Debug: controlla lo stato della risposta
@@ -41,9 +43,9 @@ function grab9More() {
             throw error; // Rilancia l'errore per gestirlo in un altro punto
         });
 }
-async function fetchAndProcessData() {
+async function fetchAndProcessData(id_argomento) {
     try {
-        let data = await grab9More(); // Attendere che i dati siano ottenuti
+        let data = await grab9More(id_argomento); // Attendere che i dati siano ottenuti
         console.log('Dati ottenuti:', data);
         return data; // Ritorna i dati ottenuti
     } catch (error) {
@@ -51,101 +53,6 @@ async function fetchAndProcessData() {
         // Gestisci l'errore qui, ad esempio mostrando un messaggio all'utente
         return [];
     }
-}
-function popolaHTML(myData) {
-    var html = `<div class="row class-432">
-    <div class="row class-2">
-        <div class="class-2-element">
-            <form action="/Argument/Article" method="post" class="w-100 h-100">
-                <input type="hidden" name="ItemId" value="${myData[0].Title}">
-                <button type="submit" class="invisible-button">
-                    <img src="${myData[0].ImgPath}" alt="Immagine">
-                    <span>${myData[0].Title} </span>
-                </button>
-            </form>
-        </div>
-        <div class="class-2-element">
-            <form action="/Argument/Article" method="post" class="w-100 h-100">
-                <input type="hidden" name="ItemId" value="${myData[1].Title}">
-                <button type="submit" class="invisible-button">
-                    <img src="${myData[1].ImgPath}" alt="Immagine">
-                    <span>${myData[1].Title} </span>
-                </button>
-            </form>
-        </div>
-    </div>
-    <div class="row class-3">
-        <div class="class-3-element">
-            <form action="/Argument/Article" method="post" class="w-100 h-100">
-                <input type="hidden" name="ItemId" value="${myData[2].Title}">
-                <button type="submit" class="invisible-button">
-                    <img src="${myData[2].ImgPath}" alt="Immagine">
-                    <span>${myData[2].Title} </span>
-                </button>
-            </form>
-        </div>
-        <div class="class-3-element">
-           <form action="/Argument/Article" method="post" class="w-100 h-100">
-                <input type="hidden" name="ItemId" value="${myData[3].Title}">
-                <button type="submit" class="invisible-button">
-                    <img src="${myData[3].ImgPath}" alt="Immagine">
-                    <span>${myData[3].Title} </span>
-                </button>
-            </form>
-        </div>
-        <div class="class-3-element">
-           <form action="/Argument/Article" method="post" class="w-100 h-100">
-                <input type="hidden" name="ItemId" value="${myData[4].Title}">
-                <button type="submit" class="invisible-button">
-                    <img src="${myData[4].ImgPath}" alt="Immagine">
-                    <span>${myData[4].Title} </span>
-                </button>
-            </form>
-        </div>
-    </div>
-    <div class="row class-4">
-        <div class="class-4-element">
-           <form action="/Argument/Article" method="post" class="w-100 h-100">
-                <input type="hidden" name="ItemId" value="${myData[5].Title}">
-                <button type="submit" class="invisible-button">
-                    <img src="${myData[5].ImgPath}" alt="Immagine">
-                    <span>${myData[5].Title} </span>
-                </button>
-            </form>
-        </div>
-        <div class="class-4-element">
-            <form action="/Argument/Article" method="post" class="w-100 h-100">
-                <input type="hidden" name="ItemId" value="${myData[6].Title}">
-                <button type="submit" class="invisible-button">
-                    <img src="${myData[6].ImgPath}" alt="Immagine">
-                    <span>${myData[6].Title} </span>
-                </button>
-            </form>
-        </div>
-        <div class="class-4-element">
-            <form action="/Argument/Article" method="post" class="w-100 h-100">
-                <input type="hidden" name="ItemId" value="${myData[7].Title}">
-                <button type="submit" class="invisible-button">
-                    <img src="${myData[7].ImgPath}" alt="Immagine">
-                    <span>${myData[7].Title} </span>
-                </button>
-            </form>
-        </div>
-        <div class="class-4-element">
-            <form action="/Argument/Article" method="post" class="w-100 h-100">
-                <input type="hidden" name="ItemId" value="${myData[8].Title}">
-                <button type="submit" class="invisible-button">
-                    <img src="${myData[8].ImgPath}" alt="Immagine">
-                    <span>${myData[8].Title} </span>
-                </button>
-            </form>
-        </div>
-    </div>
-</div>`;
-
-
-    // Ritorna la stringa HTML completa
-    return html;
 }
 function resizeView() {
     // Individua tutte le div con la classe 'child-div'
@@ -163,4 +70,95 @@ function resizeView() {
     // Imposta l'altezza totale alla div padre
     const parentDiv = document.querySelector('.parent-div-argument');
     parentDiv.style.height = totalHeight + 'px';
+}
+function popolaHTML(myData) {
+    // Creazione degli elementi del DOM
+    const container = document.createElement('div');
+    container.className = 'row class-432';
+
+    // Primo blocco di elementi
+    const row2 = document.createElement('div');
+    row2.className = 'row class-2';
+
+    for (let i = 0; i < 2 && i < myData.length; i++) {
+        const element = createDivElement(myData[i], 'class-2');
+        row2.appendChild(element);
+    }
+
+    container.appendChild(row2);
+
+    // Secondo blocco di elementi
+    const row3 = document.createElement('div');
+    row3.className = 'row class-3';
+
+    for (let i = 2; i < 5 && i < myData.length; i++) {
+        const element = createDivElement(myData[i], 'class-3');
+        row3.appendChild(element);
+    }
+
+    container.appendChild(row3);
+
+    // Terzo blocco di elementi
+    const row4 = document.createElement('div');
+    row4.className = 'row class-4';
+
+    for (let i = 5; i < 9 && i < myData.length; i++) {
+        const element = createDivElement(myData[i], 'class-4');
+        row4.appendChild(element);
+    }
+
+    container.appendChild(row4);
+
+    // Ritorna il contenitore completo
+    return container;
+}
+function createDivElement(data, type) {
+    const div = document.createElement('div');
+
+    className = '0'
+
+    switch (type) {
+        case 'class-2':
+            className = 'class-2-element';
+            break;
+        case 'class-3':
+            className = 'class-3-element';
+            break;
+        case 'class-4':
+            className = 'class-4-element';
+            break;
+    }
+
+    div.className = className;
+
+    const form = document.createElement('form');
+    form.action = '/Argument/Article';
+    form.method = 'post';
+    form.className = 'w-100 h-100';
+
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = 'ItemId';
+    input.value = data.Title;
+
+    const button = document.createElement('button');
+    button.type = 'submit';
+    button.className = 'invisible-button';
+
+    const img = document.createElement('img');
+    img.src = data.ImgPath;
+    img.alt = 'Immagine';
+
+    const span = document.createElement('span');
+    span.textContent = data.Title;
+
+    button.appendChild(img);
+    button.appendChild(span);
+
+    form.appendChild(input);
+    form.appendChild(button);
+
+    div.appendChild(form);
+
+    return div;
 }

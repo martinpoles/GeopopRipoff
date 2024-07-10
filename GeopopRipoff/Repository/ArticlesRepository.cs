@@ -16,14 +16,15 @@ namespace GeopopRipoff.Repository
         public IEnumerable<Contenuto> Get9ArticleByArgomento(string id_argomento)
         {
 
-            string qry = "SELECT top 9 contenuti.id_contenuto" 
-                            + " FROM contenuti"
-                            + " JOIN contenuti_argomenti ON contenuti.oid = contenuti_argomenti.oid_contenuto"
-                            + " JOIN contenuti_formati ON contenuti.oid = contenuti_formati.oid_contenuto"
-                            + " JOIN argomenti ON contenuti_argomenti.oid_argomento = argomenti.oid"
-                            + " JOIN formati ON contenuti_formati.oid_formato = formati.oid"
-                            + $" WHERE argomenti.id_argomento = '{id_argomento}'"
-                            + " AND formati.id_formato = 'Articolo'";
+            string qry = "SELECT top 9 contenuti.id_contenuto"
+                         + " FROM contenuti"
+                         + " JOIN contenuti_argomenti ON contenuti.oid = contenuti_argomenti.oid_contenuto"
+                         + " JOIN contenuti_formati ON contenuti.oid = contenuti_formati.oid_contenuto"
+                         + " JOIN argomenti ON contenuti_argomenti.oid_argomento = argomenti.oid"
+                         + " JOIN formati ON contenuti_formati.oid_formato = formati.oid"
+                         + $" WHERE argomenti.id_argomento = '{id_argomento}'"
+                         + " AND formati.id_formato = 'Articolo'"
+                         + " ORDER BY contenuti.dt_pubblicazione DESC";
 
             return _genericRepository.Query<Contenuto>(qry);
         }

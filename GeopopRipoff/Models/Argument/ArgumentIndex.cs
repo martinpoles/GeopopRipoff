@@ -20,4 +20,9 @@
         public string Title { get; set; }
     }
 
+    public class TrashBag
+    {
+        public string id_argomento { get; set; }
+    }
+
 }

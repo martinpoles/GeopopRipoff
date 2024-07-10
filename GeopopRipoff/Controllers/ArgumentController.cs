@@ -109,14 +109,14 @@ namespace GeopopRipoff.Controllers
         }
 
         [HttpPost]
-        public IActionResult PullDataFor9More([FromBody] string id_argomento)
+        public IActionResult PullDataFor9More([FromBody] TrashBag trashBag)
         {
             ArgumentIndex argumentIndex = new ArgumentIndex();
 
-            foreach (var item in _articlesRepository.Get9ArticleByArgomento(id_argomento))
+            foreach (var item in _articlesRepository.Get9ArticleByArgomento(trashBag.id_argomento))
             {
                 ContenutoArgumentArticle contenutoArgumentArticle = new ContenutoArgumentArticle();
-                contenutoArgumentArticle.ImgPath = @$"{item.Id_Contenuto}/{item.Id_Contenuto}.jpg";
+                contenutoArgumentArticle.ImgPath = @$"/Argument/{trashBag.id_argomento}/{item.Id_Contenuto}/{item.Id_Contenuto}.jpg";
                 contenutoArgumentArticle.Title = item.Id_Contenuto;
                 argumentIndex.Contenuti.Add(contenutoArgumentArticle);
             }
