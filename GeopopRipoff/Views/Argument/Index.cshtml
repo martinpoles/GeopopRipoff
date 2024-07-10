@@ -35,91 +35,16 @@
     </div>
 
     <div class="row menu-selection-argument children-div-argument">
-
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "1")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
-
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "2")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
-
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "3")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
-
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "4")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
-
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "5")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "6")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "7")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "8")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
-
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "8")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
-
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "8")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
-
-        <div class="col-1 menuSelectionELEMENT">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-            {
-                @Html.Hidden("ItemId", "8")
-                <button class="w-100 h-100 invisible-button">Argument2</button>
-            }
-        </div>
+        @foreach (var item in Model.Argomenti)
+        {
+            <div class="col-1 menuSelectionELEMENT">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                {
+                    @Html.Hidden("id_argomento", @item.Id_Argomento)
+                    <button class="w-100 h-100 invisible-button">@item.Id_Argomento</button>
+                }
+            </div>
+        }
     </div>
 
     <div class="row argument-display-header children-div-argument" id="id-argomento" data-model="@Html.Raw(Model.Id_Argomento)">

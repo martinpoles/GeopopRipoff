@@ -10,6 +10,7 @@ namespace GeopopRipoff.Models
     [XmlRoot("article")]
     public class ArticleXml
     {
+
         [XmlElement("title")]
         public string Title { get; set; }
 
