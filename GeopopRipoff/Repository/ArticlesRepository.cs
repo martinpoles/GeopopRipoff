@@ -62,7 +62,7 @@ namespace GeopopRipoff.Repository
         public List<Content> GetLast5Reels()
         {
 
-            string qry = " SELECT contenuti.id_contenuto"
+            string qry = " SELECT contenuti.id_contenuto, argomenti.id_argomento"
                         + " FROM contenuti"
                         + " JOIN contenuti_argomenti ON contenuti.oid = contenuti_argomenti.oid_contenuto"
                         + " JOIN contenuti_formati ON contenuti.oid = contenuti_formati.oid_contenuto"

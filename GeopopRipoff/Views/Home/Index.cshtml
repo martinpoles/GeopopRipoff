@@ -62,6 +62,7 @@
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { id = $"CarouselForm_{i}", @class = "text-overlay" }))
                             {
                                 @Html.Hidden("id_articolo", Model.ShowCase[i].Id_Contenuto)
+                                @Html.Hidden("id_argomento", Model.ShowCase[i].Id_Argomento)
                                 <a href="javascript:void(0);" id="@($"CarouselLink_{i}")" class="link-text">@Model.ShowCase[i].Id_Contenuto</a>
                             }
 
@@ -95,6 +96,7 @@
                 @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
                 {
                     @Html.Hidden("id_articolo", storia.Id_Contenuto)
+                    @Html.Hidden("id_argomento", storia.Id_Argomento)
                     <button class="invisible-button">
                         <img src="@storia.Path">
                     </button>

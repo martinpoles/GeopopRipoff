@@ -31,7 +31,7 @@ namespace GeopopRipoff.Controllers
             foreach (var item in _articlesRepository.Get9ArticleByArgomento(id_argomento))
             {
                 ContenutoArgumentArticle contenutoArgumentArticle = new ContenutoArgumentArticle();
-                contenutoArgumentArticle.ImgPath = @$"{item.Id_Contenuto}/{item.Id_Contenuto}.jpg";
+                contenutoArgumentArticle.ImgPath = @$"/Argument/{id_argomento}/{item.Id_Contenuto}/{item.Id_Contenuto}_1.jpg";
                 contenutoArgumentArticle.Title = item.Id_Contenuto;
                 argumentIndex.Contenuti.Add(contenutoArgumentArticle);
             }
@@ -44,14 +44,14 @@ namespace GeopopRipoff.Controllers
 
             return View(argumentIndex);
         }
-        public IActionResult Article(string id_articolo)
+        public IActionResult Article(string id_articolo, string id_argomento)
         {
             //recupero da db 
             var argument = _articlesRepository.GetArticleByIdArticle(id_articolo);
 
-            var pathRoot = @$"C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff\wwwroot\Argument\Onlus\{id_articolo}";
+            var pathRoot = @$"C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff\wwwroot\Argument\{id_argomento}\{id_articolo}";
 
-            var pathXml = @$"C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff\wwwroot\Argument\Onlus\{id_articolo}\{id_articolo}.xml";
+            var pathXml = @$"C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff\wwwroot\Argument\{id_argomento}\{id_articolo}\{id_articolo}.xml";
 
 
             string[] fileNames = Directory.GetFiles(pathRoot);
@@ -116,7 +116,7 @@ namespace GeopopRipoff.Controllers
             foreach (var item in _articlesRepository.Get9ArticleByArgomento(trashBag.id_argomento))
             {
                 ContenutoArgumentArticle contenutoArgumentArticle = new ContenutoArgumentArticle();
-                contenutoArgumentArticle.ImgPath = @$"/Argument/{trashBag.id_argomento}/{item.Id_Contenuto}/{item.Id_Contenuto}.jpg";
+                contenutoArgumentArticle.ImgPath = @$"/Argument/{trashBag.id_argomento}/{item.Id_Contenuto}/{item.Id_Contenuto}_1.jpg";
                 contenutoArgumentArticle.Title = item.Id_Contenuto;
                 argumentIndex.Contenuti.Add(contenutoArgumentArticle);
             }

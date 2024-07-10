@@ -127,6 +127,8 @@ namespace GeopopRipoff.Controllers
 
                 contenuto1.Path = @$"\Argument\{contenuto[i].id_argomento}\{contenuto[i].id_contenuto}\{contenuto[i].id_contenuto}_1.jpg";
 
+                contenuto1.Id_Argomento = contenuto[i].id_argomento;
+
                 index.Storie.Add(contenuto1);
                 if (i <= 5)
                 {

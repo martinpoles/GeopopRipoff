@@ -138,7 +138,7 @@ function createDivElement(data, type) {
 
     const input = document.createElement('input');
     input.type = 'hidden';
-    input.name = 'ItemId';
+    input.name = 'id_articolo';
     input.value = data.Title;
 
     const button = document.createElement('button');

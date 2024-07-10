@@ -11,6 +11,9 @@ using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.Net;
+using GeopopRipoff.Repository;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using GeopopRipoff.Models.Menu;
 
 namespace GeopopRipoff.Controllers
 {
@@ -18,15 +21,21 @@ namespace GeopopRipoff.Controllers
     {
         private readonly ILogger<MenuController> _logger;
 
-        public MenuController(ILogger<MenuController> logger)
+        private readonly ArticlesRepository _articlesRepository;
+        private readonly ArgomentiRepository _argomentiRepository;
+        public MenuController(ILogger<MenuController> logger, ArticlesRepository articlesRepository, ArgomentiRepository argomentiRepository)
         {
             _logger = logger;
+            _articlesRepository = articlesRepository;
+            _argomentiRepository = argomentiRepository;
         }
-
         public IActionResult Index(string oid)
         {
+            MenuIndex  menuIndex = new MenuIndex();
 
-            return View();
+            menuIndex.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList();
+            
+            return View(menuIndex);
         }
     }
 }

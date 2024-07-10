@@ -7,8 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\js\Shared\**" />
+    <Content Remove="wwwroot\js\Shared\**" />
+    <EmbeddedResource Remove="wwwroot\js\Shared\**" />
+    <None Remove="wwwroot\js\Shared\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\css\Menu\" />
-    <Folder Include="wwwroot\js\Shared\" />
     <Folder Include="wwwroot\TrashTemp\" />
     <Folder Include="wwwroot\Video\" />
   </ItemGroup>

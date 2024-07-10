@@ -1,4 +1,4 @@
-﻿@model GeopopRipoff.Models.UserProfile;
+﻿@model GeopopRipoff.Models.Menu.MenuIndex;
 
 
 <div class="row" style="height:100vh; width:100%; position:relative; top:50px">
@@ -68,6 +68,21 @@
 
         <div class="flexbox-try">
 
+
+            @foreach (var item in Model.Argomenti)
+            {
+
+                <div class="grid-item-menu">
+                    @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+                    {
+                        @Html.Hidden("id_argomento", item.Id_Argomento)
+                        <button class="invisible-button">
+                            <h1>@item.Id_Argomento</h1>
+                        </button>
+                    }
+                </div>
+            }
+@* 
             <div class="grid-item-menu">
                 @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
                 {
@@ -148,16 +163,7 @@
                         <h1>Argomento</h1>
                     </button>
                 }
-            </div>
-            <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                {
-                    @Html.Hidden("ItemId", "1")
-                    <button class="invisible-button">
-                        <h1>Argomento</h1>
-                    </button>
-                }
-            </div>
+            </div> *@
 
         </div>
 

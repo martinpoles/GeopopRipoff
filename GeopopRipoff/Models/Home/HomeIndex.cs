@@ -19,6 +19,7 @@
     public class Content
     {
         public string Id_Contenuto { get; set; }
+        public string Id_Argomento {  get; set; }
         public string Path { get; set; }
     }
 
