@@ -124,31 +124,42 @@
         </div>
 
         <div class="container-flexbox-article children-div-argument">
-            
-   @*          <div class="row">
-                <div class="new-entry-article">dasdadadada</div>
-            </div>
- *@
+
             <div class="row">
                 <h1>@Model.Title</h1>
                 <h3>@Model.Header</h3>
             </div>
 
-            @foreach (var item in Model.Chapters)
+            @for (int i = 0; i < Model.Chapters.Count; i++)
             {
-                <div class="row">
-                    <h3>@item.Subtitle</h3>
-                    <h5>@item.Content</h5>
+                <div class="row @(i % 2 == 0 ? "right-text" : "left-text")">
+                    <div class="text-article">
+                        <h3>@Model.Chapters[i].Subtitle</h3>
+                        <h5>@Model.Chapters[i].Content</h5>
+                    </div>
+                    <div class="image-article">
+                        <img class="immagine" src="@Model.Chapters[i].SubImgPath" alt="img">
+                    </div>
                 </div>
 
-                <div class="row">
-                    <img src="@item.SubImgPath" alt="img">
-
-                </div>
             }
 
+
+            @* @foreach (var item in Model.Chapters)
+            {
+            <div class="row">
+            <h3>@item.Subtitle</h3>
+            <h5>@item.Content</h5>
+            </div>
+
+            <div class="row">
+            <img src="@item.SubImgPath" alt="img">
+
+            </div>
+            } *@
+
         </div>
-   
+
     </div>
 </div>
 

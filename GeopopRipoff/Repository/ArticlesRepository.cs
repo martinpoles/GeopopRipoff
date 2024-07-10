@@ -58,5 +58,28 @@ namespace GeopopRipoff.Repository
             return list;
         }
 
+
+        public List<Content> GetLast5Reels()
+        {
+
+            string qry = " SELECT contenuti.id_contenuto"
+                        + " FROM contenuti"
+                        + " JOIN contenuti_argomenti ON contenuti.oid = contenuti_argomenti.oid_contenuto"
+                        + " JOIN contenuti_formati ON contenuti.oid = contenuti_formati.oid_contenuto"
+                        + " JOIN argomenti ON contenuti_argomenti.oid_argomento = argomenti.oid"
+                        + " JOIN formati ON contenuti_formati.oid_formato = formati.oid"
+                        + " WHERE formati.id_formato = 'Reels'"
+                        + " ORDER BY contenuti.dt_pubblicazione DESC";
+
+
+            List<Content> list = _genericRepository.Query<Content>(qry).ToList();
+
+            return list;
+        }
+
+
+
+
+        
     }
 }

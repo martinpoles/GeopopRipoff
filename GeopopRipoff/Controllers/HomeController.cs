@@ -123,7 +123,7 @@ namespace GeopopRipoff.Controllers
             {
                 Content contenuto1 = new Content();
 
-                contenuto1.IdContent = contenuto[i].id_contenuto;
+                contenuto1.Id_Contenuto = contenuto[i].id_contenuto;
 
                 contenuto1.Path = @$"\Argument\{contenuto[i].id_argomento}\{contenuto[i].id_contenuto}\{contenuto[i].id_contenuto}_1.jpg";
 
@@ -136,10 +136,20 @@ namespace GeopopRipoff.Controllers
             }
 
             //reels
+            var reels = _articlesRepository.GetLast5Reels();
+
+            foreach (var reel in reels)
+            {
+                Content cont = new Content();
+                cont.Id_Contenuto = reel.Id_Contenuto;
+
+                cont.Path = @$"\Video\{reel.Id_Contenuto}.mp4";
+                index.Reels.Add(cont);
+            }
             //Da completare
 
             return index;
         }
-   
+
     }
 }

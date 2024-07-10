@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Rb/Jl4mvMnfSuOzNVzaEUkT/t2WAY88+E+kaJRcvIhI=",
+  "Hash": "Lrhot5CQ6/YMalGNZ4KKvPUtfzm0K2bat0FdqylL4HM=",
   "Source": "GeopopRipoff",
   "BasePath": "_content/GeopopRipoff",
   "Mode": "Default",
@@ -3627,12 +3627,12 @@
       "OriginalItemSpec": "wwwroot\\TrashTemp\\tempXML.xml"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test1.mp4",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.mp4",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Video/Test1.mp4",
+      "RelativePath": "Video/Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.mp4",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3643,15 +3643,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Video\\Test1.mp4"
+      "OriginalItemSpec": "wwwroot\\Video\\Il Ruolo della Giustizia Sociale nella Lotta contro la Povertà.mp4"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test2.mp4",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.mp4",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Video/Test2.mp4",
+      "RelativePath": "Video/L Accesso all Acqua Potabile come Diritto Umano Fondamentale.mp4",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3662,15 +3662,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Video\\Test2.mp4"
+      "OriginalItemSpec": "wwwroot\\Video\\L Accesso all Acqua Potabile come Diritto Umano Fondamentale.mp4"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test3.mp4",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\L Emergenza Alimentare e il Ruolo delle Onlus.mp4",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Video/Test3.mp4",
+      "RelativePath": "Video/L Emergenza Alimentare e il Ruolo delle Onlus.mp4",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3681,15 +3681,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Video\\Test3.mp4"
+      "OriginalItemSpec": "wwwroot\\Video\\L Emergenza Alimentare e il Ruolo delle Onlus.mp4"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test4.mp4",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\L Impatto della Povertà sulle Comunità Migranti.mp4",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Video/Test4.mp4",
+      "RelativePath": "Video/L Impatto della Povertà sulle Comunità Migranti.mp4",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3700,15 +3700,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Video\\Test4.mp4"
+      "OriginalItemSpec": "wwwroot\\Video\\L Impatto della Povertà sulle Comunità Migranti.mp4"
     },
     {
-      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\Test5.mp4",
+      "Identity": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\Video\\La Povertà e la Salute Un Circolo Vizioso.mp4",
       "SourceId": "GeopopRipoff",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\",
       "BasePath": "_content/GeopopRipoff",
-      "RelativePath": "Video/Test5.mp4",
+      "RelativePath": "Video/La Povertà e la Salute Un Circolo Vizioso.mp4",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3719,7 +3719,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Video\\Test5.mp4"
+      "OriginalItemSpec": "wwwroot\\Video\\La Povertà e la Salute Un Circolo Vizioso.mp4"
     }
   ]
 }
