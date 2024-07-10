@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using GeopopRipoff.Models.Home;
+using System.Xml.Serialization;
 
 namespace GeopopRipoff.Models
 {
@@ -26,15 +27,15 @@ namespace GeopopRipoff.Models
         [XmlElement("subtitle")]
         public string Subtitle { get; set; }
 
-        [XmlElement("chapter")]
-        public string Chapter { get; set; }
+        [XmlElement("content")]
+        public string Content { get; set; }
 
         public string SubImgPath { get; set; }
 
-        public Chapters(string subtitle, string chapter, string subImgPath = null)
+        public Chapters(string subtitle, string content, string subImgPath = null)
         {
             Subtitle = subtitle;
-            Chapter = chapter;
+            Content = content;
             SubImgPath = subImgPath;
         }
     }

@@ -61,7 +61,7 @@
                         <div class="carousel-item @((i == 0) ? "active" : "") w-100 h-100 show-case" style="position:relative">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { id = $"CarouselForm_{i}", @class = "text-overlay" }))
                             {
-                                @Html.Hidden("ItemId", Model.ShowCase[i].IdContent)
+                                @Html.Hidden("id_articolo", Model.ShowCase[i].IdContent)
                                 <a href="javascript:void(0);" id="@($"CarouselLink_{i}")" class="link-text">@Model.ShowCase[i].IdContent</a>
                             }
 

@@ -95,11 +95,11 @@ namespace GeopopRipoff.Controllers
                 {
                     if (i < fileList.Count)
                     {
-                        article.Chapters.Add(new Chapters(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("chapter")?.InnerText, fileList[i]));
+                        article.Chapters.Add(new Chapters(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("content")?.InnerText, fileList[i]));
                     }
                     else
                     {
-                        article.Chapters.Add(new Chapters(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("chapter")?.InnerText));
+                        article.Chapters.Add(new Chapters(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("content")?.InnerText));
                     }
                     i++;
                 }
