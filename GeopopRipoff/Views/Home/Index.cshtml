@@ -61,8 +61,8 @@
                         <div class="carousel-item @((i == 0) ? "active" : "") w-100 h-100 show-case" style="position:relative">
                             @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { id = $"CarouselForm_{i}", @class = "text-overlay" }))
                             {
-                                @Html.Hidden("id_articolo", Model.ShowCase[i].IdContent)
-                                <a href="javascript:void(0);" id="@($"CarouselLink_{i}")" class="link-text">@Model.ShowCase[i].IdContent</a>
+                                @Html.Hidden("id_articolo", Model.ShowCase[i].Id_Contenuto)
+                                <a href="javascript:void(0);" id="@($"CarouselLink_{i}")" class="link-text">@Model.ShowCase[i].Id_Contenuto</a>
                             }
 
                             <script>
@@ -94,7 +94,7 @@
             {
                 @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
                 {
-                    @Html.Hidden("id_articolo", storia.IdContent)
+                    @Html.Hidden("id_articolo", storia.Id_Contenuto)
                     <button class="invisible-button">
                         <img src="@storia.Path">
                     </button>
@@ -109,7 +109,24 @@
 
                 <div class="flash-stories" id="flash-stories">
 
-                    <div class="grid-item-reels">
+                    @foreach (var item in Model.Reels)
+                    {
+                        <div class="grid-item-reels">
+                            @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                            {
+                                @Html.Hidden("id_reels", item.Id_Contenuto)
+                                <button class="invisible-button w-100 h-100">
+                                    <video id="thumbnail-video" class="thumbnail-video" muted="true" loop="true">
+                                        <source src="@item.Path" type="video/mp4">
+                                    </video>
+                                </button>
+                            }
+                        </div>
+                    }
+
+
+
+                    @* <div class="grid-item-reels">
                         @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
                         {
                             @Html.Hidden("ItemId", "1")
@@ -168,7 +185,9 @@
                             </button>
                         }
 
-                    </div>
+                    </div> *@
+
+
                 </div>
 
             </div>

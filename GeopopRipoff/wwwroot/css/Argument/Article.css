@@ -35,11 +35,38 @@
 .container-flexbox-article{
     position:absolute;
     top:130px;
-    width:auto;
+    width:100%;
     height:auto;
 }
 
-.new-entry-article{
-    position:absolute;
-   
+
+
+
+.right-text .image-article {
+    order: 2;
 }
+
+.right-text .text-article {
+    order: 1;
+}
+
+.right-text .image-article {
+    order: 1;
+}
+
+.right-text .text-article {
+    order: 2;
+}
+
+
+.text-article{
+    width:60%;
+}
+
+.image-article{
+    width:40%;
+}
+
+    .image-article .immagine {
+        width: 100%;
+    }
