@@ -1,0 +1,79 @@
+.mainCorpo {
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 10px solid #39FF14;
+    border-radius: 30px;
+    top: 50px;
+    margin-bottom: 50px;
+}
+
+.utility-bar {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    height: 75px;
+    border-bottom: 3px solid #39FF14;
+    max-height:75px;
+}
+
+.titleImg {
+    border-radius: 20px 0 0 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem
+}
+
+.searchBar {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.notificationsBell {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.specMenu {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.menuSelection {
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    height: 43px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 43px;
+}
+
+.menuSelectionELEMENT {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px !important;
+    padding: 5px 20px 5px 20px !important;
+    flex: 0 0 auto !important;
+}
+
+.render-body-container{
+    display:flex;
+    position:absolute;
+    width:100%;
+    height:92%;
+    padding:0px;
+    margin:0px !important; 
+    top:120px;
+}

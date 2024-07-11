@@ -57,29 +57,10 @@ function adjustWidth() {
     const parentDiv = document.getElementsByClassName('stories-container');
     const childDivs = document.getElementsByClassName('stories-element');
 
-    targetHeight = parentDiv[0].offsetHeight - (parentDiv[0].offsetHeight *0.2)
+    targetHeight = parentDiv[0].offsetHeight - (parentDiv[0].offsetHeight *0.2) -20
 
     for (var i = 0; i < childDivs.length; i++) {
         childDivs[i].style.height = `${targetHeight}px`;
         childDivs[i].style.width = `${targetHeight}px`;
     }
-
-}
-
-function resizeView() {
-    // Individua tutte le div con la classe 'child-div'
-    const childDivs = document.querySelectorAll('.children-div-home');
-    let totalHeight = 75;
-
-    // Calcola la somma delle altezze delle div
-    childDivs.forEach(div => {
-        console.log(div.name, div.offsetHeight)
-        totalHeight += div.offsetHeight;
-    });
-
-    console.log(totalHeight)
-
-    // Imposta l'altezza totale alla div padre
-    const parentDiv = document.querySelector('.parent-div-home');
-    parentDiv.style.height = totalHeight + 'px';
 }

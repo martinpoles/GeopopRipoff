@@ -1,7 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", function () {
-    resizeView()
-});
-async function insertHtmlStructure() {
+﻿async function insertHtmlStructure() {
     const container = document.getElementById('container-class234');
 
     var personDataElement = document.getElementById('id-argomento');
@@ -16,6 +13,7 @@ async function insertHtmlStructure() {
    container.appendChild(g)
 
     resizeView();
+    fixShowMore();
 }
 function grab9More(id_argomento) {
     
@@ -53,23 +51,6 @@ async function fetchAndProcessData(id_argomento) {
         // Gestisci l'errore qui, ad esempio mostrando un messaggio all'utente
         return [];
     }
-}
-function resizeView() {
-    // Individua tutte le div con la classe 'child-div'
-    const childDivs = document.querySelectorAll('.children-div-argument');
-    let totalHeight = 75;
-
-    // Calcola la somma delle altezze delle div
-    childDivs.forEach(div => {
-        console.log(div.name, div.offsetHeight)
-        totalHeight += div.offsetHeight;
-    });
-
-    console.log(totalHeight)
-
-    // Imposta l'altezza totale alla div padre
-    const parentDiv = document.querySelector('.parent-div-argument');
-    parentDiv.style.height = totalHeight + 'px';
 }
 function popolaHTML(myData, idArgomento) {
     // Creazione degli elementi del DOM
@@ -168,4 +149,30 @@ function createDivElement(data, type, idArgomento) {
     div.appendChild(form);
 
     return div;
+}
+function resizeView() {
+    const childDivs = document.querySelectorAll('.children-div-all');
+    let totalHeight = 125;
+
+    childDivs.forEach(div => {
+        totalHeight += div.offsetHeight;
+        console.log(div.className, div.offsetHeight, "boh")
+    });
+
+    const parentDiv = document.querySelector('.parent-div-all');
+    parentDiv.style.height = totalHeight + 'px';
+    console.log("resizeView".totalHeight);
+}
+
+function fixShowMore() {
+    const mainCorpo = document.querySelector('.mainCorpo');
+    const utilityBar = document.querySelector('.utility-bar');
+    const menuSelection = document.querySelector('.menuSelection');
+    const renderBodyContainer = document.querySelector('.render-body-container');
+
+    let totaleMenoDefault = mainCorpo.offsetHeight - utilityBar.offsetHeight - menuSelection.offsetHeight
+
+    renderBodyContainer.style.height = totaleMenoDefault + 'px';
+
+
 }

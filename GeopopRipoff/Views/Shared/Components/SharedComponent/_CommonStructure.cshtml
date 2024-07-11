@@ -1,0 +1,12 @@
+﻿@model GeopopRipoff.Models.Shared.CommonStructure
+
+@foreach (var item in Model.Argomenti)
+{
+    <div class="col-1 menuSelectionELEMENT">
+        @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+        {
+            @Html.Hidden("id_argomento", item.Id_Argomento)
+            <button class="w-100 h-100 invisible-button colore-scritte-HV">@item.Id_Argomento</button>
+        }
+    </div>
+}

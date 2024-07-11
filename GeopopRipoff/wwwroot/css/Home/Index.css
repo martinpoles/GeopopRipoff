@@ -62,104 +62,45 @@ footer {
 
 }
 
-.invisible-button {
-    background: none;
-    border: none;
-    outline: none;
-    width: 100%;
-    height: 100%;
-    padding:0px;
-}
 
 
 
-.mainCorpo {
-    height: 200vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 10px solid #39FF14;
-    border-radius: 30px;
-    top: 50px;
-    margin-bottom: 50px;
-}
 
-.utility-bar {
-    position: absolute;
-    width: 100%;
-    top: 0%;
-    height: 5%;
-    border-bottom: 3px solid #39FF14;
-}
 
-.titleImg {
-    border-radius: 20px 0 0 0;
-    height: 100%;
-}
-
-.searchBar {
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.notificationsBell {
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.specMenu {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.menuSelection {
-    position: absolute;
-    width: 100%;
-    top: 5%;
-    height: 3%;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-}
-
-.menuSelectionELEMENT {
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-
-    max-width:150px !important;
-    padding: 5px 20px 5px 20px !important;
-    flex: 0 0 auto !important;
-}
 
 .mainShowCase {
     position: absolute;
     width: 100%;
-    top: 8%;
     height: 30%;
+    padding:10px 10px !important;
+    margin:0px !important;
+}
+
+.stories-container {
+    position: absolute;
+    height: 15%;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    padding: 10px 10px !important;
+    margin: 0px !important;
 }
 
 .reelsStyle {
     position: absolute;
     width: 100%;
-    top: 53%;
-    height: 20%;
+    top: 50%;
+    height: 25%;
     display: flex;
     flex-direction: column;
-}
-
-.suggerimenti {
-    position: absolute;
-    width: 100%;
-    top: 73%;
-    height: 27%;
-    border-radius: 0 0 20px 20px;
+    padding: 10px 10px !important;
+    margin: 0px !important;
 }
 
 .flexbox-try {
@@ -228,24 +169,6 @@ footer {
     top: 0;
     left: 0;
     border-radius: 10%;
-}
-
-.stories-container {
-    position: absolute;
-    height: 15%;
-    top: 38%;
-    width:100%;
-
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    overflow-y:auto;
-
 }
 
 .link-text {

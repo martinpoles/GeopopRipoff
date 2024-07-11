@@ -10,7 +10,6 @@
     margin-bottom: 50px;
 }
 
-
 .utility-bar-article {
     position: absolute;
     width: 100%;
@@ -18,7 +17,6 @@
     height: 70px;
     border-bottom: 3px solid #39FF14;
 }
-
 
 .menu-selection-article {
     position: absolute;
@@ -30,54 +28,44 @@
     overflow-y: auto;
 }
 
-
-.container-flexbox-article{
-    position:absolute;
-    top:130px;
-    width:100%;
-    height:auto;
+.container-flexbox-article {
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
 
-
 .right-text {
-    margin:0px;
+    margin: 0px;
 }
 
 .left-text {
     margin: 0px;
 }
 
-    .right-text .image-article {
+.right-text .image-article {
     order: 2;
-
 }
 
 .right-text .text-article {
     order: 1;
-
 }
 
 .right-text .image-article {
     order: 1;
-
 }
 
 .right-text .text-article {
     order: 2;
-
 }
-
 
 .text-article {
     width: 60%;
     padding: 5px;
-
 }
 
 .image-article {
     width: 40%;
     padding: 5px;
-
 }
 
     .image-article .immagine {

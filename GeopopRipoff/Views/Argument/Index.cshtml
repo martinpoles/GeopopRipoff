@@ -1,180 +1,131 @@
 ﻿@model GeopopRipoff.Models.Argument.ArgumentIndex
 
-<div class="col-12 main-corp-argument parent-div-argument colore-sfondo">
+<div class="row argument-display-header children-div-all" id="id-argomento" data-model="@Html.Raw(Model.Id_Argomento)">
+    <img src="@Model.PathHeader">
+    <span class="text-overlay">@Model.Descrizione</span>
+</div>
 
-    <div class="row utility-bar-argument children-div-argument">
+<div class="container-class234-holder children-div-all">
 
-        <div class="col-5 titleImg">ARGUMENT</div>
-        <div class="col-4 searchBar">
+    <div class="row container-class234" id="container-class234">
 
-            <form id="search-form">
-                <input type="text" id="search-input" placeholder="Cerca...">
-                <button type="submit">Cerca</button>
-            </form>
-
-        </div>
-        <div class="col-1 notificationsBell">
-
-            @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
-            {
-                <button class="invisible-button">
-                    <i class="fas fa-bell"></i>
-                </button>
-            }
-        </div>
-        <div class="col-1 specMenu">
-            @using (Html.BeginForm("Index", "Menu", FormMethod.Post, new { @class = "" }))
-            {
-                <button class="invisible-button" onclick="navigateTo('Menu')">
-                    <i class="fas fa-bars"></i>
-                </button>
-            }
-        </div>
-        <div class="col-1" style="border-radius: 0 20px 0 0;"></div>
-
-    </div>
-
-    <div class="row menu-selection-argument children-div-argument">
-        @foreach (var item in Model.Argomenti)
+        @for (int i = 0; i < Model.Contenuti.Count; i += 9)
         {
-            <div class="col-1 menuSelectionELEMENT">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                {
-                    @Html.Hidden("id_argomento", @item.Id_Argomento)
-                    <button class="w-100 h-100 invisible-button colore-scritte-HV">@item.Id_Argomento</button>
-                }
+            <div class="row class-432">
+                <div class="row class-2">
+                    <div class="class-2-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("id_articolo", Model.Contenuti[i].Title)
+                            @Html.Hidden("id_argomento", Model.Id_Argomento)
+                            <button class="invisible-button">
+                                <img src="@Model.Contenuti[i].ImgPath">
+                                <span class="colore-scritte-LV">@Model.Contenuti[i].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-2-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("id_articolo", Model.Contenuti[i + 1].Title)
+                            @Html.Hidden("id_argomento", Model.Id_Argomento)
+                            <button class="invisible-button">
+                                <img src="@Model.Contenuti[i + 1].ImgPath">
+                                <span class="colore-scritte-LV">@Model.Contenuti[i + 1].Title</span>
+                            </button>
+                        }
+                    </div>
+                </div>
+                <div class="row class-3">
+                    <div class="class-3-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("id_articolo", Model.Contenuti[i + 2].Title)
+                            @Html.Hidden("id_argomento", Model.Id_Argomento)
+                            <button class="invisible-button">
+                                <img src="@Model.Contenuti[i + 2].ImgPath">
+                                <span class="colore-scritte-LV">@Model.Contenuti[i + 2].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-3-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("id_articolo", Model.Contenuti[i + 3].Title)
+                            @Html.Hidden("id_argomento", Model.Id_Argomento)
+                            <button class="invisible-button">
+                                <img src="@Model.Contenuti[i + 3].ImgPath">
+                                <span class="colore-scritte-LV">@Model.Contenuti[i + 3].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-3-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("id_articolo", Model.Contenuti[i + 4].Title)
+                            @Html.Hidden("id_argomento", Model.Id_Argomento)
+                            <button class="invisible-button">
+                                <img src="@Model.Contenuti[i + 4].ImgPath">
+                                <span class="colore-scritte-LV">@Model.Contenuti[i + 4].Title</span>
+                            </button>
+                        }
+                    </div>
+                </div>
+                <div class="row class-4">
+                    <div class="class-4-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("id_articolo", Model.Contenuti[i + 5].Title)
+                            @Html.Hidden("id_argomento", Model.Id_Argomento)
+                            <button class="invisible-button">
+                                <img src="@Model.Contenuti[i + 5].ImgPath">
+                                <span class="colore-scritte-LV">@Model.Contenuti[i + 5].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-4-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("id_articolo", Model.Contenuti[i + 6].Title)
+                            @Html.Hidden("id_argomento", Model.Id_Argomento)
+                            <button class="invisible-button">
+                                <img src="@Model.Contenuti[i + 6].ImgPath">
+                                <span class="colore-scritte-LV">@Model.Contenuti[i + 6].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-4-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("id_articolo", Model.Contenuti[i + 7].Title)
+                            @Html.Hidden("id_argomento", Model.Id_Argomento)
+                            <button class="invisible-button">
+                                <img src="@Model.Contenuti[i + 7].ImgPath">
+                                <span class="colore-scritte-LV">@Model.Contenuti[i + 7].Title</span>
+                            </button>
+                        }
+                    </div>
+                    <div class="class-4-element">
+                        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("id_articolo", Model.Contenuti[i + 8].Title)
+                            @Html.Hidden("id_argomento", Model.Id_Argomento)
+                            <button class="invisible-button">
+                                <img src="@Model.Contenuti[i + 8].ImgPath">
+                                <span class="colore-scritte-LV">@Model.Contenuti[i + 8].Title</span>
+                            </button>
+                        }
+                    </div>
+                </div>
             </div>
+
         }
     </div>
 
-    <div class="row argument-display-header children-div-argument" id="id-argomento" data-model="@Html.Raw(Model.Id_Argomento)">
-        <img src="@Model.PathHeader">
-        <span class="text-overlay">@Model.Descrizione</span>
-    </div>
+</div>
 
-    <div class="container-class234-holder children-div-argument">
-
-        <div class="row container-class234" id="container-class234">
-
-            @for (int i = 0; i < Model.Contenuti.Count; i += 9)
-            {
-                <div class="row class-432">
-                    <div class="row class-2">
-                        <div class="class-2-element">
-                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                            {
-                                @Html.Hidden("id_articolo", Model.Contenuti[i].Title)
-                                @Html.Hidden("id_argomento", Model.Id_Argomento)
-                                <button class="invisible-button">
-                                    <img src="@Model.Contenuti[i].ImgPath">
-                                    <span class="colore-scritte-LV">@Model.Contenuti[i].Title</span>
-                                </button>
-                            }
-                        </div>
-                        <div class="class-2-element">
-                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                            {
-                                @Html.Hidden("id_articolo", Model.Contenuti[i + 1].Title)
-                                @Html.Hidden("id_argomento", Model.Id_Argomento)
-                                <button class="invisible-button">
-                                    <img src="@Model.Contenuti[i + 1].ImgPath">
-                                    <span class="colore-scritte-LV">@Model.Contenuti[i + 1].Title</span>
-                                </button>
-                            }
-                        </div>
-                    </div>
-                    <div class="row class-3">
-                        <div class="class-3-element">
-                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                            {
-                                @Html.Hidden("id_articolo", Model.Contenuti[i + 2].Title)
-                                @Html.Hidden("id_argomento", Model.Id_Argomento)
-                                <button class="invisible-button">
-                                    <img src="@Model.Contenuti[i + 2].ImgPath">
-                                    <span class="colore-scritte-LV">@Model.Contenuti[i + 2].Title</span>
-                                </button>
-                            }
-                        </div>
-                        <div class="class-3-element">
-                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                            {
-                                @Html.Hidden("id_articolo", Model.Contenuti[i + 3].Title)
-                                @Html.Hidden("id_argomento", Model.Id_Argomento)
-                                <button class="invisible-button">
-                                    <img src="@Model.Contenuti[i + 3].ImgPath">
-                                    <span class="colore-scritte-LV">@Model.Contenuti[i + 3].Title</span>
-                                </button>
-                            }
-                        </div>
-                        <div class="class-3-element">
-                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                            {
-                                @Html.Hidden("id_articolo", Model.Contenuti[i + 4].Title)
-                                @Html.Hidden("id_argomento", Model.Id_Argomento)
-                                <button class="invisible-button">
-                                    <img src="@Model.Contenuti[i + 4].ImgPath">
-                                    <span class="colore-scritte-LV">@Model.Contenuti[i + 4].Title</span>
-                                </button>
-                            }
-                        </div>
-                    </div>
-                    <div class="row class-4">
-                        <div class="class-4-element">
-                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                            {
-                                @Html.Hidden("id_articolo", Model.Contenuti[i + 5].Title)
-                                @Html.Hidden("id_argomento", Model.Id_Argomento)
-                                <button class="invisible-button">
-                                    <img src="@Model.Contenuti[i + 5].ImgPath">
-                                    <span class="colore-scritte-LV">@Model.Contenuti[i + 5].Title</span>
-                                </button>
-                            }
-                        </div>
-                        <div class="class-4-element">
-                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                            {
-                                @Html.Hidden("id_articolo", Model.Contenuti[i + 6].Title)
-                                @Html.Hidden("id_argomento", Model.Id_Argomento)
-                                <button class="invisible-button">
-                                    <img src="@Model.Contenuti[i + 6].ImgPath">
-                                    <span class="colore-scritte-LV">@Model.Contenuti[i + 6].Title</span>
-                                </button>
-                            }
-                        </div>
-                        <div class="class-4-element">
-                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                            {
-                                @Html.Hidden("id_articolo", Model.Contenuti[i + 7].Title)
-                                @Html.Hidden("id_argomento", Model.Id_Argomento)
-                                <button class="invisible-button">
-                                    <img src="@Model.Contenuti[i + 7].ImgPath">
-                                    <span class="colore-scritte-LV">@Model.Contenuti[i + 7].Title</span>
-                                </button>
-                            }
-                        </div>
-                        <div class="class-4-element">
-                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                            {
-                                @Html.Hidden("id_articolo", Model.Contenuti[i + 8].Title)
-                                @Html.Hidden("id_argomento", Model.Id_Argomento)
-                                <button class="invisible-button">
-                                    <img src="@Model.Contenuti[i + 8].ImgPath">
-                                    <span class="colore-scritte-LV">@Model.Contenuti[i + 8].Title</span>
-                                </button>
-                            }
-                        </div>
-                    </div>
-                </div>
-
-            }
-        </div>
-
-    </div>
-    
-    <div class="row show-more children-div-argument">
-        <button onclick="insertHtmlStructure()">Show More</button>
-    </div>
-
+<div class="row show-more children-div-all">
+    <button onclick="insertHtmlStructure()" class="invisible-button colore-scritte-HV">Show More</button>
 </div>
 
 <link rel="stylesheet" href="~/css/Argument/Index.css" asp-append-version="true" />

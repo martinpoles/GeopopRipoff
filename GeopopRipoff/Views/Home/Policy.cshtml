@@ -1,54 +1,15 @@
 ﻿@model GeopopRipoff.Utility.Document
 
+<div class="row testo children-div-all">
+    <h1 class="title-policy colore-scritte-LV">@Model.Title</h1>
+    <h3 class="header-policy colore-scritte-LV">@Model.Header</h3>
 
-
-<div class="container">
-    <div class="col-12 corpo-policy parent-div-policy">
-       
-        <div class="row utility-bar children-div-policy">
-            <div class="col-5 titleImg"></div>
-            <div class="col-4 searchBar">
-
-                <form id="search-form">
-                    <input type="text" id="search-input" placeholder="Cerca...">
-                    <button type="submit">Cerca</button>
-                </form>
-
-            </div>
-            <div class="col-1 notificationsBell">
-
-                @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
-                {
-                    <button class="invisible-button">
-                        <i class="fas fa-bell"></i>
-                    </button>
-                }
-            </div>
-            <div class="col-1 specMenu">
-                @using (Html.BeginForm("Index", "Menu", FormMethod.Post, new { @class = "" }))
-                {
-                    <button class="invisible-button" onclick="navigateTo('Menu')">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                }
-            </div>
-            <div class="col-1" style="border-radius: 0 20px 0 0;"></div>
-        </div>
-
-        <div class="row testo children-div-policy">
-            <h1 class="title-policy colore-scritte-LV">@Model.Title</h1>
-            <h3 class="header-policy colore-scritte-LV">@Model.Header</h3>
-
-            @for (int i = 0; i < Model.Sections.Count; i++)
-            {
-                <h4 class="subtitle-policy colore-scritte-LV">@(i + 1)) @Model.Sections[i].Subtitle</h4>
-                <h5 class="content-policy colore-scritte-LV">@Model.Sections[i].Content</h5>
-            }
-        </div>
-      
-    </div>
+    @for (int i = 0; i < Model.Sections.Count; i++)
+    {
+        <h4 class="subtitle-policy colore-scritte-LV">@(i + 1)) @Model.Sections[i].Subtitle</h4>
+        <h5 class="content-policy colore-scritte-LV">@Model.Sections[i].Content</h5>
+    }
 </div>
-
 
 <script src="~/js/Home/Policy.js" asp-append-version="true"></script>
 <link rel="stylesheet" href="~/css/Home/Policy.css" asp-append-version="true" />

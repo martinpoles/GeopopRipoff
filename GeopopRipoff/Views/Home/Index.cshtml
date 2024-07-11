@@ -1,202 +1,147 @@
 ﻿@model GeopopRipoff.Models.Home.HomeIndex
 
-<div class="container">
-    <div class="col-12 mainCorpo colore-sfondo parent-div-home">
+<div class="row mainShowCase children-div-all">
 
-        <div class="row utility-bar children-div-home">
+    <div id="carouselExampleControls" class="carousel slide w-100 h-100" data-ride="carousel" style="padding:0px">
 
-            <div class="col-5 titleImg"></div>
-            <div class="col-4 searchBar">
+        <div class="carousel-inner w-100 h-100">
 
-                <form id="search-form">
-                    <input type="text" id="search-input" placeholder="Cerca...">
-                    <button type="submit">Cerca</button>
-                </form>
-
-            </div>
-            <div class="col-1 notificationsBell">
-
-                @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
-                {
-                    <button class="invisible-button">
-                        <i class="fas fa-bell"></i>
-                    </button>
-                }
-            </div>
-            <div class="col-1 specMenu">
-                @using (Html.BeginForm("Index", "Menu", FormMethod.Post, new { @class = "" }))
-                {
-                    <button class="invisible-button" onclick="navigateTo('Menu')">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                }
-            </div>
-            <div class="col-1" style="border-radius: 0 20px 0 0;"></div>
-
-        </div>
-
-        <div class="row menuSelection children-div-home">
-
-            @foreach (var item in Model.Argomenti)
+            @for (int i = 0; i < Model.ShowCase.Count; i++)
             {
-                <div class="col-1 menuSelectionELEMENT">
-                    @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                <div class="carousel-item @((i == 0) ? "active" : "") w-100 h-100 show-case" style="position:relative">
+                    @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { id = $"CarouselForm_{i}", @class = "text-overlay" }))
                     {
-                        @Html.Hidden("id_argomento", @item.Id_Argomento)
-                        <button class="w-100 h-100 invisible-button colore-scritte-HV">@item.Id_Argomento</button>
+                        @Html.Hidden("id_articolo", Model.ShowCase[i].Id_Contenuto)
+                        @Html.Hidden("id_argomento", Model.ShowCase[i].Id_Argomento)
+                        <a href="javascript:void(0);" id="@($"CarouselLink_{i}")" class="link-text">@Model.ShowCase[i].Id_Contenuto</a>
                     }
+
+                    <script>
+                        document.getElementById("@($"CarouselLink_{i}")").addEventListener("click", function () {
+                            document.getElementById("@($"CarouselForm_{i}")").submit();
+                        });
+                    </script>
+
+                    <img src="@Model.ShowCase[i].Path" class="d-block w-100" alt="Slide @(i + 1)">
                 </div>
             }
-
         </div>
 
-        <div class="row mainShowCase children-div-home">
-
-            <div id="carouselExampleControls" class="carousel slide w-100 h-100" data-ride="carousel" style="padding:0px">
-
-                <div class="carousel-inner w-100 h-100">
-
-                    @for (int i = 0; i < Model.ShowCase.Count; i++)
-                    {
-                        <div class="carousel-item @((i == 0) ? "active" : "") w-100 h-100 show-case" style="position:relative">
-                            @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { id = $"CarouselForm_{i}", @class = "text-overlay" }))
-                            {
-                                @Html.Hidden("id_articolo", Model.ShowCase[i].Id_Contenuto)
-                                @Html.Hidden("id_argomento", Model.ShowCase[i].Id_Argomento)
-                                <a href="javascript:void(0);" id="@($"CarouselLink_{i}")" class="link-text">@Model.ShowCase[i].Id_Contenuto</a>
-                            }
-
-                            <script>
-                                document.getElementById("@($"CarouselLink_{i}")").addEventListener("click", function () {
-                                    document.getElementById("@($"CarouselForm_{i}")").submit();
-                                });
-                            </script>
-
-                            <img src="@Model.ShowCase[i].Path" class="d-block w-100" alt="Slide @(i + 1)">
-                        </div>
-                    }
-                </div>
-
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="row stories-container children-div-home">
-
-            @foreach (var storia in Model.Storie)
-            {
-                @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
-                {
-                    @Html.Hidden("id_articolo", storia.Id_Contenuto)
-                    @Html.Hidden("id_argomento", storia.Id_Argomento)
-                    <button class="invisible-button">
-                        <img src="@storia.Path">
-                    </button>
-                }
-            }
-           
-        </div>
-
-        <div class="row reelsStyle children-div-home">
-
-            <div class="row" style="height:100%; display:flex; padding-top:10px; padding-bottom:10px; flex:1; margin-left: 0px;margin-right: 0px;">
-
-                <div class="flash-stories" id="flash-stories">
-
-                    @foreach (var item in Model.Reels)
-                    {
-                        <div class="grid-item-reels">
-                            @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
-                            {
-                                @Html.Hidden("id_reels", item.Id_Contenuto)
-                                <button class="invisible-button w-100 h-100">
-                                    <video id="thumbnail-video" class="thumbnail-video" muted="true" loop="true">
-                                        <source src="@item.Path" type="video/mp4">
-                                    </video>
-                                </button>
-                            }
-                        </div>
-                    }
-
-
-
-                    @* <div class="grid-item-reels">
-                        @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
-                        {
-                            @Html.Hidden("ItemId", "1")
-                            <button class="invisible-button w-100 h-100">
-                                <video id="thumbnail-video" class="thumbnail-video" muted="true" loop="true">
-                                    <source src="~/Video/Test1.mp4" type="video/mp4">
-                                </video>
-                            </button>
-                        }
-                    </div>
-
-                    <div class="grid-item-reels">
-                        @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
-                        {
-                            @Html.Hidden("ItemId", "1")
-                            <button class="invisible-button">
-                                <video id="thumbnail-video" class="thumbnail-video" muted loop>
-                                    <source src="~/Video/Test2.mp4" type="video/mp4">
-                                </video>
-                            </button>
-                        }
-                    </div>
-
-                    <div class="grid-item-reels">
-                        @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
-                        {
-                            @Html.Hidden("ItemId", "1")
-                            <button class="invisible-button">
-                                <video id="thumbnail-video" class="thumbnail-video" muted loop>
-                                    <source src="~/Video/Test3.mp4" type="video/mp4">
-                                </video>
-                            </button>
-                        }
-                    </div>
-
-                    <div class="grid-item-reels">
-                        @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "" }))
-                        {
-                            @Html.Hidden("ItemId", "1")
-                            <button class="invisible-button">
-                                <video id="thumbnail-video" class="thumbnail-video" muted loop>
-                                    <source src="~/Video/Test4.mp4" type="video/mp4">
-                                </video>
-                            </button>
-                        }
-                    </div>
-
-                    <div class="grid-item-reels">
-                        @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "" }))
-                        {
-                            @Html.Hidden("ItemId", "1")
-                            <button class="invisible-button">
-                                <video id="thumbnail-video" class="thumbnail-video" muted loop>
-                                    <source src="~/Video/Test5.mp4" type="video/mp4">
-                                </video>
-                            </button>
-                        }
-
-                    </div> *@
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-@*         <div class="row suggerimenti">
-        </div> *@
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+
+</div>
+
+<div class="row stories-container children-div-all">
+
+    @foreach (var storia in Model.Storie)
+    {
+        @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "stories-element" }))
+        {
+            @Html.Hidden("id_articolo", storia.Id_Contenuto)
+            @Html.Hidden("id_argomento", storia.Id_Argomento)
+            <button class="invisible-button">
+                <img src="@storia.Path">
+            </button>
+        }
+    }
+
+</div>
+
+<div class="row reelsStyle children-div-all">
+
+    <div class="row" style="height:100%; display:flex; padding-top:10px; padding-bottom:10px; flex:1; margin-left: 0px;margin-right: 0px;">
+
+        <div class="flash-stories" id="flash-stories">
+
+            @foreach (var item in Model.Reels)
+            {
+                <div class="grid-item-reels">
+                    @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                    {
+                        @Html.Hidden("id_reels", item.Id_Contenuto)
+                        <button class="invisible-button w-100 h-100">
+                            <video id="thumbnail-video" class="thumbnail-video" muted="true" loop="true">
+                                <source src="@item.Path" type="video/mp4">
+                            </video>
+                        </button>
+                    }
+                </div>
+            }
+
+
+
+            @* <div class="grid-item-reels">
+            @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button w-100 h-100">
+            <video id="thumbnail-video" class="thumbnail-video" muted="true" loop="true">
+            <source src="~/Video/Test1.mp4" type="video/mp4">
+            </video>
+            </button>
+            }
+            </div>
+
+            <div class="grid-item-reels">
+            @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <video id="thumbnail-video" class="thumbnail-video" muted loop>
+            <source src="~/Video/Test2.mp4" type="video/mp4">
+            </video>
+            </button>
+            }
+            </div>
+
+            <div class="grid-item-reels">
+            @using (Html.BeginForm("Argument", "Home", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <video id="thumbnail-video" class="thumbnail-video" muted loop>
+            <source src="~/Video/Test3.mp4" type="video/mp4">
+            </video>
+            </button>
+            }
+            </div>
+
+            <div class="grid-item-reels">
+            @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <video id="thumbnail-video" class="thumbnail-video" muted loop>
+            <source src="~/Video/Test4.mp4" type="video/mp4">
+            </video>
+            </button>
+            }
+            </div>
+
+            <div class="grid-item-reels">
+            @using (Html.BeginForm("Notifiche", "Menu", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <video id="thumbnail-video" class="thumbnail-video" muted loop>
+            <source src="~/Video/Test5.mp4" type="video/mp4">
+            </video>
+            </button>
+            }
+
+            </div> *@
+
+
+        </div>
+
+    </div>
+
 </div>

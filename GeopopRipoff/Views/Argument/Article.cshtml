@@ -1,80 +1,25 @@
 ﻿@model GeopopRipoff.Models.ArticleXml
 
-<div class="container">
-    <div class="col-12 main-corp-article parent-div-argument colore-sfondo">
+<div class="container-flexbox-article children-div-all">
 
-        <div class="row utility-bar-article children-div-argument">
-
-            <div class="col-5 titleImg"></div>
-            <div class="col-4 searchBar">
-
-                <form id="search-form">
-                    <input type="text" id="search-input" placeholder="Cerca...">
-                    <button type="submit">Cerca</button>
-                </form>
-
-            </div>
-            <div class="col-1 notificationsBell">
-
-                @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
-                {
-                    <button class="invisible-button">
-                        <i class="fas fa-bell"></i>
-                    </button>
-                }
-            </div>
-            <div class="col-1 specMenu">
-                @using (Html.BeginForm("Index", "Menu", FormMethod.Post, new { @class = "" }))
-                {
-                    <button class="invisible-button" onclick="navigateTo('Menu')">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                }
-            </div>
-            <div class="col-1" style="border-radius: 0 20px 0 0;"></div>
-
-        </div>
-
-        <div class="row menu-selection-article children-div-argument">
-            
-            @foreach (var item in Model.Argomenti)
-            {
-                <div class="col-1 menuSelectionELEMENT">
-                    @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
-                    {
-                        @Html.Hidden("id_argomento", @item.Id_Argomento)
-                        <button class="w-100 h-100 invisible-button colore-scritte-HV">@item.Id_Argomento</button>
-                    }
-                </div>
-            }
-
-        </div>
-
-        <div class="container-flexbox-article children-div-argument">
-
-            <div class="row" style="margin:0px;">
-                <h1 class="colore-scritte-LV">@Model.Title</h1>
-                <h3 class="colore-scritte-LV">@Model.Header</h3>
-            </div>
-
-            @for (int i = 0; i < Model.Chapters.Count; i++)
-            {
-                <div class="row @(i % 2 == 0 ? "right-text" : "left-text")">
-                    <div class="text-article">
-                        <h3 class="colore-scritte-LV">@Model.Chapters[i].Subtitle</h3>
-                        <h5 class="colore-scritte-LV">@Model.Chapters[i].Content</h5>
-                    </div>
-                    <div class="image-article">
-                        <img class="immagine" src="@Model.Chapters[i].SubImgPath" alt="img">
-                    </div>
-                </div>
-            }
-
-        </div>
-
+    <div class="row" style="margin:0px;">
+        <h1 class="colore-scritte-LV">@Model.Title</h1>
+        <h3 class="colore-scritte-LV">@Model.Header</h3>
     </div>
+
+    @for (int i = 0; i < Model.Chapters.Count; i++)
+    {
+        <div class="row @(i % 2 == 0 ? "right-text" : "left-text")">
+            <div class="text-article">
+                <h3 class="colore-scritte-LV">@Model.Chapters[i].Subtitle</h3>
+                <h5 class="colore-scritte-LV">@Model.Chapters[i].Content</h5>
+            </div>
+            <div class="image-article">
+                <img class="immagine" src="@Model.Chapters[i].SubImgPath" alt="img">
+            </div>
+        </div>
+    }
+
 </div>
 
-
 <link rel="stylesheet" href="~/css/Argument/Article.css" asp-append-version="true" />
-<script src="~/js/Argument/Article.js" asp-append-version="true"></script>

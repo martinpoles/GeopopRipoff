@@ -513,8 +513,20 @@
       "PackagePath": "staticwebassets\\css\\LogSignInOut\\Index.css"
     },
     {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Shared\\_layout.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\_layout.css"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Shared\\globalClass.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\globalClass.css"
+    },
+    {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Shared\\globalColor.css",
       "PackagePath": "staticwebassets\\css\\Shared\\globalColor.css"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Shared\\globalText.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\globalText.css"
     },
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\favicon.ico",
@@ -523,10 +535,6 @@
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\htmlTemplate\\class432.html",
       "PackagePath": "staticwebassets\\htmlTemplate\\class432.html"
-    },
-    {
-      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Argument\\Article.js",
-      "PackagePath": "staticwebassets\\js\\Argument\\Article.js"
     },
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Argument\\Index.js",
@@ -547,6 +555,10 @@
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Menu\\Index.js",
       "PackagePath": "staticwebassets\\js\\Menu\\Index.js"
+    },
+    {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Shared\\_Layout.js",
+      "PackagePath": "staticwebassets\\js\\Shared\\_Layout.js"
     },
     {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\lib\\bootstrap\\LICENSE",

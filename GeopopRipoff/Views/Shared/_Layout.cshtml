@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="~/GeopopRipoff.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Home/Index.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Shared/globalColor.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Shared/globalText.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Shared/globalClass.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Shared/_layout.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +21,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="~/js/Shared/_Layout.js" asp-append-version="true"></script>
+
 </head>
 <body class="colore-sfondo">
 
@@ -27,11 +31,65 @@
 
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+
+            <div class="col-12 mainCorpo colore-sfondo parent-div-all">
+
+                <div class="row utility-bar children-div-all">
+
+                    <div class="col-5 titleImg colore-scritte-HV">
+                        @using (Html.BeginForm("Index", "Reels", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        {
+                            @Html.Hidden("id_argomento", "@item.Id_Argomento")
+                            <button class="w-100 h-100 invisible-button colore-scritte-HV">SOSTENIBILMENTE</button>
+                        }
+                    </div>
+                    <div class="col-4 searchBar">
+
+                        <form id="search-form">
+                            <input type="text" id="search-input" placeholder="Cerca...">
+                            <button type="submit">Cerca</button>
+                        </form>
+
+                    </div>
+                    <div class="col-1 notificationsBell">
+
+                        @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
+                        {
+                            <button class="invisible-button">
+                                <i class="fas fa-bell"></i>
+                            </button>
+                        }
+                    </div>
+                    <div class="col-1 specMenu">
+                        @using (Html.BeginForm("Index", "Menu", FormMethod.Post, new { @class = "" }))
+                        {
+                            <button class="invisible-button" onclick="navigateTo('Menu')">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        }
+                    </div>
+                    <div class="col-1" style="border-radius: 0 20px 0 0;"></div>
+
+                </div>
+
+                <div class="row menuSelection children-div-all">
+
+
+                    @await Component.InvokeAsync("SharedComponent")
+
+
+                </div>
+
+                <div class="row render-body-container">
+
+                    @RenderBody()
+                </div>
+
+            </div>
         </main>
     </div>
     <footer id="footer">
-        
+
         <section class="d-flex justify-content-between p-4 text-white colore-principale">
 
             <div>
@@ -68,28 +126,28 @@
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
                         <p>
-                            Il sole splendeva alto nel cielo azzurro, mentre le onde del mare si infrangevano dolcemente sulla riva. 
+                            Il sole splendeva alto nel cielo azzurro, mentre le onde del mare si infrangevano dolcemente sulla riva.
                             I bambini giocavano sulla sabbia, costruendo castelli e scavando buche profonde.
                         </p>
                     </div>
-@* 
+                    @*
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
-                        <h6 class="text-uppercase fw-bold">Products</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                            style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <p>
-                            <a href="#!" class="text-white">Testo a casa</a>
-                        </p>                    
-                        <p>                     
-                            <a href="#!" class="text-white">Testo a casa</a>
-                        </p>                    
-                        <p>                     
-                            <a href="#!" class="text-white">Testo a casa</a>
-                        </p>                    
-                        <p>                     
-                            <a href="#!" class="text-white">Testo a casa</a>
-                        </p>
+                    <h6 class="text-uppercase fw-bold">Products</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                    <a href="#!" class="text-white">Testo a casa</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-white">Testo a casa</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-white">Testo a casa</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-white">Testo a casa</a>
+                    </p>
                     </div> *@
 
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
@@ -97,7 +155,7 @@
                         <h6 class="text-uppercase fw-bold">Useful links</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
                         <p>
-                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "telemarketingPolicyForm",}))
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "telemarketingPolicyForm", }))
                             {
                                 @Html.Hidden("ItemId", "1")
                                 <a href="javascript:void(0);" id="telemarketingPolicyLink" class="link-text">Telemarketing Policy</a>
@@ -108,7 +166,7 @@
                                 });
                             </script>
                         </p>
-                       
+
                         <p>
                             @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "cookiePolicyForm", }))
                             {
