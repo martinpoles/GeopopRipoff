@@ -36,13 +36,13 @@
         </div>
 
         <div class="row testo children-div-policy">
-            <h1 class="title-policy">@Model.Title</h1>
-            <h3 class="header-policy">@Model.Header</h3>
+            <h1 class="title-policy colore-scritte-LV">@Model.Title</h1>
+            <h3 class="header-policy colore-scritte-LV">@Model.Header</h3>
 
             @for (int i = 0; i < Model.Sections.Count; i++)
             {
-                <h4 class="subtitle-policy">@(i + 1)) @Model.Sections[i].Subtitle</h4>
-                <h5 class="content-policy">@Model.Sections[i].Content</h5>
+                <h4 class="subtitle-policy colore-scritte-LV">@(i + 1)) @Model.Sections[i].Subtitle</h4>
+                <h5 class="content-policy colore-scritte-LV">@Model.Sections[i].Content</h5>
             }
         </div>
       

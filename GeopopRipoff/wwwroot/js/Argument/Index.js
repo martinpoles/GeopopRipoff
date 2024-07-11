@@ -9,7 +9,7 @@ async function insertHtmlStructure() {
 
     let myData = await fetchAndProcessData(idArgomento);
 
-    var g = popolaHTML(myData.Contenuti);
+    var g = popolaHTML(myData.Contenuti, idArgomento);
 
    /* container.innerHTML = g;*/
 
@@ -71,7 +71,7 @@ function resizeView() {
     const parentDiv = document.querySelector('.parent-div-argument');
     parentDiv.style.height = totalHeight + 'px';
 }
-function popolaHTML(myData) {
+function popolaHTML(myData, idArgomento) {
     // Creazione degli elementi del DOM
     const container = document.createElement('div');
     container.className = 'row class-432';
@@ -81,7 +81,7 @@ function popolaHTML(myData) {
     row2.className = 'row class-2';
 
     for (let i = 0; i < 2 && i < myData.length; i++) {
-        const element = createDivElement(myData[i], 'class-2');
+        const element = createDivElement(myData[i], 'class-2', idArgomento);
         row2.appendChild(element);
     }
 
@@ -92,7 +92,7 @@ function popolaHTML(myData) {
     row3.className = 'row class-3';
 
     for (let i = 2; i < 5 && i < myData.length; i++) {
-        const element = createDivElement(myData[i], 'class-3');
+        const element = createDivElement(myData[i], 'class-3', idArgomento);
         row3.appendChild(element);
     }
 
@@ -103,7 +103,7 @@ function popolaHTML(myData) {
     row4.className = 'row class-4';
 
     for (let i = 5; i < 9 && i < myData.length; i++) {
-        const element = createDivElement(myData[i], 'class-4');
+        const element = createDivElement(myData[i], 'class-4', idArgomento);
         row4.appendChild(element);
     }
 
@@ -112,7 +112,7 @@ function popolaHTML(myData) {
     // Ritorna il contenitore completo
     return container;
 }
-function createDivElement(data, type) {
+function createDivElement(data, type, idArgomento) {
     const div = document.createElement('div');
 
     className = '0'
@@ -144,7 +144,7 @@ function createDivElement(data, type) {
     const input2 = document.createElement('input');
     input2.type = 'hidden';
     input2.name = 'id_argomento';
-    input2.value = data.idArgomento;
+    input2.value = idArgomento;
 
 
     const button = document.createElement('button');
@@ -162,6 +162,7 @@ function createDivElement(data, type) {
     button.appendChild(span);
 
     form.appendChild(input);
+    form.appendChild(input2);
     form.appendChild(button);
 
     div.appendChild(form);

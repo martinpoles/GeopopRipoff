@@ -1,9 +1,9 @@
 ﻿@model GeopopRipoff.Models.Home.HomeIndex
 
 <div class="container">
-    <div class="col-12 mainCorpo colore-sfondo">
+    <div class="col-12 mainCorpo colore-sfondo parent-div-home">
 
-        <div class="row utility-bar">
+        <div class="row utility-bar children-div-home">
 
             <div class="col-5 titleImg"></div>
             <div class="col-4 searchBar">
@@ -35,7 +35,7 @@
 
         </div>
 
-        <div class="row menuSelection">
+        <div class="row menuSelection children-div-home">
 
             @foreach (var item in Model.Argomenti)
             {
@@ -50,7 +50,7 @@
 
         </div>
 
-        <div class="row mainShowCase">
+        <div class="row mainShowCase children-div-home">
 
             <div id="carouselExampleControls" class="carousel slide w-100 h-100" data-ride="carousel" style="padding:0px">
 
@@ -89,7 +89,7 @@
 
         </div>
 
-        <div class="row stories-container">
+        <div class="row stories-container children-div-home">
 
             @foreach (var storia in Model.Storie)
             {
@@ -105,7 +105,7 @@
            
         </div>
 
-        <div class="row reelsStyle">
+        <div class="row reelsStyle children-div-home">
 
             <div class="row" style="height:100%; display:flex; padding-top:10px; padding-bottom:10px; flex:1; margin-left: 0px;margin-right: 0px;">
 
@@ -196,7 +196,7 @@
 
         </div>
 
-        <div class="row suggerimenti">
-        </div>
+@*         <div class="row suggerimenti">
+        </div> *@
     </div>
 </div>
