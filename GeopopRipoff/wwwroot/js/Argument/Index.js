@@ -141,6 +141,12 @@ function createDivElement(data, type) {
     input.name = 'id_articolo';
     input.value = data.Title;
 
+    const input2 = document.createElement('input');
+    input2.type = 'hidden';
+    input2.name = 'id_argomento';
+    input2.value = data.idArgomento;
+
+
     const button = document.createElement('button');
     button.type = 'submit';
     button.className = 'invisible-button';

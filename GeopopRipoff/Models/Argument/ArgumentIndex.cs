@@ -5,6 +5,7 @@
         public string PathHeader { get; set; }
         public string Descrizione { get; set; }
         public string Id_Argomento { get; set; }
+        public List<Argomento> Argomenti { get; set; }
         public List<ContenutoArgumentArticle> Contenuti { get; set; }
 
         public ArgumentIndex()

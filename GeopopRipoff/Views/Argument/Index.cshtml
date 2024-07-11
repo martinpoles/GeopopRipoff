@@ -1,6 +1,6 @@
 ﻿@model GeopopRipoff.Models.Argument.ArgumentIndex
 
-<div class="col-12 main-corp-argument parent-div-argument">
+<div class="col-12 main-corp-argument parent-div-argument colore-sfondo">
 
     <div class="row utility-bar-argument children-div-argument">
 
@@ -41,7 +41,7 @@
                 @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                 {
                     @Html.Hidden("id_argomento", @item.Id_Argomento)
-                    <button class="w-100 h-100 invisible-button">@item.Id_Argomento</button>
+                    <button class="w-100 h-100 invisible-button colore-scritte-HV">@item.Id_Argomento</button>
                 }
             </div>
         }

@@ -1,7 +1,7 @@
 ﻿@model GeopopRipoff.Models.Home.HomeIndex
 
 <div class="container">
-    <div class="col-12 mainCorpo">
+    <div class="col-12 mainCorpo colore-sfondo">
 
         <div class="row utility-bar">
 
@@ -43,7 +43,7 @@
                     @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
                     {
                         @Html.Hidden("id_argomento", @item.Id_Argomento)
-                        <button class="w-100 h-100 invisible-button">@item.Id_Argomento</button>
+                        <button class="w-100 h-100 invisible-button colore-scritte-HV">@item.Id_Argomento</button>
                     }
                 </div>
             }

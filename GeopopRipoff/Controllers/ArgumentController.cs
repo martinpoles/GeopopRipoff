@@ -36,6 +36,8 @@ namespace GeopopRipoff.Controllers
                 argumentIndex.Contenuti.Add(contenutoArgumentArticle);
             }
 
+            argumentIndex.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList(); ;
+
             argumentIndex.PathHeader = $"/Argument/Header/{id_argomento}.jpg";
 
             argumentIndex.Descrizione = _argomentiRepository.GetArgumentDescriptionByIdArgument(id_argomento).FirstOrDefault();
@@ -85,6 +87,8 @@ namespace GeopopRipoff.Controllers
             article.Header = xmlDoc.SelectSingleNode("/article/header")?.InnerText;
             article.Chapters = new List<Chapters>();
 
+
+            article.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList();
 
             // Leggi le sezioni
             XmlNodeList sectionNodes = xmlDoc.SelectNodes("/article/chapters/chapter");

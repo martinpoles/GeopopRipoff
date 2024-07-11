@@ -11,6 +11,8 @@ namespace GeopopRipoff.Models
     public class ArticleXml
     {
 
+        public List<Argomento> Argomenti { get; set; }
+
         [XmlElement("title")]
         public string Title { get; set; }
 

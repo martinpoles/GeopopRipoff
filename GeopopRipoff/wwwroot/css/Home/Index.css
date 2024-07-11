@@ -79,8 +79,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #f8f9fa;
-    border: 10px solid #F5F5F5;
+    border: 10px solid #39FF14;
     border-radius: 30px;
     top: 50px;
     margin-bottom: 50px;
@@ -91,7 +90,7 @@ footer {
     width: 100%;
     top: 0%;
     height: 5%;
-    border-bottom: 3px solid #D55858;
+    border-bottom: 3px solid #39FF14;
 }
 
 .titleImg {
