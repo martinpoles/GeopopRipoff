@@ -13,6 +13,7 @@ builder.Services.AddScoped<GenericRepository>();
 // Registra i repository specifici
 builder.Services.AddScoped<ArticlesRepository>();
 builder.Services.AddScoped<ArgomentiRepository>();
+builder.Services.AddScoped<LogSignInOutRepository>();
 
 
 // Add services to the container.

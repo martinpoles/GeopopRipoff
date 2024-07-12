@@ -23,18 +23,26 @@ namespace GeopopRipoff.Controllers
 
         private readonly ArticlesRepository _articlesRepository;
         private readonly ArgomentiRepository _argomentiRepository;
-        public MenuController(ILogger<MenuController> logger, ArticlesRepository articlesRepository, ArgomentiRepository argomentiRepository)
+        private readonly LogSignInOutRepository _logSignInOutRepository;
+        public MenuController(ILogger<MenuController> logger, ArticlesRepository articlesRepository, ArgomentiRepository argomentiRepository
+            , LogSignInOutRepository logSignInOutRepository)
         {
             _logger = logger;
             _articlesRepository = articlesRepository;
             _argomentiRepository = argomentiRepository;
+            _logSignInOutRepository = logSignInOutRepository;
         }
         public IActionResult Index(string oid)
         {
-            MenuIndex  menuIndex = new MenuIndex();
+            MenuIndex menuIndex = new MenuIndex();
 
             menuIndex.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList();
-            
+
+            if (!string.IsNullOrEmpty(oid))
+            {
+                menuIndex.Utente = _logSignInOutRepository.GetUtenteByOid(oid);
+            }
+
             return View(menuIndex);
         }
     }

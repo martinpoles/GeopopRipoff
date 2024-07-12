@@ -137,6 +137,7 @@ function createDivElement(data, type, idArgomento) {
     img.alt = 'Immagine';
 
     const span = document.createElement('span');
+    span.classList.add('colore-scritte-LV');
     span.textContent = data.Title;
 
     button.appendChild(img);

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeopopRipoff")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaac5c4753b90854da8a72b59ec1c63e37ef30e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe2273aa3f082cbc8230bc2093d9269a7ea668a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeopopRipoff")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeopopRipoff")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
 ﻿using GeopopRipoff.Models;
+using GeopopRipoff.Models.Menu;
 using Microsoft.EntityFrameworkCore;
 
 namespace GeopopRipoff.Repository
@@ -14,6 +15,7 @@ namespace GeopopRipoff.Repository
         public DbSet<Argomento> Argomenti { get; set; }
         public DbSet<Formato> Formato { get; set; }
         public DbSet<Autore> Autore { get; set; }
+        public DbSet<Utente> Utente { get; set; }
         public DbSet<ContenutoAutore> ContenutoAutore { get; set; }
         public DbSet<ContenutoFormato> ContenutoFormato { get; set; }
         public DbSet<ContenutoArgomento> ContenutoArgomento { get; set; }

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GeopopRipoff</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/GeopopRipoff.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Home/Index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Shared/globalColor.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Shared/globalText.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Shared/globalClass.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Shared/_layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+    <script src="~/js/Home/Index.js" asp-append-version="true"></script>
+    <script src="~/js/LogSignInOut/FbSDK.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Shared/_Layout.js" asp-append-version="true"></script>
+
+</head>
+<body class="colore-sfondo">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0&appId=1015689366876643" nonce="QfO4GBCz"></script>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+
+
+                    @RenderBody()
+
+        </main>
+    </div>
+    <footer id="footer">
+
+        <section class="d-flex justify-content-between p-4 text-white colore-principale">
+
+            <div>
+                <a href="https://www.facebook.com" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.google.com/" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.instagram.com" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.tiktok.com/" class="text-white me-4">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold">8 MILA</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            Il sole splendeva alto nel cielo azzurro, mentre le onde del mare si infrangevano dolcemente sulla riva.
+                            I bambini giocavano sulla sabbia, costruendo castelli e scavando buche profonde.
+                        </p>
+                    </div>
+                    @*
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <h6 class="text-uppercase fw-bold">Products</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                    <a href="#!" class="text-white">Testo a casa</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-white">Testo a casa</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-white">Testo a casa</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-white">Testo a casa</a>
+                    </p>
+                    </div> *@
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "telemarketingPolicyForm", }))
+                            {
+                                @Html.Hidden("ItemId", "1")
+                                <a href="javascript:void(0);" id="telemarketingPolicyLink" class="link-text">Telemarketing Policy</a>
+                            }
+                            <script>
+                                document.getElementById("telemarketingPolicyLink").addEventListener("click", function () {
+                                    document.getElementById("telemarketingPolicyForm").submit();
+                                });
+                            </script>
+                        </p>
+
+                        <p>
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "cookiePolicyForm", }))
+                            {
+                                @Html.Hidden("ItemId", "2")
+                                <a href="javascript:void(0);" id="cookiePolicyLink" class="link-text">Cookie Policy</a>
+                            }
+                            <script>
+                                document.getElementById("cookiePolicyLink").addEventListener("click", function () {
+                                    document.getElementById("cookiePolicyForm").submit();
+                                });
+                            </script>
+                        </p>
+
+
+
+                        <p>
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "privacyPolicyForm", }))
+                            {
+                                @Html.Hidden("ItemId", "3")
+                                <a href="javascript:void(0);" id="privacyPolicyLink" class="link-text">Privacy Policy</a>
+                            }
+                            <script>
+                                document.getElementById("privacyPolicyLink").addEventListener("click", function () {
+                                    document.getElementById("privacyPolicyForm").submit();
+                                });
+                            </script>
+
+                        </p>
+
+                        <p>
+                        </p>
+
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p><i class="fas fa-home mr-3"></i>Corso Europa 44, 20010 Inveruno (MI)</p>
+                        <p><i class="fas fa-envelope mr-3"></i>info@8mila.com</p>
+                        <p><i class="fas fa-phone mr-3"></i>+39 0331 1815264</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

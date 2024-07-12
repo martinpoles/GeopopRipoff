@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\views\\argument\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\views\\argument\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\models\\menu\\menuindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\models\\menu\\menuindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\wwwroot\\css\\argument\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\wwwroot\\css\\argument\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\wwwroot\\js\\argument\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\wwwroot\\js\\argument\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\wwwroot\\css\\shared\\_layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\wwwroot\\css\\shared\\_layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\wwwroot\\js\\shared\\_layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\wwwroot\\js\\shared\\_layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\views\\logsigninout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\views\\logsigninout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,66 +39,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Views\\Argument\\Index.cshtml",
-              "RelativeDocumentMoniker": "GeopopRipoff\\Views\\Argument\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Views\\Argument\\Index.cshtml",
-              "RelativeToolTip": "GeopopRipoff\\Views\\Argument\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-11T14:52:13.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.js",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Shared\\_Layout.js",
-              "RelativeDocumentMoniker": "GeopopRipoff\\wwwroot\\js\\Shared\\_Layout.js",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Shared\\_Layout.js",
-              "RelativeToolTip": "GeopopRipoff\\wwwroot\\js\\Shared\\_Layout.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-11T14:50:13.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.js",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Argument\\Index.js",
-              "RelativeDocumentMoniker": "GeopopRipoff\\wwwroot\\js\\Argument\\Index.js",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\js\\Argument\\Index.js",
-              "RelativeToolTip": "GeopopRipoff\\wwwroot\\js\\Argument\\Index.js",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwA8AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-11T14:49:39.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_layout.css",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Shared\\_layout.css",
-              "RelativeDocumentMoniker": "GeopopRipoff\\wwwroot\\css\\Shared\\_layout.css",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Shared\\_layout.css",
-              "RelativeToolTip": "GeopopRipoff\\wwwroot\\css\\Shared\\_layout.css",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAqwE0AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-11T14:38:21.007Z",
+              "Title": "MenuIndex.cs",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Models\\Menu\\MenuIndex.cs",
+              "RelativeDocumentMoniker": "GeopopRipoff\\Models\\Menu\\MenuIndex.cs",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Models\\Menu\\MenuIndex.cs",
+              "RelativeToolTip": "GeopopRipoff\\Models\\Menu\\MenuIndex.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T09:11:03.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.css",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Argument\\Index.css",
-              "RelativeDocumentMoniker": "GeopopRipoff\\wwwroot\\css\\Argument\\Index.css",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Argument\\Index.css",
-              "RelativeToolTip": "GeopopRipoff\\wwwroot\\css\\Argument\\Index.css",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAHUAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-11T14:33:11.218Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Views\\Menu\\Index.cshtml",
+              "RelativeDocumentMoniker": "GeopopRipoff\\Views\\Menu\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Views\\Menu\\Index.cshtml",
+              "RelativeToolTip": "GeopopRipoff\\Views\\Menu\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T09:08:21.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "GeopopRipoff\\Repository\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Repository\\GenericRepository.cs",
+              "RelativeToolTip": "GeopopRipoff\\Repository\\GenericRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T08:24:25.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Views\\LogSignInOut\\Index.cshtml",
+              "RelativeDocumentMoniker": "GeopopRipoff\\Views\\LogSignInOut\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Views\\LogSignInOut\\Index.cshtml",
+              "RelativeToolTip": "GeopopRipoff\\Views\\LogSignInOut\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T07:22:07.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "GeopopRipoff\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "GeopopRipoff\\Controllers\\MenuController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAMwCgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T07:21:34.653Z",
               "EditorCaption": ""
             }
           ]

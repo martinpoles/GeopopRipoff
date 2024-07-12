@@ -37,4 +37,9 @@ public class GenericRepository
             return connection.Execute(sql, parameters);
         }
     }
+
+    public string returnConnectionString()
+    {
+        return Connection.ConnectionString;
+    }
 }

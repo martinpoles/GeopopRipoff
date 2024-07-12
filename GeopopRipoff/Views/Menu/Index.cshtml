@@ -1,4 +1,8 @@
-﻿@model GeopopRipoff.Models.Menu.MenuIndex;
+﻿@{
+    Layout = "~/Views/Shared/_LayoutMinimal.cshtml";
+}
+
+@model GeopopRipoff.Models.Menu.MenuIndex;
 
 
 <div class="row" style="height:100vh; width:100%; position:relative; top:50px">
@@ -31,11 +35,13 @@
                         <img src="#" alt="Alternate Text" style="border-radius:50%; padding:5px" />
                         <span style="display: flex; flex-direction: column; justify-content: center;">
                             <span>Benvenuto</span>
-                            @* <span>@Model.Name</span> *@
+                            @if (!string.IsNullOrEmpty(Model.Utente.Id_Username))
+                            {
+                                <span>@Model.Utente.Id_Username</span>
+                            }
                         </span>
                     </button>
                 }
-
             </div>
 
             <div class="col-3" style="display: flex; align-items: center;">
@@ -82,87 +88,87 @@
                     }
                 </div>
             }
-@* 
+            @*
             <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                {
-                    @Html.Hidden("ItemId", "1")
-                    <button class="invisible-button">
-                        <h1>Argomento</h1>
-                    </button>
-                }
+            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <h1>Argomento</h1>
+            </button>
+            }
             </div>
             <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                {
-                    @Html.Hidden("ItemId", "1")
-                    <button class="invisible-button">
-                        <h1>Argomento</h1>
-                    </button>
-                }
+            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <h1>Argomento</h1>
+            </button>
+            }
             </div>
             <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                {
-                    @Html.Hidden("ItemId", "1")
-                    <button class="invisible-button">
-                        <h1>Argomento</h1>
-                    </button>
-                }
+            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <h1>Argomento</h1>
+            </button>
+            }
             </div>
             <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                {
-                    @Html.Hidden("ItemId", "1")
-                    <button class="invisible-button">
-                        <h1>Argomento</h1>
-                    </button>
-                }
+            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <h1>Argomento</h1>
+            </button>
+            }
             </div>
             <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                {
-                    @Html.Hidden("ItemId", "1")
-                    <button class="invisible-button">
-                        <h1>Argomento</h1>
-                    </button>
-                }
+            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <h1>Argomento</h1>
+            </button>
+            }
             </div>
             <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                {
-                    @Html.Hidden("ItemId", "1")
-                    <button class="invisible-button">
-                        <h1>Argomento</h1>
-                    </button>
-                }
+            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <h1>Argomento</h1>
+            </button>
+            }
             </div>
             <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                {
-                    @Html.Hidden("ItemId", "1")
-                    <button class="invisible-button">
-                        <h1>Argomento</h1>
-                    </button>
-                }
+            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <h1>Argomento</h1>
+            </button>
+            }
             </div>
             <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                {
-                    @Html.Hidden("ItemId", "1")
-                    <button class="invisible-button">
-                        <h1>Argomento</h1>
-                    </button>
-                }
+            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <h1>Argomento</h1>
+            </button>
+            }
             </div>
             <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                {
-                    @Html.Hidden("ItemId", "1")
-                    <button class="invisible-button">
-                        <h1>Argomento</h1>
-                    </button>
-                }
+            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+            {
+            @Html.Hidden("ItemId", "1")
+            <button class="invisible-button">
+            <h1>Argomento</h1>
+            </button>
+            }
             </div> *@
 
         </div>

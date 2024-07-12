@@ -83,4 +83,15 @@ namespace GeopopRipoff.Models
         public Argomento Argomento { get; set; }
     }
 
+
+    public class Utente
+    {
+        [Key]
+        public int Oid { get; set; }
+        public string Id_Username { get; set; }
+        public string Id_Nome { get; set; }
+        public string Id_Cognome { get; set; }
+        public string Id_Email { get; set; }
+    }
+
 }

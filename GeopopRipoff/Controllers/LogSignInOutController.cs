@@ -11,16 +11,19 @@ using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.Net;
+using GeopopRipoff.Repository;
 
 namespace GeopopRipoff.Controllers
 {
     public class LogSignInOutController : Controller
     {
         private readonly ILogger<LogSignInOutController> _logger;
+        private readonly LogSignInOutRepository _logSignInOutRepository;
 
-        public LogSignInOutController(ILogger<LogSignInOutController> logger)
+        public LogSignInOutController(ILogger<LogSignInOutController> logger, LogSignInOutRepository logSignInOutRepository)
         {
             _logger = logger;
+            _logSignInOutRepository = logSignInOutRepository;
         }
 
         public ActionResult Index()
@@ -34,13 +37,10 @@ namespace GeopopRipoff.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Esegui le operazioni necessarie con l'oggetto UserProfile (salvataggio nel database, ecc.)
-                // Ad esempio:
-                // MoveToSomething(user);
-
-                // Restituisci un oggetto JSON di conferma
-                return Json(new { success = true, message = "Dati salvati con successo.", oid = "1"});
-            }
+                int oid = _logSignInOutRepository.InsertUtente(user.Name, "", "", user.Email);
+             
+                return Json(new { success = true, message = "Dati salvati con successo.", oid = oid});
+                }
             else
             {
                 // Se ci sono errori di validazione, restituisci un oggetto JSON con gli errori
