@@ -34,15 +34,15 @@
 
             <div class="col-12 mainCorpo colore-sfondo parent-div-all">
 
-                <div class="row utility-bar children-div-all">
+                <div class="utility-bar children-div-all">
 
-                    <div class="col-5 titleImg colore-scritte-HV" style="border-radius: 20px 0 0 0;">
+                    <div class="titleImg colore-scritte-HV item">
                         @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
                         {
                             <button class="w-100 h-100 invisible-button colore-scritte-HV">SOSTENIBILMENTE</button>
                         }
                     </div>
-                    <div class="col-4 searchBar">
+                    <div class="searchBar item">
 
                         <form id="search-form">
                             <input type="text" id="search-input" placeholder="Cerca...">
@@ -50,7 +50,7 @@
                         </form>
 
                     </div>
-                    <div class="col-1 notificationsBell">
+                    <div class="notificationsBell item">
 
                         @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
                         {
@@ -59,7 +59,7 @@
                             </button>
                         }
                     </div>
-                    <div class="col-1 specMenu">
+                    <div class="specMenu item">
                         @using (Html.BeginForm("Index", "Menu", FormMethod.Post, new { @class = "" }))
                         {
                             <button class="invisible-button" onclick="navigateTo('Menu')">
@@ -67,11 +67,10 @@
                             </button>
                         }
                     </div>
-                    <div class="col-1" style="border-radius: 0 20px 0 0;"></div>
 
                 </div>
 
-                <div class="row menuSelection children-div-all">
+                <div class="menuSelection children-div-all">
 
 
                     @await Component.InvokeAsync("SharedComponent")
@@ -79,7 +78,7 @@
 
                 </div>
 
-                <div class="row render-body-container">
+                <div class="render-body-container">
 
                     @RenderBody()
                 </div>
