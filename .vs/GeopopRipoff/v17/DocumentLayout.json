@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\geopopripoff\\geopopripoff\\geopopripoff\\wwwroot\\css\\shared\\_layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{62A51DDB-6E5B-42B6-BDB6-4AE114279532}|GeopopRipoff\\GeopopRipoff.csproj|solutionrelative:geopopripoff\\wwwroot\\css\\shared\\_layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_layout.css",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Shared\\_layout.css",
+              "RelativeDocumentMoniker": "GeopopRipoff\\wwwroot\\css\\Shared\\_layout.css",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\Shared\\_layout.css",
+              "RelativeToolTip": "GeopopRipoff\\wwwroot\\css\\Shared\\_layout.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-15T13:48:27.351Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GeopopRipoff\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GeopopRipoff\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAAAI0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-15T13:43:25.363Z",
+              "EditorCaption": ""
             }
           ]
         }

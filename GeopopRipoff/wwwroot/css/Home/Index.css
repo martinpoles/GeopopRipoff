@@ -17,6 +17,18 @@ html {
     min-height: 100%;
 }
 
+body {
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+}
+
 .carousel-inner .carousel-item {
     transition: transform 0s ease;
 }
@@ -25,6 +37,7 @@ html {
 .carousel-inner .carousel-item-prev {
     display: flex;
 }
+
 .carousel-item-next.carousel-item-left,
 .carousel-item-prev.carousel-item-right {
     transform: translateX(0);
@@ -48,25 +61,6 @@ html {
 .carousel-inner .carousel-item-left {
     transform: translateX(0);
 }
-
-body {
-    background-color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-
-}
-
-
-
-
-
-
 
 .mainShowCase {
     position: absolute;
@@ -118,29 +112,6 @@ footer {
     display: flex;
 }
 
-.social-media-buttons-container {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.social-media-buttons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 40px;
-    height: 40px;
-    color: white;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-.privacy-coockie-ecc {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-}
-
 .flash-stories {
     display: flex;
     flex-direction: row;
@@ -171,18 +142,6 @@ footer {
     border-radius: 10%;
 }
 
-.link-text {
-    color: #ffffff !important; /* Cambia il colore del testo del link */
-    text-decoration: none; /* Rimuove la sottolineatura */
-    padding: 10px 20px; /* Spaziatura interna */
-    border-radius: 5px; /* Arrotonda i bordi */
-}
-
-    .link-text:hover {
-        color: #E2EAF4; /* Colore del testo del link al passaggio del mouse */
-    }
-
-
 .stories-element{
     padding:0px;
 }
@@ -202,28 +161,8 @@ footer {
     text-align: center;
 }
 
-.text-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0px 0px 15px 15px;
-    font-size: 3em; /* Dimensione del testo */
-    display: inline-flex;
-    text-align:left;
-}
-
 .show-case img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-.custom-fb-login-btn {
-    background-color: #4267B2; /* Facebook Blue */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
 }

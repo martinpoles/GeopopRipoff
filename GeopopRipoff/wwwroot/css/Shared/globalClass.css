@@ -6,3 +6,24 @@
     height: 100%;
     padding: 0px;
 }
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0px 0px 15px 15px;
+    font-size: 3em; /* Dimensione del testo */
+    display: inline-flex;
+    text-align: left;
+}
+
+.link-text {
+    color: #ffffff !important; /* Cambia il colore del testo del link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    padding: 10px 20px; /* Spaziatura interna */
+    border-radius: 5px; /* Arrotonda i bordi */
+}
+
+.link-text:hover {
+    color: #E2EAF4; /* Colore del testo del link al passaggio del mouse */
+}
