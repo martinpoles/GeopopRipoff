@@ -37,9 +37,8 @@
                 <div class="row utility-bar children-div-all">
 
                     <div class="col-5 titleImg colore-scritte-HV">
-                        @using (Html.BeginForm("Index", "Reels", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
                         {
-                            @Html.Hidden("id_argomento", "@item.Id_Argomento")
                             <button class="w-100 h-100 invisible-button colore-scritte-HV">SOSTENIBILMENTE</button>
                         }
                     </div>

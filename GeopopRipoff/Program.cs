@@ -40,4 +40,11 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+
+var port = Environment.GetEnvironmentVariable("PORT");
+if (string.IsNullOrEmpty(port))
+{
+    port = "8080"; // Porta di default se non è impostata da Heroku
+}
+
 app.Run();

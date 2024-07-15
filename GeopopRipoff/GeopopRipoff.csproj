@@ -8,14 +8,17 @@
 
   <ItemGroup>
     <Compile Remove="wwwroot\css\Menu\**" />
+    <Compile Remove="wwwroot\TrashTemp\**" />
+    <Compile Remove="wwwroot\Video\**" />
     <Content Remove="wwwroot\css\Menu\**" />
+    <Content Remove="wwwroot\TrashTemp\**" />
+    <Content Remove="wwwroot\Video\**" />
     <EmbeddedResource Remove="wwwroot\css\Menu\**" />
+    <EmbeddedResource Remove="wwwroot\TrashTemp\**" />
+    <EmbeddedResource Remove="wwwroot\Video\**" />
     <None Remove="wwwroot\css\Menu\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\TrashTemp\" />
-    <Folder Include="wwwroot\Video\" />
+    <None Remove="wwwroot\TrashTemp\**" />
+    <None Remove="wwwroot\Video\**" />
   </ItemGroup>
 
   <ItemGroup>
