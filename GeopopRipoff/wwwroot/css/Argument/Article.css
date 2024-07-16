@@ -1,33 +1,3 @@
-.main-corp-article {
-    height: 200vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 10px solid #39FF14;
-    border-radius: 30px;
-    top: 50px;
-    margin-bottom: 50px;
-}
-
-.utility-bar-article {
-    position: absolute;
-    width: 100%;
-    top: 0%;
-    height: 70px;
-    border-bottom: 3px solid #39FF14;
-}
-
-.menu-selection-article {
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-}
-
 .container-flexbox-article {
     position: absolute;
     width: 100%;
@@ -71,3 +41,18 @@
     .image-article .immagine {
         width: 100%;
     }
+
+@media (max-width: 500px) {
+    .row {
+        flex-direction: row; /* Cambia in colonna sotto i 500px */
+    }
+
+    .right-text,
+    .left-text {
+        order: unset; /* Resetta l'ordine per la colonna */
+    }
+    .text-article,
+    .image-article {
+        width:100%;
+    }
+}

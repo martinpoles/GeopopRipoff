@@ -1,4 +1,5 @@
-﻿document.addEventListener("DOMContentLoaded", function () {
+﻿//Home Index
+document.addEventListener("DOMContentLoaded", function () {
 
     adjustWidth();
     window.addEventListener('resize', adjustWidth);
@@ -30,7 +31,7 @@
 
     const stopSequence = () => {
         isPlaying = false;
-        videos.forEach(video => {
+        Array.from(videos).forEach(video => {
             video.pause();
             video.currentTime = 0; // Reset all videos
         });
@@ -38,7 +39,7 @@
     };
 
     observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
+        Array.from(entries).forEach(entry => {
             if (entry.isIntersecting) {
                 startSequence();
             } else {
@@ -52,15 +53,18 @@
     
 });
 
+window.addEventListener('resize', function () {
+    adjustWidth();
+});
 
 function adjustWidth() {
-    const parentDiv = document.getElementsByClassName('stories-container');
-    const childDivs = document.getElementsByClassName('stories-element');
+    const parentStories = document.getElementsByClassName('stories-container');
+    const childStories = document.getElementsByClassName('stories-element');
 
-    targetHeight = parentDiv[0].offsetHeight - (parentDiv[0].offsetHeight *0.2) -20
+    targetHeight = parentStories[0].offsetHeight - (parentStories[0].offsetHeight *0.2) -20
 
-    for (var i = 0; i < childDivs.length; i++) {
-        childDivs[i].style.height = `${targetHeight}px`;
-        childDivs[i].style.width = `${targetHeight}px`;
+    for (var i = 0; i < childStories.length; i++) {
+        childStories[i].style.height = `${targetHeight}px`;
+        childStories[i].style.width = `${targetHeight}px`;
     }
 }

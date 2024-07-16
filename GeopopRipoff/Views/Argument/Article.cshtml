@@ -1,20 +1,20 @@
 ﻿@model GeopopRipoff.Models.ArticleXml
 
-<div class="container-flexbox-article children-div-all">
+<div class="container-flexbox-article ">
 
-    <div class="row" style="margin:0px;">
-        <h1 class="colore-scritte-LV">@Model.Title</h1>
-        <h3 class="colore-scritte-LV">@Model.Header</h3>
+    <div class="row  children-div-all second-lv-conteiner" style="margin:0px;">
+        <h1 class="colore-scritte-LV third-lv-conteiner">@Model.Title</h1>
+        <h3 class="colore-scritte-LV third-lv-conteiner">@Model.Header</h3>
     </div>
 
     @for (int i = 0; i < Model.Chapters.Count; i++)
     {
-        <div class="row @(i % 2 == 0 ? "right-text" : "left-text")">
-            <div class="text-article">
+        <div class="row @(i % 2 == 0 ? "right-text" : "left-text") children-div-all second-lv-conteiner">
+            <div class="text-article third-lv-conteiner">
                 <h3 class="colore-scritte-LV">@Model.Chapters[i].Subtitle</h3>
                 <h5 class="colore-scritte-LV">@Model.Chapters[i].Content</h5>
             </div>
-            <div class="image-article">
+            <div class="image-article third-lv-conteiner">
                 <img class="immagine" src="@Model.Chapters[i].SubImgPath" alt="img">
             </div>
         </div>

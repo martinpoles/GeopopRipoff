@@ -5,180 +5,86 @@
 @model GeopopRipoff.Models.Menu.MenuIndex;
 
 
-<div class="row" style="height:100vh; width:100%; position:relative; top:50px">
-    <div class="col-1"></div>
+<div class="row container-menu father-menu" style="">
 
-    <div class="col-10">
+    <div class="row go-back-to-home child-menu">
 
-        <div class="row" style="top:15%; height:10%;">
-            <div class="col-11"></div>
-            <div class="col-1" style="display: flex; align-items: center; justify-content: center; font-size:40px">
-                @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "" }))
-                {
+        <div class="link-back-go-back-to-home">
+            @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "" }))
+            {
 
-                    <button class="invisible-button" style="display: flex; align-items: center">
-                        <i class="fas fa-times" style="padding:5px"></i>
-                        <span>CHIUDI</span>
-                    </button>
+                <button class="invisible-button" style="display: flex; align-items: center">
+                    <i class="fas fa-times" style="padding:5px"></i>
+                    <span>CHIUDI</span>
+                </button>
 
-                }
-            </div>
+            }
+        </div>
+    </div>
+
+    <div class="row utility-bar-menu child-menu">
+
+        <div class="" style="width:auto; height: 100%;">
+
+            @using (Html.BeginForm("Index", "LogSignInOut", FormMethod.Post, new { @class = "" }))
+            {
+                <button class="invisible-button" style="display: flex; align-items: center">
+                    <img src="#" alt="Alternate Text" style="border-radius:50%; padding:5px" />
+                    <span style="display: flex; flex-direction: column; justify-content: center;">
+                        <span>Benvenuto</span>
+                        @if (!string.IsNullOrEmpty(Model.Utente.Id_Username))
+                        {
+                            <span>@Model.Utente.Id_Username</span>
+                        }
+                    </span>
+                </button>
+            }
         </div>
 
-        <div class="row" style="top:35%; height:10%;">
-
-            <div class="col-3" style="">
-
-                @using (Html.BeginForm("Index", "LogSignInOut", FormMethod.Post, new { @class = "" }))
-                {
-                    <button class="invisible-button" style="display: flex; align-items: center">
-                        <img src="#" alt="Alternate Text" style="border-radius:50%; padding:5px" />
-                        <span style="display: flex; flex-direction: column; justify-content: center;">
-                            <span>Benvenuto</span>
-                            @if (!string.IsNullOrEmpty(Model.Utente.Id_Username))
-                            {
-                                <span>@Model.Utente.Id_Username</span>
-                            }
-                        </span>
-                    </button>
-                }
-            </div>
-
-            <div class="col-3" style="display: flex; align-items: center;">
-                @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
-                {
-                    <button class="invisible-button">
-                        <i class="fas fa-bell"></i>
-                    </button>
-                }
-                <span style="display: flex; flex-direction: column; justify-content: center; padding:10px">
-                    <span>Hai X</span>
-                    <span>Nuove Notifiche</span>
-                </span>
-
-
-            </div>
-
-        </div>
-
-        <div class="row" style="top:25%; height:10%;">
-            <div style="">
-                <form id="search-form" style="justify-content: center; display: flex; align-items: center; height:100%;">
-                    <input type="text" id="search-input" placeholder="Cerca..." style="width:50%; padding:10px">
-                    <button type="submit" class="invisible-button">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <div class="flexbox-try">
-
-
-            @foreach (var item in Model.Argomenti)
+        <div class="" style="display: flex; align-items: center; width:auto; height: 100%;">
+            @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
             {
+                <button class="invisible-button">
+                    <i class="fas fa-bell"></i>
+                </button>
+            }
+            <span style="display: flex; flex-direction: column; justify-content: center; padding:10px">
+                <span>Hai X</span>
+                <span>Nuove Notifiche</span>
+            </span>
 
-                <div class="grid-item-menu">
-                    @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-                    {
-                        @Html.Hidden("id_argomento", item.Id_Argomento)
-                        <button class="invisible-button">
-                            <h1>@item.Id_Argomento</h1>
-                        </button>
-                    }
-                </div>
-            }
-            @*
-            <div class="grid-item-menu">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-            {
-            @Html.Hidden("ItemId", "1")
-            <button class="invisible-button">
-            <h1>Argomento</h1>
-            </button>
-            }
-            </div>
-            <div class="grid-item-menu">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-            {
-            @Html.Hidden("ItemId", "1")
-            <button class="invisible-button">
-            <h1>Argomento</h1>
-            </button>
-            }
-            </div>
-            <div class="grid-item-menu">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-            {
-            @Html.Hidden("ItemId", "1")
-            <button class="invisible-button">
-            <h1>Argomento</h1>
-            </button>
-            }
-            </div>
-            <div class="grid-item-menu">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-            {
-            @Html.Hidden("ItemId", "1")
-            <button class="invisible-button">
-            <h1>Argomento</h1>
-            </button>
-            }
-            </div>
-            <div class="grid-item-menu">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-            {
-            @Html.Hidden("ItemId", "1")
-            <button class="invisible-button">
-            <h1>Argomento</h1>
-            </button>
-            }
-            </div>
-            <div class="grid-item-menu">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-            {
-            @Html.Hidden("ItemId", "1")
-            <button class="invisible-button">
-            <h1>Argomento</h1>
-            </button>
-            }
-            </div>
-            <div class="grid-item-menu">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-            {
-            @Html.Hidden("ItemId", "1")
-            <button class="invisible-button">
-            <h1>Argomento</h1>
-            </button>
-            }
-            </div>
-            <div class="grid-item-menu">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-            {
-            @Html.Hidden("ItemId", "1")
-            <button class="invisible-button">
-            <h1>Argomento</h1>
-            </button>
-            }
-            </div>
-            <div class="grid-item-menu">
-            @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
-            {
-            @Html.Hidden("ItemId", "1")
-            <button class="invisible-button">
-            <h1>Argomento</h1>
-            </button>
-            }
-            </div> *@
 
         </div>
 
     </div>
 
+    <div class="row barra-di-ricerca-menu child-menu">
+        <div style="">
+            <form id="search-form" style="">
+                <input type="text" id="search-input" placeholder="Cerca..." style="width:50%; padding:10px">
+                <button type="submit" class="invisible-button button-special">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row flexbox-try child-menu">
+        @foreach (var item in Model.Argomenti)
+        {
+
+            <div class="grid-item-menu">
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.Hidden("id_argomento", item.Id_Argomento)
+                    <button class="invisible-button">
+                        <h1>@item.Id_Argomento</h1>
+                    </button>
+                }
+            </div>
+        }
+    </div>
+
 </div>
-
-<div class="col-1"></div>
-</div>
-
-
+<link rel="stylesheet" href="~/css/Menu/Index.css" asp-append-version="true" />
 <script src="~/js/Menu/Index.js" asp-append-version="true"></script>

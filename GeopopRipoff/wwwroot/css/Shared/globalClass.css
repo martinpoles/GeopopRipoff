@@ -27,3 +27,12 @@
 .link-text:hover {
     color: #E2EAF4; /* Colore del testo del link al passaggio del mouse */
 }
+
+@media (max-width: 500px) {
+    .link-text {
+        font-size:25px;
+    }
+    .text-overlay{
+        font-size:25px;
+     }
+}

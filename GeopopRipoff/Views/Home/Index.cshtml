@@ -1,6 +1,6 @@
 ﻿@model GeopopRipoff.Models.Home.HomeIndex
 
-<div class="row mainShowCase children-div-all">
+<div class="row main-show-case second-lv-conteiner children-div-all">
 
     <div id="carouselExampleControls" class="carousel slide w-100 h-100" data-ride="carousel" style="padding:0px">
 
@@ -39,7 +39,7 @@
 
 </div>
 
-<div class="row stories-container children-div-all">
+<div class="row stories-container second-lv-conteiner children-div-all">
 
     @foreach (var storia in Model.Storie)
     {
@@ -55,7 +55,7 @@
 
 </div>
 
-<div class="row reelsStyle children-div-all">
+<div class="row reels-style second-lv-conteiner children-div-all">
 
     <div class="row" style="height:100%; display:flex; padding-top:10px; padding-bottom:10px; flex:1; margin-left: 0px;margin-right: 0px;">
 
@@ -81,3 +81,5 @@
     </div>
 
 </div>
+
+<script src="~/js/Home/Index.js" asp-append-version="true"></script>
