@@ -87,6 +87,6 @@
     {
         flex: 0 0 100%; /* Incolonna tutti gli elementi su una colonna */
         width: calc(100% - 20px);
-        margin-bottom: 20px; /* Spazio tra gli elementi quando in colonna */
+        margin-bottom: 50px; /* Spazio tra gli elementi quando in colonna */
     }
 }
