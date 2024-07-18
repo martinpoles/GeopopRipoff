@@ -8,6 +8,7 @@ using System.IO;
 using System.Xml;
 using System.Text.RegularExpressions;
 using GeopopRipoff.Models.Argument;
+using Microsoft.Extensions.Hosting.Internal;
 
 
 namespace GeopopRipoff.Controllers
@@ -15,14 +16,20 @@ namespace GeopopRipoff.Controllers
     public class ArgumentController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IConfiguration _configuration;
         private readonly ArticlesRepository _articlesRepository;
         private readonly ArgomentiRepository _argomentiRepository;
-        public ArgumentController(ILogger<HomeController> logger, ArticlesRepository articlesRepository, ArgomentiRepository argomentiRepository)
+        private readonly IWebHostEnvironment _hostingEnvironment;
+
+        public ArgumentController(ILogger<HomeController> logger, IConfiguration configuration, ArticlesRepository articlesRepository, ArgomentiRepository argomentiRepository, IWebHostEnvironment hostingEnvironment)
         {
             _logger = logger;
+            _configuration = configuration;
             _articlesRepository = articlesRepository;
             _argomentiRepository = argomentiRepository;
+            _hostingEnvironment = hostingEnvironment;
         }
+
 
         public IActionResult Index(string id_argomento)
         {
@@ -31,14 +38,16 @@ namespace GeopopRipoff.Controllers
             foreach (var item in _articlesRepository.Get9ArticleByArgomento(id_argomento))
             {
                 ContenutoArgumentArticle contenutoArgumentArticle = new ContenutoArgumentArticle();
-                contenutoArgumentArticle.ImgPath = @$"/Argument/{id_argomento}/{item.Id_Contenuto}/{item.Id_Contenuto}_1.jpg";
+                
+                contenutoArgumentArticle.ImgPath = @$"/DataMultimedia/Contenuti/{item.Id_Contenuto}/{item.Id_Contenuto}_1.jpg";
+                
                 contenutoArgumentArticle.Title = item.Id_Contenuto;
                 argumentIndex.Contenuti.Add(contenutoArgumentArticle);
             }
 
             argumentIndex.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList(); ;
 
-            argumentIndex.PathHeader = $"/Argument/Header/{id_argomento}.jpg";
+            argumentIndex.PathHeader = $"/DataMultimedia/Header/{id_argomento}.jpg";
 
             argumentIndex.Descrizione = _argomentiRepository.GetArgumentDescriptionByIdArgument(id_argomento).FirstOrDefault();
 
@@ -51,19 +60,22 @@ namespace GeopopRipoff.Controllers
             //recupero da db 
             var argument = _articlesRepository.GetArticleByIdArticle(id_articolo);
 
-            var pathRoot = @$"C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff\wwwroot\Argument\{id_argomento}\{id_articolo}";
+            var pathRoot = @$"/DataMultimedia/Contenuti/{id_articolo}";
 
-            var pathXml = @$"C:\Users\ssoko\Desktop\Personal\Code\GeopopRipoff\GeopopRipoff\GeopopRipoff\wwwroot\Argument\{id_argomento}\{id_articolo}\{id_articolo}.xml";
+            var pathXml = @$"{pathRoot}/{id_articolo}.xml";
 
+            var pathRootAbsolute = _hostingEnvironment.ContentRootPath + "/wwwroot" + pathRoot;
 
-            string[] fileNames = Directory.GetFiles(pathRoot);
+            string[] fileNames = Directory.GetFiles(pathRootAbsolute);
             Regex regex = new Regex(@".*_\d+\.jpg$");
             var validFileNames = fileNames.Where(fileName => regex.IsMatch(Path.GetFileName(fileName)));
 
             List<string> fileList = new List<string>();
+            
+            
             foreach (var fileName in validFileNames)
             {
-                string searchString = @"\Argument\";
+                string searchString = @"/DataMultimedia/";
                 int index = fileName.IndexOf(searchString);
                 string result = "";
 
@@ -80,7 +92,7 @@ namespace GeopopRipoff.Controllers
             ArticleXml article = new ArticleXml();
 
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(pathXml);
+            xmlDoc.Load((_hostingEnvironment.ContentRootPath + "/wwwroot" + pathXml));
 
             // Leggi il titolo e l'intestazione
             article.Title = xmlDoc.SelectSingleNode("/article/title")?.InnerText;
@@ -120,7 +132,11 @@ namespace GeopopRipoff.Controllers
             foreach (var item in _articlesRepository.Get9ArticleByArgomento(trashBag.id_argomento))
             {
                 ContenutoArgumentArticle contenutoArgumentArticle = new ContenutoArgumentArticle();
-                contenutoArgumentArticle.ImgPath = @$"/Argument/{trashBag.id_argomento}/{item.Id_Contenuto}/{item.Id_Contenuto}_1.jpg";
+
+
+                contenutoArgumentArticle.ImgPath = @$"/DataMultimedia/{item.Id_Contenuto}/{item.Id_Contenuto}_1.jpg";
+                
+                
                 contenutoArgumentArticle.Title = item.Id_Contenuto;
                 argumentIndex.Contenuti.Add(contenutoArgumentArticle);
             }

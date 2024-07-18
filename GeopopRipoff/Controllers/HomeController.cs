@@ -20,15 +20,18 @@ namespace GeopopRipoff.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        private readonly IConfiguration _configuration;
+        private readonly IWebHostEnvironment _hostingEnvironment;
         private readonly ArticlesRepository _articlesRepository;
         private readonly ArgomentiRepository _argomentiRepository;
 
-        public HomeController(ILogger<HomeController> logger, ArticlesRepository articlesRepository, ArgomentiRepository argomentiRepository)
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration, ArticlesRepository articlesRepository, ArgomentiRepository argomentiRepository, IWebHostEnvironment hostingEnvironment)
         {
             _logger = logger;
+            _configuration = configuration;
             _articlesRepository = articlesRepository;
             _argomentiRepository = argomentiRepository;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -41,11 +44,6 @@ namespace GeopopRipoff.Controllers
         public IActionResult Index()
         {
             return View(GetIndexData());
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
         }
 
         [HttpPost]
@@ -73,11 +71,8 @@ namespace GeopopRipoff.Controllers
 
         public ActionResult Policy(string itemId)
         {
-
-            string xmlFilePath = "C:\\Users\\ssoko\\Desktop\\TEMP\\TestXml.xml";
-
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(xmlFilePath);
+            xmlDoc.Load(_hostingEnvironment.ContentRootPath + "/wwwroot/DataMultimedia/Documenti/TestXml.xml");
 
             GeopopRipoff.Utility.Document document = new GeopopRipoff.Utility.Document();
 
@@ -125,7 +120,7 @@ namespace GeopopRipoff.Controllers
 
                 contenuto1.Id_Contenuto = contenuto[i].id_contenuto;
 
-                contenuto1.Path = @$"\Argument\{contenuto[i].id_argomento}\{contenuto[i].id_contenuto}\{contenuto[i].id_contenuto}_1.jpg";
+                contenuto1.Path =@$"/DataMultimedia/Contenuti/{contenuto[i].id_contenuto}/{contenuto[i].id_contenuto}_1.jpg";
 
                 contenuto1.Id_Argomento = contenuto[i].id_argomento;
 
@@ -145,13 +140,12 @@ namespace GeopopRipoff.Controllers
                 Content cont = new Content();
                 cont.Id_Contenuto = reel.Id_Contenuto;
 
-                cont.Path = @$"\Video\{reel.Id_Contenuto}.mp4";
+                cont.Path = @$"/DataMultimedia/Contenuti/{reel.Id_Contenuto}/{reel.Id_Contenuto}.mp4";
                 index.Reels.Add(cont);
             }
             //Da completare
 
             return index;
         }
-
     }
 }

@@ -48,7 +48,7 @@ namespace GeopopRipoff.Repository
                         + " JOIN contenuti_formati ON contenuti.oid = contenuti_formati.oid_contenuto"
                         + " JOIN argomenti ON contenuti_argomenti.oid_argomento = argomenti.oid"
                         + " JOIN formati ON contenuti_formati.oid_formato = formati.oid"
-                        + " WHERE Dt_Pubblicazione >= DATEADD(WEEK, -2, GETDATE())" 
+                        + " WHERE Dt_Pubblicazione >= DATEADD(WEEK, -4, GETDATE())" 
                         + " AND formati.id_formato = 'Articolo'"
                         + " ORDER BY Argomenti.Id_Argomento DESC";
 
