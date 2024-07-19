@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System.Xml.Serialization;
 
 namespace GeopopRipoff.Utility
 {
@@ -19,6 +20,10 @@ namespace GeopopRipoff.Utility
         [XmlArray("sections")]
         [XmlArrayItem("section")]
         public List<Section> Sections { get; set; }
+        public Document()
+        {
+            Sections = new List<Section>();
+        }
     }
 
     public class Section

@@ -23,6 +23,10 @@ namespace GeopopRipoff.Models
         [XmlArrayItem("chapter")]
         public List<Chapters> Chapters { get; set; }
         public string LocalPath { get; set; }
+        public ArticleXml()
+        {
+            Chapters = new List<Chapters>();
+        }
     }
 
     public class Chapters
