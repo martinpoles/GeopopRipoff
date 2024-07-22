@@ -14,6 +14,8 @@ using GeopopRipoff.Repository;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Identity.Client.Extensions.Msal;
 using GeopopRipoff.Models.Home;
+using System.IO;
+using System;
 
 namespace GeopopRipoff.Controllers
 {
@@ -46,12 +48,9 @@ namespace GeopopRipoff.Controllers
             return View(GetIndexData());
         }
 
-        [HttpPost]
-        public ActionResult Notifiche()
+        public IActionResult Notifiche()
         {
-            //premo il bottone 
-            //entro qua e in base al bottone valorizzo il model 
-            //utilizzo il model per generare la view successiva
+
             return View();
         }
 
@@ -71,34 +70,40 @@ namespace GeopopRipoff.Controllers
 
         public ActionResult Policy(string itemId)
         {
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(_hostingEnvironment.ContentRootPath + "/wwwroot/DataMultimedia/Documenti/TestXml.xml");
-
             GeopopRipoff.Utility.Document document = new GeopopRipoff.Utility.Document();
+            FileInfo fileInfo = new FileInfo(_hostingEnvironment.ContentRootPath + "/wwwroot/DataMultimedia/Documenti/Policy.xml");
 
-
-            // Leggi il titolo e l'intestazione
-            document.Title = xmlDoc.SelectSingleNode("/body/title")?.InnerText;
-            document.Header = xmlDoc.SelectSingleNode("/body/header")?.InnerText;
-            document.Sections = new List<Section>();
-
-
-            // Leggi le sezioni
-            XmlNodeList sectionNodes = xmlDoc.SelectNodes("/body/sections/section");
-            if (sectionNodes != null)
+            if (fileInfo.Exists)
             {
-                foreach (XmlNode sectionNode in sectionNodes)
+                XmlDocument xmlDoc = new XmlDocument();
+                xmlDoc.Load(_hostingEnvironment.ContentRootPath + "/wwwroot/DataMultimedia/Documenti/Policy.xml");
+
+
+
+
+                // Leggi il titolo e l'intestazione
+                document.Title = xmlDoc.SelectSingleNode("/body/title")?.InnerText;
+                document.Header = xmlDoc.SelectSingleNode("/body/header")?.InnerText;
+                document.Sections = new List<Section>();
+
+
+                // Leggi le sezioni
+                XmlNodeList sectionNodes = xmlDoc.SelectNodes("/body/sections/section");
+                if (sectionNodes != null)
                 {
-                    document.Sections.Add(new Section(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("content")?.InnerText));
+                    foreach (XmlNode sectionNode in sectionNodes)
+                    {
+                        document.Sections.Add(new Section(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("content")?.InnerText));
+                    }
                 }
-            }
 
-            switch (itemId)
-            {
-                case "1":
-                    break;
-                default:
-                    break;
+                switch (itemId)
+                {
+                    case "1":
+                        break;
+                    default:
+                        break;
+                }
             }
             return View(document);
         }
@@ -108,7 +113,7 @@ namespace GeopopRipoff.Controllers
             HomeIndex index = new HomeIndex();
 
             //argomenti
-            index.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList();
+            //index.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList();
 
             //storie
             var contenuto = _articlesRepository.GetLast2WeekStories();

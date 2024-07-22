@@ -30,7 +30,7 @@ namespace GeopopRipoff.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
-
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Index(string id_argomento)
         {
             ArgumentIndex argumentIndex = new ArgumentIndex();
@@ -38,25 +38,28 @@ namespace GeopopRipoff.Controllers
             foreach (var item in _articlesRepository.Get9ArticleByArgomento(id_argomento))
             {
                 ContenutoArgumentArticle contenutoArgumentArticle = new ContenutoArgumentArticle();
-                
+
                 contenutoArgumentArticle.ImgPath = @$"/DataMultimedia/Contenuti/{item.Id_Contenuto}/{item.Id_Contenuto}_1.jpg";
-                
+
                 contenutoArgumentArticle.Title = item.Id_Contenuto;
                 argumentIndex.Contenuti.Add(contenutoArgumentArticle);
             }
 
-            argumentIndex.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList(); ;
+            //argumentIndex.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList(); ;
 
             argumentIndex.PathHeader = $"/DataMultimedia/Header/{id_argomento}.jpg";
 
             argumentIndex.Descrizione = _argomentiRepository.GetArgumentDescriptionByIdArgument(id_argomento).FirstOrDefault();
 
-            argumentIndex.Id_Argomento = id_argomento;
+            //argumentIndex.Id_Argomento = id_argomento;
 
             return View(argumentIndex);
         }
         public IActionResult Article(string id_articolo, string id_argomento)
         {
+            ArticleXml article = new ArticleXml();
+
+
             //recupero da db 
             var argument = _articlesRepository.GetArticleByIdArticle(id_articolo);
 
@@ -66,61 +69,70 @@ namespace GeopopRipoff.Controllers
 
             var pathRootAbsolute = _hostingEnvironment.ContentRootPath + "/wwwroot" + pathRoot;
 
-            string[] fileNames = Directory.GetFiles(pathRootAbsolute);
-            Regex regex = new Regex(@".*_\d+\.jpg$");
-            var validFileNames = fileNames.Where(fileName => regex.IsMatch(Path.GetFileName(fileName)));
+            FileInfo fileInfo12 = new FileInfo(pathRootAbsolute);
 
-            List<string> fileList = new List<string>();
-            
-            
-            foreach (var fileName in validFileNames)
-            {
-                string searchString = @"/DataMultimedia/";
-                int index = fileName.IndexOf(searchString);
-                string result = "";
+            //if (fileInfo12.Exists)
+            //{
 
-                if (index >= 0)
+                string[] fileNames = Directory.GetFiles(pathRootAbsolute);
+                Regex regex = new Regex(@".*_\d+\.jpg$");
+                var validFileNames = fileNames.Where(fileName => regex.IsMatch(Path.GetFileName(fileName)));
+
+                List<string> fileList = new List<string>();
+
+
+                foreach (var fileName in validFileNames)
                 {
-                    // Extract the substring starting from the search string
-                    result = fileName.Substring(index);
+                    string searchString = @"/DataMultimedia/";
+                    int index = fileName.IndexOf(searchString);
+                    string result = "";
+
+                    if (index >= 0)
+                    {
+                        // Extract the substring starting from the search string
+                        result = fileName.Substring(index);
+                    }
+
+                    fileList.Add(result.ToString());
                 }
 
-                fileList.Add(result.ToString());
-            }
 
+                FileInfo fileInfo = new FileInfo(_hostingEnvironment.ContentRootPath + "/wwwroot" + pathXml);
 
-            ArticleXml article = new ArticleXml();
-
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load((_hostingEnvironment.ContentRootPath + "/wwwroot" + pathXml));
-
-            // Leggi il titolo e l'intestazione
-            article.Title = xmlDoc.SelectSingleNode("/article/title")?.InnerText;
-            article.Header = xmlDoc.SelectSingleNode("/article/header")?.InnerText;
-            article.Chapters = new List<Chapters>();
-
-
-            article.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList();
-
-            // Leggi le sezioni
-            XmlNodeList sectionNodes = xmlDoc.SelectNodes("/article/chapters/chapter");
-            int i = 0;
-            if (sectionNodes != null)
-            {
-                foreach (XmlNode sectionNode in sectionNodes)
+                if (fileInfo.Exists)
                 {
-                    if (i < fileList.Count)
-                    {
-                        article.Chapters.Add(new Chapters(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("content")?.InnerText, fileList[i]));
-                    }
-                    else
-                    {
-                        article.Chapters.Add(new Chapters(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("content")?.InnerText));
-                    }
-                    i++;
-                }
-            }
 
+                    XmlDocument xmlDoc = new XmlDocument();
+                    xmlDoc.Load((_hostingEnvironment.ContentRootPath + "/wwwroot" + pathXml));
+
+                    // Leggi il titolo e l'intestazione
+                    article.Title = xmlDoc.SelectSingleNode("/article/title")?.InnerText;
+                    article.Header = xmlDoc.SelectSingleNode("/article/header")?.InnerText;
+                    article.Chapters = new List<Chapters>();
+
+
+                    //article.Argomenti = _argomentiRepository.GetAllActiveDocument().ToList();
+
+                    // Leggi le sezioni
+                    XmlNodeList sectionNodes = xmlDoc.SelectNodes("/article/chapters/chapter");
+                    int i = 0;
+                    if (sectionNodes != null)
+                    {
+                        foreach (XmlNode sectionNode in sectionNodes)
+                        {
+                            if (i < fileList.Count)
+                            {
+                                article.Chapters.Add(new Chapters(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("content")?.InnerText, fileList[i]));
+                            }
+                            else
+                            {
+                                article.Chapters.Add(new Chapters(sectionNode.SelectSingleNode("subtitle")?.InnerText, sectionNode.SelectSingleNode("content")?.InnerText));
+                            }
+                            i++;
+                        }
+                    }
+                }
+            //}
             return View(article);
         }
 
@@ -134,9 +146,9 @@ namespace GeopopRipoff.Controllers
                 ContenutoArgumentArticle contenutoArgumentArticle = new ContenutoArgumentArticle();
 
 
-                contenutoArgumentArticle.ImgPath = @$"/DataMultimedia/{item.Id_Contenuto}/{item.Id_Contenuto}_1.jpg";
-                
-                
+                contenutoArgumentArticle.ImgPath = @$"/DataMultimedia/Contenuti/{item.Id_Contenuto}/{item.Id_Contenuto}_1.jpg";
+
+
                 contenutoArgumentArticle.Title = item.Id_Contenuto;
                 argumentIndex.Contenuti.Add(contenutoArgumentArticle);
             }

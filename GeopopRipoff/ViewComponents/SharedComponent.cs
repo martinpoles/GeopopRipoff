@@ -1,6 +1,7 @@
 ﻿using GeopopRipoff.Models.Shared;
 using GeopopRipoff.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
 
 namespace GeopopRipoff.ViewComponents
 {
@@ -16,6 +17,7 @@ namespace GeopopRipoff.ViewComponents
             _argomentiRepository = argomentiRepository;
         }
 
+        [OutputCache(NoStore = true, Duration = 0)]
         public IViewComponentResult Invoke()
         {
 
