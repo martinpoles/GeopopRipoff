@@ -24,6 +24,7 @@
     margin: 0;
     padding : 15px;
     position:absolute;
+    width:100%;
 }
 
 .item-argument:nth-child(1),

@@ -17,12 +17,17 @@ async function insertHtmlStructure() {
 
 }
 function grab9More(id_argomento) {
-    
+    // conto quante container-class234
+    intCounter = document.getElementsByClassName('container-class234').length
+
     // Esegui una richiesta fetch al server
     return fetch('/Argument/PullDataFor9More', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id_argomento: id_argomento })
+        body: JSON.stringify({
+            id_argomento: id_argomento,
+            counter: intCounter
+        })
     })
         .then(response => {
             console.log('Response status:', response.status); // Debug: controlla lo stato della risposta

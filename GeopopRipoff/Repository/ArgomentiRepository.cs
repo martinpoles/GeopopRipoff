@@ -1,5 +1,7 @@
 ﻿using GeopopRipoff.Models;
+using Microsoft.Data.SqlClient;
 using System.Security.Cryptography;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace GeopopRipoff.Repository
 {
@@ -23,9 +25,11 @@ namespace GeopopRipoff.Repository
         {
 
             string qry = "SELECT argomenti.ds_argomento FROM argomenti" +
-                            $" WHERE argomenti.id_argomento = '{id_argomento}'";
+                            $" WHERE argomenti.id_argomento = '@IdArgomento'";
 
-            return _genericRepository.Query<string>(qry);
+            var parameters = new { IdArgomento = id_argomento };
+
+            return _genericRepository.Query<string>(qry, parameters);
         }
     }
 }

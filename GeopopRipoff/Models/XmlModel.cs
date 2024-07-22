@@ -12,6 +12,8 @@ namespace GeopopRipoff.Models
     {
 
         public List<Argomento> Argomenti { get; set; }
+        public Autore Autore { get; set; }
+        public DateTime DtPubblicazione { get; set; }
 
         [XmlElement("title")]
         public string Title { get; set; }
@@ -26,6 +28,8 @@ namespace GeopopRipoff.Models
         public ArticleXml()
         {
             Chapters = new List<Chapters>();
+            Argomenti = new List<Argomento>();
+            Autore = new Autore();
         }
     }
 

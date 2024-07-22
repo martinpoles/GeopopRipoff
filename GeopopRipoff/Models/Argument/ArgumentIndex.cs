@@ -24,6 +24,15 @@
     public class TrashBag
     {
         public string id_argomento { get; set; }
+        public int counter { get; set; }
     }
+
+    public class DbDataArticle 
+    {
+        public string id_contenuto { get; set; }
+        public string id_autore { get; set; }
+        public DateTime dt_pubblicazione { get; set; }
+    }
+
 
 }
