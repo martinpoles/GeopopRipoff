@@ -4,28 +4,30 @@ body, html {
     height: 100%;
     overflow: hidden;
 }
-
 .video-feed {
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
-    height: 100vh;
+    height: 80%;
     width: 100%;
     scroll-snap-type: y mandatory;
+    position: relative; 
+    top:10%;
 }
 
 .video-container {
-    width: 100%;
-    height: 100vh;
     scroll-snap-align: start;
+    position: absolute; /* Posizione assoluta per centrare i video */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    border-radius: 10%;
 }
 
 .video-item {
-    max-height: 100%;
-    max-width: 100%;
+    width: 100%; /* Occupa tutta la larghezza del contenitore */
+    height: 100%; /* Occupa tutta l'altezza del contenitore */
+    object-fit: cover; /* Mantiene le proporzioni del video */
+    border-radius:25px;
 }
