@@ -125,7 +125,7 @@ namespace GeopopRipoff.Controllers
 
                 contenuto1.Id_Contenuto = contenuto[i].id_contenuto;
 
-                contenuto1.Path =@$"/DataMultimedia/Contenuti/{contenuto[i].id_contenuto}/{contenuto[i].id_contenuto}_1.jpg";
+                contenuto1.Path = @$"/DataMultimedia/Contenuti/{contenuto[i].id_contenuto}/{contenuto[i].id_contenuto}_1.jpg";
 
                 contenuto1.Id_Argomento = contenuto[i].id_argomento;
 
@@ -148,7 +148,6 @@ namespace GeopopRipoff.Controllers
                 cont.Path = @$"/DataMultimedia/Contenuti/{reel.Id_Contenuto}/{reel.Id_Contenuto}.mp4";
                 index.Reels.Add(cont);
             }
-            //Da completare
 
             return index;
         }

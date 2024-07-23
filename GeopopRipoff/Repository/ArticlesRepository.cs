@@ -72,7 +72,6 @@ namespace GeopopRipoff.Repository
             return list;
         }
 
-
         public List<Content> GetLast5Reels()
         {
 
@@ -91,7 +90,7 @@ namespace GeopopRipoff.Repository
             return list;
         }
 
-
+    
 
 
         

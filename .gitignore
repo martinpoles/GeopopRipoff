@@ -31,6 +31,8 @@ packages/
 
 # Ignore any personal or sensitive data
 appsettings.json
+wwwroot/DataMultimedia/
+
 
 # Ignore Node.js files (if applicable)
 node_modules/
