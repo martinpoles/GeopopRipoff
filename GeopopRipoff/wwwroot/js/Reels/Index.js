@@ -65,7 +65,7 @@ function resizeReels() {
         // calcola le posizioni per centrare il video
         const left = (containerWidth - videoWidth) / 2;
 
-        if (containerHeight < 500)
+        if (containerHeight < 700 || containerWidth < 500)
         {
             top = containerHeight + progressivoTop;
 
