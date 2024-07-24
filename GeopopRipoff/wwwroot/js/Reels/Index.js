@@ -72,14 +72,44 @@ function resizeReels() {
             // applica le dimensioni e le posizioni al video
             div.style.width = `100%`;
             div.style.height = `100%`;
-
-
             div.style.top = `${top}px`;
+    
+            //modifico il container padre
+            ContainerSchermo.style.height = `100%`;
+            ContainerSchermo.style.top = `0%`;
 
             progressivoTop += top;
 
-            ContainerSchermo.style.height = `100%`;
-            ContainerSchermo.style.top = `0%`;
+
+            const videoItem = div.querySelector('.video-item');
+            const utilityBarReels = div.querySelector('.utility-bar-reels');
+            const utilityBarTxt = div.querySelector('.utility-bar-txt');
+            const utilityBarBtn = div.querySelector('.utility-bar-btn');
+
+            // Modifica gli stili del video-item
+            videoItem.style.width = '100%';
+            videoItem.style.position = 'absolute';
+
+            // Modifica gli stili dell'utility-bar-reels
+            utilityBarReels.style.position = 'absolute';
+            utilityBarReels.style.width = '100%';
+            utilityBarReels.style.height = '30%';
+            utilityBarReels.style.bottom = '5%';
+
+            // Modifica gli stili dell'utility-bar-btn
+            utilityBarBtn.style.display = 'flex';
+            utilityBarBtn.style.flexDirection = 'row';
+            utilityBarBtn.style.justifyContent = 'flex-start';
+            utilityBarBtn.style.gap = '30px';
+
+            // Modifica le icone da fa-4x a fa-2x
+            const icons = utilityBarBtn.querySelectorAll('i');
+            icons.forEach(icon => {
+                icon.classList.remove('fa-4x');
+                icon.classList.add('fa-2x');
+            });
+
+
         }
         else
         {

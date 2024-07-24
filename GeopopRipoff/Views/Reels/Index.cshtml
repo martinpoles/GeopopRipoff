@@ -12,21 +12,49 @@
     <title>ViviSostenibile</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/css/Reels/Index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="~/js/Reels/Index.js"></script>
-    
+
 </head>
 <body>
     <div class="video-feed">
         @foreach (var video in Model.List_Reels)
         {
             <div class="video-container">
+
                 <video controls muted preload="none" class="video-item">
                     <source src="@video.Path" type="video/mp4">
                     Il tuo browser non supporta il tag video.
                 </video>
+
+                <div class="utility-bar-reels">
+
+                    <div class="utility-bar-txt">
+
+                        <div class="utility-bar-title">@video.Id_Contenuto</div>
+
+                        @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+                        {
+                            <a class="utility-bar-link">Vedi L'Intero Video</a>
+                        }
+
+                    </div>
+
+                    <div class="utility-bar-btn">
+
+                        <i class="fas fa-share fa-4x"></i>
+
+                        <i class="fas fa-thumbs-up fa-4x"></i>
+
+                        <i class="fas fa-comment fa-4x"></i>
+
+                    </div>
+
+                </div>
+
             </div>
         }
     </div>
