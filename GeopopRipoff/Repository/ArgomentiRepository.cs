@@ -21,15 +21,15 @@ namespace GeopopRipoff.Repository
 
             return _genericRepository.Query<Argomento>(qry);
         }
-        public IEnumerable<string> GetArgumentDescriptionByIdArgument(string id_argomento)
+        public List<Argomento> GetArgumentDescriptionByIdArgument(string id_argomento)
         {
 
             string qry = "SELECT argomenti.ds_argomento FROM argomenti" +
-                            $" WHERE argomenti.id_argomento = '@IdArgomento'";
+                            $" WHERE argomenti.id_argomento = @IdArgomento";
 
             var parameters = new { IdArgomento = id_argomento };
 
-            return _genericRepository.Query<string>(qry, parameters);
+            return _genericRepository.Query<Argomento>(qry, parameters).ToList();
         }
     }
 }

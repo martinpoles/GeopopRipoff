@@ -1,7 +1,20 @@
 ﻿//Layout
 document.addEventListener("DOMContentLoaded", function () {
-    resizeView()
+    //resizeView()
 });
+
+window.addEventListener('load', function () {
+    //resize prima spinner
+    resizeView()
+
+    //tolgo l'img di caricamento
+    var loader = document.getElementById('loading-spinner');
+    var content = document.getElementById('main-corpo');
+
+    loader.style.display = 'none';
+    content.style.display = 'flex';
+});
+
 
 window.addEventListener('resize', function () {
     resizeView();

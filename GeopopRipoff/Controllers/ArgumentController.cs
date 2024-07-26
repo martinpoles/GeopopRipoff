@@ -56,7 +56,7 @@ namespace GeopopRipoff.Controllers
 
             argumentIndex.PathHeader = $"/DataMultimedia/Header/{id_argomento}.jpg";
 
-            argumentIndex.Descrizione = _argomentiRepository.GetArgumentDescriptionByIdArgument(id_argomento).FirstOrDefault();
+            argumentIndex.Descrizione = _argomentiRepository.GetArgumentDescriptionByIdArgument(id_argomento).FirstOrDefault().Ds_Argomento;
 
             argumentIndex.Id_Argomento = id_argomento;
 

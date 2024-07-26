@@ -3,7 +3,7 @@
 @foreach (var item in Model.Argomenti)
 {
     <div class="col-1 menuSelectionELEMENT">
-        @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+        @using (Html.BeginForm("Index", "Argument", FormMethod.Get, new { @class = "w-100 h-100" }))
         {
             <input type="hidden" name="id_argomento" value="@item.Id_Argomento" />
             <button class="w-100 h-100 invisible-button colore-scritte-HV">@item.Id_Argomento</button>

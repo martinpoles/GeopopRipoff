@@ -11,7 +11,7 @@
         @for (int i = 0; i < Model.Contenuti.Count; i++)
         {
             <div class="item-argument" data-index="@i">
-                @using (Html.BeginForm("Article", "Argument", FormMethod.Post, new { @class = "w-100 h-100" }))
+                @using (Html.BeginForm("Article", "Argument", FormMethod.Get, new { @class = "w-100 h-100" }))
                 {
                     @Html.Hidden("id_articolo", Model.Contenuti[i].Title)
                     @Html.Hidden("id_argomento", Model.Id_Argomento)
