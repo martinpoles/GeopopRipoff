@@ -7,11 +7,11 @@ namespace GeopopRipoff.Models.Reels
         //lista di reels
         //primo reels
         public Reels Id_Reels { get; set; }
-        public List<Content> List_Reels { get; set; }
+        public List<ReelsExtraData> List_Reels { get; set; }
 
         public ReelsIndex()
         {
-           List_Reels = new List<Content>();
+           List_Reels = new List<ReelsExtraData>();
         }
 
     }
@@ -23,5 +23,15 @@ namespace GeopopRipoff.Models.Reels
         public string Dt_Pubblicazione { get; set; }
         public string Local_Path { get; set; }
 
+    }
+
+    public class ReelsExtraData
+    {
+        public string Id_Contenuto { get; set; }
+        public string Id_Argomento { get; set; }
+        public string Dt_Pubblicazione { get; set; }
+        public string Cn_Like { get; set; }
+        public string Total_Comments { get; set; }
+        public string Path { get; set; }
     }
 }

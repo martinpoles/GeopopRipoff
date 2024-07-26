@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ViviSostenibile</title>
+    <title>VivoSostenibile</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/css/Reels/Index.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -21,12 +21,13 @@
 </head>
 <body>
     <div class="video-feed">
-        @foreach (var video in Model.List_Reels)
+
+        @for (int i = 0; i < Model.List_Reels.Count; i++)
         {
             <div class="video-container">
 
-                <video controls muted preload="none" class="video-item">
-                    <source src="@video.Path" type="video/mp4">
+                <video controls muted="true" preload="none" class="video-item">
+                    <source src="@Model.List_Reels[i].Path" type="video/mp4">
                     Il tuo browser non supporta il tag video.
                 </video>
 
@@ -34,12 +35,19 @@
 
                     <div class="utility-bar-txt">
 
-                        <div class="utility-bar-title">@video.Id_Contenuto</div>
+                        <h1 class="utility-bar-title" style="color: #D1D1D1">@Model.List_Reels[i].Id_Contenuto</h1>
 
-                        @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+                        @using (Html.BeginForm("Video", "Reels", FormMethod.Post, new { @class = "", id = $"ReelsLink_{i}" }))
                         {
-                            <a class="utility-bar-link">Vedi L'Intero Video</a>
+                            @Html.Hidden("id_articolo", @Model.List_Reels[i].Id_Contenuto)
+                            <a class="utility-bar-link" href="javascript:void(0);" id="@Model.List_Reels[i].Id_Contenuto">Vedi L'Intero Video</a>
                         }
+
+                        <script>
+                            document.getElementById("@($"ReelsLink_{i}")").addEventListener("click", function () {
+                                document.getElementById("@($"ReelsLink_{i}")").submit();
+                            });
+                        </script>
 
                     </div>
 
@@ -48,8 +56,11 @@
                         <i class="fas fa-share fa-4x"></i>
 
                         <i class="fas fa-thumbs-up fa-4x"></i>
+                        <h8>@Model.List_Reels[i].Cn_Like</h8>
+
 
                         <i class="fas fa-comment fa-4x"></i>
+                        <h8>@Model.List_Reels[i].Total_Comments</h8>
 
                     </div>
 

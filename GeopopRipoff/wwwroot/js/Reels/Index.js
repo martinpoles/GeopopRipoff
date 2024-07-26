@@ -89,6 +89,7 @@ function resizeReels() {
             // Modifica gli stili del video-item
             videoItem.style.width = '100%';
             videoItem.style.position = 'absolute';
+            videoItem.style.borderRadius = '0px'
 
             // Modifica gli stili dell'utility-bar-reels
             utilityBarReels.style.position = 'absolute';

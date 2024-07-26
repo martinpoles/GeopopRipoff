@@ -1,6 +1,7 @@
 ﻿using GeopopRipoff.Models;
 using GeopopRipoff.Models.Argument;
 using GeopopRipoff.Models.Home;
+using GeopopRipoff.Models.Reels;
 using Microsoft.Data.SqlClient;
 using System.Security.Cryptography;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
@@ -89,10 +90,25 @@ namespace GeopopRipoff.Repository
 
             return list;
         }
-
-    
-
-
         
+        public List<ReelsExtraData> GetAllReelsAndExtraData()
+        {
+
+            string qry = "SELECT contenuti.id_contenuto, argomenti.id_argomento, contenuti.dt_pubblicazione, contenuti_like.cn_like, COUNT(DISTINCT contenuti_commenti.oid_commento) AS total_comments"
+                       + " FROM contenuti"
+                       + " JOIN contenuti_argomenti ON contenuti.oid = contenuti_argomenti.oid_contenuto"
+                       + " JOIN contenuti_formati ON contenuti.oid = contenuti_formati.oid_contenuto"
+                       + " JOIN argomenti ON contenuti_argomenti.oid_argomento = argomenti.oid"
+                       + " JOIN formati ON contenuti_formati.oid_formato = formati.oid"
+                       + " LEFT JOIN contenuti_like ON contenuti.oid = contenuti_like.oid_contenuto"
+                       + " LEFT JOIN contenuti_commenti ON contenuti.oid = contenuti_commenti.oid_contenuto"
+                       + " WHERE formati.id_formato = 'Reels'"
+                       + " GROUP BY contenuti.id_contenuto, argomenti.id_argomento, contenuti.dt_pubblicazione, contenuti_like.cn_like"
+                       + " ORDER BY contenuti.dt_pubblicazione DESC";
+
+            List<ReelsExtraData> list = _genericRepository.Query<ReelsExtraData>(qry).ToList();
+
+            return list;
+        }
     }
 }

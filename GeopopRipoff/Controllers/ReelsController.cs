@@ -24,23 +24,18 @@ namespace GeopopRipoff.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
-
-
         public IActionResult Index(string id_reels)
         {
             ReelsIndex reelsIndex = new ReelsIndex();
 
         
-            var reels = _articlesRepository.GetLast5Reels();
+            var reels = _articlesRepository.GetAllReelsAndExtraData();
 
 
             foreach (var reel in reels)
             {
-                Content cont = new Content();
-                cont.Id_Contenuto = reel.Id_Contenuto;
-
-                cont.Path = @$"/DataMultimedia/Contenuti/{reel.Id_Contenuto}/{reel.Id_Contenuto}.mp4";
-                reelsIndex.List_Reels.Add(cont);
+                reel.Path = @$"/DataMultimedia/Contenuti/{reel.Id_Contenuto}/{reel.Id_Contenuto}.mp4";
+                reelsIndex.List_Reels.Add(reel);
             }
 
 
@@ -48,10 +43,13 @@ namespace GeopopRipoff.Controllers
             {
                 //il reels premuto se abbiamo
                 reelsIndex.Id_Reels = default;
-
             }
 
             return View(reelsIndex);
+        }
+        public IActionResult Video(string id_reels)
+        {
+            return View();
         }
     }
 }

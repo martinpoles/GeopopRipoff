@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
+    background-color: #474747; /*grigio scuro / argento */
 }
 .video-feed {
     display: flex;
@@ -20,7 +21,6 @@ body, html {
     display: flex;
     width: 100%;
     height: 100%;
-    border-radius: 10%;
     scroll-snap-align: start;
     justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
     align-items: center;
@@ -52,6 +52,7 @@ body, html {
     height: 50%; /* Occupano ciascuno metà della utility-bar-reels */
     box-sizing: border-box; /* Include il padding e il bordo nelle dimensioni totali */
     overflow: visible;
+    padding-left: 10px;
 }
 
 .utility-bar-title, .utility-bar-link {
