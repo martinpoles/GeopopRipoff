@@ -9,6 +9,10 @@ async function insertHtmlStructure() {
 
     let myData = await fetchAndProcessData(idArgomento);
 
+    if (myData.Contenuti < 1) {
+        return;
+    }
+
     var g = popolaHTML(myData.Contenuti, idArgomento);
 
    container.appendChild(g)

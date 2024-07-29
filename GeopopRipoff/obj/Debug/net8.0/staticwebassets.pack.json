@@ -1809,6 +1809,10 @@
       "PackagePath": "staticwebassets\\css\\Shared\\globalText.css"
     },
     {
+      "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\css\\placeholdernotfound.png",
+      "PackagePath": "staticwebassets\\css\\placeholdernotfound.png"
+    },
+    {
       "Id": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\GeopopRipoff\\GeopopRipoff\\GeopopRipoff\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

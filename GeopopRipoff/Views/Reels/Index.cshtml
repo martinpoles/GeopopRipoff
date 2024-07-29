@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/css/Reels/Index.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="~/css/Shared/globalClass.css" asp-append-version="true" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -37,7 +38,7 @@
 
                         <h1 class="utility-bar-title" style="color: #D1D1D1">@Model.List_Reels[i].Id_Contenuto</h1>
 
-                        @using (Html.BeginForm("Video", "Reels", FormMethod.Post, new { @class = "", id = $"ReelsLink_{i}" }))
+                        @using (Html.BeginForm("Video", "Reels", FormMethod.Get, new { @class = "", id = $"ReelsLink_{i}" }))
                         {
                             @Html.Hidden("id_articolo", @Model.List_Reels[i].Id_Contenuto)
                             <a class="utility-bar-link" href="javascript:void(0);" id="@Model.List_Reels[i].Id_Contenuto">Vedi L'Intero Video</a>
@@ -53,14 +54,37 @@
 
                     <div class="utility-bar-btn">
 
-                        <i class="fas fa-share fa-4x"></i>
+                        @using (Html.BeginForm("ShareBtn", "Reels", FormMethod.Get, new { @class = "", @style = "text-align:center" }))
+                        {
+                            @Html.Hidden("id_reels", @Model.List_Reels[i].Id_Contenuto)
+                            <button class="invisible-button">
+                                <i class="fas fa-share fa-3x"></i>
+                            </button>
+                        }
 
-                        <i class="fas fa-thumbs-up fa-4x"></i>
-                        <h8>@Model.List_Reels[i].Cn_Like</h8>
+
+                        @using (Html.BeginForm("LikeBtn", "Reels", FormMethod.Get, new { @class = "", @style = "text-align:center" }))
+                        {
+                            @Html.Hidden("id_reels", @Model.List_Reels[i].Id_Contenuto)
+                            <button class="invisible-button">
+                                <i class="fas fa-thumbs-up fa-3x"></i>
+                            </button>
+                            <h8>@Model.List_Reels[i].Cn_Like</h8>
+                        }
 
 
-                        <i class="fas fa-comment fa-4x"></i>
-                        <h8>@Model.List_Reels[i].Total_Comments</h8>
+                        @using (Html.BeginForm("CommentBtn", "Reels", FormMethod.Get, new { @class = "", @style = "text-align:center" }))
+                        {
+
+                            @Html.Hidden("id_reels", @Model.List_Reels[i].Id_Contenuto)
+                            <button class="invisible-button">
+                                <i class="fas fa-comment fa-3x"></i>
+                            </button>
+                            <h8>@Model.List_Reels[i].Total_Comments</h8>
+                        }
+
+
+
 
                     </div>
 

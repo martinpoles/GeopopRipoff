@@ -36,6 +36,10 @@
 .image-article {
     width: 40%;
     padding: 5px;
+    background-image: url('../placeholdernotfound.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
     .image-article .immagine {

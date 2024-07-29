@@ -19,6 +19,7 @@ builder.Services.AddScoped<GenericRepository>();
 builder.Services.AddScoped<ArticlesRepository>();
 builder.Services.AddScoped<ArgomentiRepository>();
 builder.Services.AddScoped<LogSignInOutRepository>();
+builder.Services.AddScoped<ReelsRepository>();
 
 
 // Add services to the container.

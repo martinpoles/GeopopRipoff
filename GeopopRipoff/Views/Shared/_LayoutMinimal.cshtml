@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - GeopopRipoff</title>
+    <title>@ViewData["Title"]VivoSostenibile</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/GeopopRipoff.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Home/Index.css" asp-append-version="true" />
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
-    <script src="~/js/LogSignInOut/FbSDK.js" asp-append-version="true"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -81,7 +80,7 @@
                         <h6 class="text-uppercase fw-bold">Useful links</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
                         <p>
-                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "telemarketingPolicyForm", }))
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Get, new { @id = "telemarketingPolicyForm", }))
                             {
                                 @Html.Hidden("ItemId", "1")
                                 <a href="javascript:void(0);" id="telemarketingPolicyLink" class="link-text">Telemarketing Policy</a>
@@ -94,7 +93,7 @@
                         </p>
 
                         <p>
-                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "cookiePolicyForm", }))
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Get, new { @id = "cookiePolicyForm", }))
                             {
                                 @Html.Hidden("ItemId", "2")
                                 <a href="javascript:void(0);" id="cookiePolicyLink" class="link-text">Cookie Policy</a>
@@ -109,7 +108,7 @@
 
 
                         <p>
-                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "privacyPolicyForm", }))
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Get, new { @id = "privacyPolicyForm", }))
                             {
                                 @Html.Hidden("ItemId", "3")
                                 <a href="javascript:void(0);" id="privacyPolicyLink" class="link-text">Privacy Policy</a>

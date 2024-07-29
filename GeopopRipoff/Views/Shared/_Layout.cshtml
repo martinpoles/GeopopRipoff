@@ -42,7 +42,7 @@
                 <div class="utility-bar first-lv-conteiner children-div-all">
 
                     <div class="titleImg colore-scritte-HV item">
-                        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "w-100 h-100" }))
+                        @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "w-100 h-100" }))
                         {
                             <button class="w-100 h-100 invisible-button colore-scritte-HV">VivoSostenibile</button>
                         }
@@ -57,7 +57,7 @@
                     </div>
                     <div class="notificationsBell item">
 
-                        @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
+                        @using (Html.BeginForm("Notifiche", "Home", FormMethod.Get, new { @class = "" }))
                         {
                             <button class="invisible-button">
                                 <i class="fas fa-bell"></i>
@@ -65,7 +65,7 @@
                         }
                     </div>
                     <div class="specMenu item">
-                        @using (Html.BeginForm("Index", "Menu", FormMethod.Post, new { @class = "" }))
+                        @using (Html.BeginForm("Index", "Menu", FormMethod.Get, new { @class = "" }))
                         {
                             <button class="invisible-button">
                                 <i class="fas fa-bars"></i>
@@ -141,7 +141,7 @@
                         <h6 class="text-uppercase fw-bold">Useful links</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
                         <p>
-                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "telemarketingPolicyForm", }))
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Get, new { @id = "telemarketingPolicyForm", }))
                             {
                                 @Html.Hidden("ItemId", "1")
                                 <a href="javascript:void(0);" id="telemarketingPolicyLink" class="link-text">Telemarketing Policy</a>
@@ -154,7 +154,7 @@
                         </p>
 
                         <p>
-                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "cookiePolicyForm", }))
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Get, new { @id = "cookiePolicyForm", }))
                             {
                                 @Html.Hidden("ItemId", "2")
                                 <a href="javascript:void(0);" id="cookiePolicyLink" class="link-text">Cookie Policy</a>
@@ -169,7 +169,7 @@
 
 
                         <p>
-                            @using (Html.BeginForm("Policy", "Home", FormMethod.Post, new { @id = "privacyPolicyForm", }))
+                            @using (Html.BeginForm("Policy", "Home", FormMethod.Get, new { @id = "privacyPolicyForm", }))
                             {
                                 @Html.Hidden("ItemId", "3")
                                 <a href="javascript:void(0);" id="privacyPolicyLink" class="link-text">Privacy Policy</a>

@@ -81,6 +81,14 @@ namespace GeopopRipoff.Controllers
 
             FileInfo fileInfo12 = new FileInfo(pathRootAbsolute);
 
+            if (!Directory.Exists(pathRootAbsolute))
+            {
+
+                // Gestione del caso in cui la directory non esiste
+                // Puoi decidere se tornare un errore o gestirlo in altro modo
+                return RedirectToAction("Error", "Home", new { statusCode = 404, errorMessage = "Directory non trovata." });
+            }
+
             string[] fileNames = Directory.GetFiles(pathRootAbsolute);
             Regex regex = new Regex(@".*_\d+\.jpg$");
             var validFileNames = fileNames.Where(fileName => regex.IsMatch(Path.GetFileName(fileName)));

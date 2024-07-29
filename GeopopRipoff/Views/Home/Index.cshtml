@@ -22,7 +22,7 @@
                         });
                     </script>
 
-                    <img src="@Model.ShowCase[i].Path" class="d-block w-100" alt="Slide @(i + 1)">
+                    <img src="@Model.ShowCase[i].Path" class="d-block w-100" onerror="this.style.display='none'">
                 </div>
             }
         </div>
@@ -48,7 +48,7 @@
             @Html.Hidden("id_articolo", storia.Id_Contenuto)
             @Html.Hidden("id_argomento", storia.Id_Argomento)
             <button class="invisible-button">
-                <img src="@storia.Path">
+                <img src="@storia.Path" onerror="this.style.display='none'">
             </button>
         }
     }
@@ -61,7 +61,7 @@
             @foreach (var item in Model.Reels)
             {
                 <div class="grid-item-reels">
-                    @using (Html.BeginForm("Index", "Reels", FormMethod.Post, new { @class = "w-100 h-100" }))
+                    @using (Html.BeginForm("Index", "Reels", FormMethod.Get, new { @class = "w-100 h-100" }))
                     {
                         @Html.Hidden("id_reels", item.Id_Contenuto)
                         <button class="invisible-button w-100 h-100">

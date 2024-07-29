@@ -128,7 +128,7 @@ namespace GeopopRipoff.Controllers
                 contenuto1.Id_Argomento = contenuto[i].id_argomento;
 
                 index.Storie.Add(contenuto1);
-                if (i <= 5)
+                if (i <= 0)
                 {
                     //show case
                     index.ShowCase.Add(contenuto1);

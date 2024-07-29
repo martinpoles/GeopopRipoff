@@ -10,7 +10,7 @@
     <div class="row go-back-to-home child-menu">
 
         <div class="link-back-go-back-to-home">
-            @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "" }))
+            @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "" }))
             {
 
                 <button class="invisible-button" style="display: flex; align-items: center">
@@ -26,7 +26,7 @@
 
         <div class="" style="width:auto; height: 100%;">
 
-            @using (Html.BeginForm("Index", "LogSignInOut", FormMethod.Post, new { @class = "" }))
+            @using (Html.BeginForm("Index", "LogSignInOut", FormMethod.Get, new { @class = "" }))
             {
                 <button class="invisible-button" style="display: flex; align-items: center">
                     <img src="#" alt="Alternate Text" style="border-radius:50%; padding:5px" />
@@ -42,7 +42,7 @@
         </div>
 
         <div class="" style="display: flex; align-items: center; width:auto; height: 100%;">
-            @using (Html.BeginForm("Notifiche", "Home", FormMethod.Post, new { @class = "" }))
+            @using (Html.BeginForm("Notifiche", "Home", FormMethod.Get, new { @class = "" }))
             {
                 <button class="invisible-button">
                     <i class="fas fa-bell"></i>
@@ -74,7 +74,7 @@
         {
 
             <div class="grid-item-menu">
-                @using (Html.BeginForm("Index", "Argument", FormMethod.Post, new { @class = "" }))
+                @using (Html.BeginForm("Index", "Argument", FormMethod.Get, new { @class = "" }))
                 {
                     @Html.Hidden("id_argomento", item.Id_Argomento)
                     <button class="invisible-button">
